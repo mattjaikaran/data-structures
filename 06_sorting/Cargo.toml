@@ -1,0 +1,8 @@
+[package]
+name = "06_sorting"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "06_sorting"
+path = "sorting.rs"

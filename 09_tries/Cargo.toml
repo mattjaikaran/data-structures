@@ -1,0 +1,8 @@
+[package]
+name = "09_tries"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "09_tries"
+path = "tries.rs"
