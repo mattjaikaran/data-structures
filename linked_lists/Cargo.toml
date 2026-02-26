@@ -1,0 +1,8 @@
+[package]
+name = "linked-lists"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "linked-lists"
+path = "linked_lists.rs"

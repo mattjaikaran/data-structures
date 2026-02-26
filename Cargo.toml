@@ -1,0 +1,18 @@
+[workspace]
+members = [
+    "arrays",
+    "linked_lists",
+    "stacks_queues",
+    "trees",
+    "graphs",
+    "heaps",
+    "hash_maps",
+    "tries",
+    "dynamic_programming",
+    "sorting",
+    "bit_manipulation",
+    "strings_algorithms",
+    "backtracking",
+    "greedy",
+]
+resolver = "2"

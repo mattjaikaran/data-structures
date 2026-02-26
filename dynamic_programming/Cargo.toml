@@ -1,0 +1,8 @@
+[package]
+name = "dynamic-programming"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "dynamic-programming"
+path = "dynamic_programming.rs"
