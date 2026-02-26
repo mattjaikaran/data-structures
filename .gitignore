@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# TypeScript / Node
+node_modules/
+dist/
+*.js.map
+tsconfig.tsbuildinfo
+.npm
+
+# Rust
+rust/target/
+Cargo.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
