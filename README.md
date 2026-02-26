@@ -1,35 +1,53 @@
 # 📚 Data Structures & Algorithms Handbook
 
-A complete interview prep and learning resource — implementations in Python, TypeScript, and Rust, plus curated problem lists, company guides, and deep-dive learning docs.
+Complete interview prep and learning reference. Implementations in **Python**, **TypeScript**, and **Rust** — organized in a deliberate learning progression from foundations to hardest topics.
 
 ---
 
-## Languages
+## Study Order
 
-| Language | Status | Notes |
-|----------|--------|-------|
-| 🐍 Python | ✅ All tests passing | Run: `python <topic>/<topic>.py` |
-| 🟨 TypeScript | ✅ All tests passing | Run: `npx ts-node <topic>/<topic>.ts` |
-| 🦀 Rust | ✅ All tests written | Run: `cargo test` from repo root |
+Folders are numbered. Start at `01_` and work forward. Each topic builds on what came before.
+
+| # | Module | Why This Order | Difficulty |
+|---|--------|---------------|-----------|
+| 01 | `arrays` | Everything else builds on array thinking. Two pointers, sliding window, binary search. | 🟢 Foundation |
+| 02 | `hash_maps` | The most common optimization tool. O(1) lookup unlocks dozens of problems. | 🟢 Foundation |
+| 03 | `strings` | Arrays of characters. KMP, Z-algorithm, sliding window on strings. | 🟢–🟡 |
+| 04 | `linked_lists` | Pointer manipulation. Fast/slow pointers, reversal, LRU cache. | 🟡 |
+| 05 | `stacks_queues` | Essential for DFS/BFS. Monotonic stack is underrated. | 🟡 |
+| 06 | `sorting` | Know the algorithms, not just `sort()`. Quickselect, merge sort internals. | 🟡 |
+| 07 | `trees` | DFS bottom-up/top-down. Most tree problems use 2–3 recursive patterns. | 🟡 |
+| 08 | `heaps` | Top-K problems, streaming median, task scheduling. | 🟡 |
+| 09 | `tries` | Prefix trees. Word search, autocomplete, XOR tricks. | 🟡 |
+| 10 | `graphs` | BFS/DFS, Dijkstra, Union-Find, topological sort. | 🟡–🔴 |
+| 11 | `bit_manipulation` | XOR tricks, masks, bit counting. Fast and elegant when it applies. | 🟡 |
+| 12 | `dynamic_programming` | The hardest category. 1D/2D DP, knapsack, string DP, interval DP. Save for last. | 🔴 |
+| 13 | `backtracking` | Subsets, permutations, N-Queens, Sudoku. Needs recursion comfort. | 🔴 |
+| 14 | `greedy` | Locally optimal choices. Intervals, scheduling, heaps. | 🟡–🔴 |
 
 ---
 
-## Data Structures & Algorithms
+## Running Tests
 
-| Module | Topics Covered | Problems |
-|--------|---------------|---------|
-| `arrays/` | Two pointers, sliding window, prefix sum, binary search | 15+ |
-| `linked_lists/` | Singly/Doubly linked list, LRU Cache, Floyd's cycle | 16 |
-| `stacks_queues/` | Stack, Queue, MinStack, monotonic stack, deque | 12 |
-| `trees/` | BST, DFS/BFS, LCA, path sum, serialize/deserialize | 13 |
-| `graphs/` | BFS, DFS, Dijkstra, Union-Find, topo sort | 12 |
-| `heaps/` | MinHeap, MaxHeap, MedianFinder, top-K patterns | 10 |
-| `hash_maps/` | Manual HashMap, sliding window, prefix sums | 12 |
-| `tries/` | Trie, WildcardTrie, autocomplete, word search | 8 |
-| `dynamic_programming/` | 1D/2D DP, knapsack, string DP, interval DP | 25+ |
-| `sorting/` | Quicksort, mergesort, heapsort, counting sort, radix | 10 |
-| `bit_manipulation/` | XOR tricks, masks, bit counting patterns | 12 |
-| `strings_algorithms/` | KMP, Z-algorithm, Manacher, classic string problems | 14 |
+```bash
+# Python — run any module
+python 01_arrays/arrays.py
+python 12_dynamic_programming/dynamic_programming.py
+
+# Run all Python modules in order
+for i in 01 02 03 04 05 06 07 08 09 10 11 12 13 14; do
+  dir=$(ls -d ${i}_* 2>/dev/null)
+  file=$(ls $dir/*.py 2>/dev/null | head -1)
+  [ -n "$file" ] && python $file
+done
+
+# TypeScript — run any module
+npx ts-node --skip-project 01_arrays/arrays.ts
+npx ts-node --skip-project 12_dynamic_programming/dynamic_programming.ts
+
+# Rust — all modules via workspace
+cargo test
+```
 
 ---
 
@@ -38,54 +56,49 @@ A complete interview prep and learning resource — implementations in Python, T
 | File | What It Covers |
 |------|---------------|
 | `blind75.md` | All 75 problems with pattern + key insight per problem |
-| `neetcode150.md` | Extended 150 — gaps the Blind 75 misses, organized by topic |
-| `interview_patterns.md` | 14 core patterns with templates + complexity reference |
-| `system_design.md` | Full framework + 8 classic design problems (URL shortener, Instagram, YouTube, etc.) |
-| `by_company.md` | Meta, Google, Amazon, Apple, Microsoft + others — what each actually tests |
-| `python_deep_dive.md` | Data model, generators, decorators, async, typing, performance |
-| `rust_after_the_book.md` | Lifetimes, smart pointers, concurrency, macros, audio plugins, learning path |
+| `neetcode150.md` | Extended 150 — gaps Blind 75 misses |
+| `interview_patterns.md` | 14 core patterns with code templates + complexity table |
+| `system_design.md` | Full framework + 8 classic design problems |
+| `by_company.md` | Meta, Google, Amazon, Apple, Microsoft + others |
+| `behavioral_interview.md` | STAR, all 16 Amazon LPs, question bank, story templates |
+| `mock_interviews.md` | 14 timed sessions including full loop simulations |
+| `python_deep_dive.md` | Generators, decorators, async, type system, performance |
+| `typescript_deep_dive.md` | Event loop, closures, type system, patterns |
+| `rust_after_the_book.md` | Lifetimes, smart pointers, async, audio plugins |
 
 ---
 
-## Suggested Study Order
+## Practice App (`practice-app/`)
 
-### Phase 1 — Foundations (Week 1-2)
-`arrays → linked_lists → stacks_queues → hash_maps`
-Build core intuition: pointer manipulation, O(1) lookup, tradeoffs.
-Read `interview_patterns.md` alongside.
+`dsa-practice-app.jsx` — React app with 28 problems, AI solution checker, hints, progress tracking.
+Paste into a Claude.ai artifact to run.
 
-### Phase 2 — Trees & Graphs (Week 3-4)
-`trees → graphs → tries`
-DFS/BFS appear in ~40% of interview problems.
+---
+
+## Project Stats
+
+- **14 modules** × **3 languages** = 42 implementation files
+- **~200 problems** implemented with passing test suites
+- **10 learning docs** covering algorithms, system design, behavioral, and language deep dives
+- **14/14 Python** ✅ and **14/14 TypeScript** ✅ test suites passing
+
+---
+
+## Suggested Weekly Plan
+
+**Week 1–2:** `01_arrays` → `02_hash_maps` → `03_strings` → `04_linked_lists`
+Read `interview_patterns.md` as you go.
+
+**Week 3–4:** `05_stacks_queues` → `06_sorting` → `07_trees`
 Start working through `blind75.md`.
 
-### Phase 3 — Advanced (Week 5-6)
-`heaps → dynamic_programming → sorting → bit_manipulation → strings_algorithms`
+**Week 5:** `08_heaps` → `09_tries` → `10_graphs`
 
-### Phase 4 — System Design (Week 7-8)
-`system_design.md → practice with a partner → by_company.md`
+**Week 6:** `11_bit_manipulation` → `12_dynamic_programming`
+DP deserves a full dedicated week. Don't rush it.
 
----
+**Week 7:** `13_backtracking` → `14_greedy`
 
-## Running Everything
-
-```bash
-# Python
-for topic in arrays linked_lists stacks_queues trees graphs heaps hash_maps tries \
-             dynamic_programming sorting bit_manipulation strings_algorithms; do
-  python ${topic}/${topic}.py
-done
-
-# TypeScript
-for topic in arrays linked_lists stacks_queues trees graphs heaps hash_maps tries \
-             dynamic_programming sorting bit_manipulation strings_algorithms; do
-  npx ts-node --skip-project ${topic}/${topic}.ts
-done
-
-# Rust
-cargo test
-```
-
----
-
-## Problem Count: ~165 total (45 Easy / 95 Medium / 25 Hard)
+**Week 8:** System design + behavioral.
+Read `system_design.md`, `by_company.md`, `behavioral_interview.md`.
+Run the mock interview sessions in `mock_interviews.md`.

@@ -1,0 +1,8 @@
+[package]
+name = "03_strings"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "03_strings"
+path = "strings_algorithms.rs"

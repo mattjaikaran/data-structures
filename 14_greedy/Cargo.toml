@@ -1,0 +1,8 @@
+[package]
+name = "14_greedy"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "14_greedy"
+path = "greedy.rs"
