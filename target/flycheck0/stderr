@@ -1,5 +1,5 @@
-   0.030870459s  INFO prepare_target{force=false package_id=arrays v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/arrays) target="arrays"}: cargo::core::compiler::fingerprint: fingerprint error for arrays v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/arrays)/Check { test: false }/TargetInner { name: "arrays", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/arrays/arrays.rs", Edition2021) }
-   0.030908375s  INFO prepare_target{force=false package_id=arrays v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/arrays) target="arrays"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/arrays-c5b04828a0314fea/bin-arrays`
+   0.007049667s  INFO prepare_target{force=false package_id=arrays v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/01_arrays) target="arrays"}: cargo::core::compiler::fingerprint: fingerprint error for arrays v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/01_arrays)/Check { test: false }/TargetInner { name: "arrays", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/01_arrays/arrays.rs", Edition2021) }
+   0.007069000s  INFO prepare_target{force=false package_id=arrays v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/01_arrays) target="arrays"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/arrays-32c518e4e079ab5b/bin-arrays`
 
 Caused by:
     No such file or directory (os error 2)
@@ -23,8 +23,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.133181167s  INFO prepare_target{force=false package_id=arrays v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/arrays) target="arrays"}: cargo::core::compiler::fingerprint: fingerprint error for arrays v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/arrays)/Check { test: true }/TargetInner { name: "arrays", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/arrays/arrays.rs", Edition2021) }
-   0.133197375s  INFO prepare_target{force=false package_id=arrays v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/arrays) target="arrays"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/arrays-4914acb4ebcb7631/test-bin-arrays`
+   0.022128125s  INFO prepare_target{force=false package_id=arrays v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/01_arrays) target="arrays"}: cargo::core::compiler::fingerprint: fingerprint error for arrays v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/01_arrays)/Check { test: true }/TargetInner { name: "arrays", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/01_arrays/arrays.rs", Edition2021) }
+   0.022139459s  INFO prepare_target{force=false package_id=arrays v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/01_arrays) target="arrays"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/arrays-c3d2a60792eb4b26/test-bin-arrays`
 
 Caused by:
     No such file or directory (os error 2)
@@ -48,8 +48,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.133492209s  INFO prepare_target{force=false package_id=backtracking v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/backtracking) target="backtracking"}: cargo::core::compiler::fingerprint: fingerprint error for backtracking v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/backtracking)/Check { test: false }/TargetInner { name: "backtracking", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/backtracking/backtracking.rs", Edition2021) }
-   0.133498959s  INFO prepare_target{force=false package_id=backtracking v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/backtracking) target="backtracking"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/backtracking-501c561082908580/bin-backtracking`
+   0.022320500s  INFO prepare_target{force=false package_id=backtracking v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/13_backtracking) target="backtracking"}: cargo::core::compiler::fingerprint: fingerprint error for backtracking v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/13_backtracking)/Check { test: false }/TargetInner { name: "backtracking", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/13_backtracking/backtracking.rs", Edition2021) }
+   0.022325209s  INFO prepare_target{force=false package_id=backtracking v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/13_backtracking) target="backtracking"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/backtracking-70cad424e4678bb2/bin-backtracking`
 
 Caused by:
     No such file or directory (os error 2)
@@ -73,8 +73,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.133688167s  INFO prepare_target{force=false package_id=backtracking v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/backtracking) target="backtracking"}: cargo::core::compiler::fingerprint: fingerprint error for backtracking v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/backtracking)/Check { test: true }/TargetInner { name: "backtracking", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/backtracking/backtracking.rs", Edition2021) }
-   0.133706584s  INFO prepare_target{force=false package_id=backtracking v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/backtracking) target="backtracking"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/backtracking-d1a8a8a1f9a7ebf2/test-bin-backtracking`
+   0.022489292s  INFO prepare_target{force=false package_id=backtracking v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/13_backtracking) target="backtracking"}: cargo::core::compiler::fingerprint: fingerprint error for backtracking v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/13_backtracking)/Check { test: true }/TargetInner { name: "backtracking", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/13_backtracking/backtracking.rs", Edition2021) }
+   0.022493209s  INFO prepare_target{force=false package_id=backtracking v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/13_backtracking) target="backtracking"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/backtracking-3d5487a20fd3f499/test-bin-backtracking`
 
 Caused by:
     No such file or directory (os error 2)
@@ -98,8 +98,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.134748084s  INFO prepare_target{force=false package_id=bit-manipulation v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/bit_manipulation) target="bit-manipulation"}: cargo::core::compiler::fingerprint: fingerprint error for bit-manipulation v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/bit_manipulation)/Check { test: false }/TargetInner { name: "bit-manipulation", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/bit_manipulation/bit_manipulation.rs", Edition2021) }
-   0.134767834s  INFO prepare_target{force=false package_id=bit-manipulation v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/bit_manipulation) target="bit-manipulation"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/bit-manipulation-e4627571b076e464/bin-bit-manipulation`
+   0.022653334s  INFO prepare_target{force=false package_id=bit_manipulation v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/11_bit_manipulation) target="bit_manipulation"}: cargo::core::compiler::fingerprint: fingerprint error for bit_manipulation v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/11_bit_manipulation)/Check { test: false }/TargetInner { name: "bit_manipulation", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/11_bit_manipulation/bit_manipulation.rs", Edition2021) }
+   0.022657292s  INFO prepare_target{force=false package_id=bit_manipulation v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/11_bit_manipulation) target="bit_manipulation"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/bit_manipulation-f7033f2dcad22835/bin-bit_manipulation`
 
 Caused by:
     No such file or directory (os error 2)
@@ -123,8 +123,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.135170500s  INFO prepare_target{force=false package_id=bit-manipulation v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/bit_manipulation) target="bit-manipulation"}: cargo::core::compiler::fingerprint: fingerprint error for bit-manipulation v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/bit_manipulation)/Check { test: true }/TargetInner { name: "bit-manipulation", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/bit_manipulation/bit_manipulation.rs", Edition2021) }
-   0.135184209s  INFO prepare_target{force=false package_id=bit-manipulation v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/bit_manipulation) target="bit-manipulation"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/bit-manipulation-ce7265f74f6a1706/test-bin-bit-manipulation`
+   0.022813709s  INFO prepare_target{force=false package_id=bit_manipulation v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/11_bit_manipulation) target="bit_manipulation"}: cargo::core::compiler::fingerprint: fingerprint error for bit_manipulation v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/11_bit_manipulation)/Check { test: true }/TargetInner { name: "bit_manipulation", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/11_bit_manipulation/bit_manipulation.rs", Edition2021) }
+   0.022819709s  INFO prepare_target{force=false package_id=bit_manipulation v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/11_bit_manipulation) target="bit_manipulation"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/bit_manipulation-e0135b62c55e7404/test-bin-bit_manipulation`
 
 Caused by:
     No such file or directory (os error 2)
@@ -148,8 +148,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.135433584s  INFO prepare_target{force=false package_id=dynamic-programming v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/dynamic_programming) target="dynamic-programming"}: cargo::core::compiler::fingerprint: fingerprint error for dynamic-programming v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/dynamic_programming)/Check { test: false }/TargetInner { name: "dynamic-programming", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/dynamic_programming/dynamic_programming.rs", Edition2021) }
-   0.135442375s  INFO prepare_target{force=false package_id=dynamic-programming v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/dynamic_programming) target="dynamic-programming"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/dynamic-programming-2cb6564f28eb99a6/bin-dynamic-programming`
+   0.022978250s  INFO prepare_target{force=false package_id=dynamic_programming v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/12_dynamic_programming) target="dynamic_programming"}: cargo::core::compiler::fingerprint: fingerprint error for dynamic_programming v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/12_dynamic_programming)/Check { test: false }/TargetInner { name: "dynamic_programming", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/12_dynamic_programming/dynamic_programming.rs", Edition2021) }
+   0.022982042s  INFO prepare_target{force=false package_id=dynamic_programming v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/12_dynamic_programming) target="dynamic_programming"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/dynamic_programming-b5d04f6cf765ccd0/bin-dynamic_programming`
 
 Caused by:
     No such file or directory (os error 2)
@@ -173,8 +173,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.135638959s  INFO prepare_target{force=false package_id=dynamic-programming v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/dynamic_programming) target="dynamic-programming"}: cargo::core::compiler::fingerprint: fingerprint error for dynamic-programming v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/dynamic_programming)/Check { test: true }/TargetInner { name: "dynamic-programming", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/dynamic_programming/dynamic_programming.rs", Edition2021) }
-   0.135644209s  INFO prepare_target{force=false package_id=dynamic-programming v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/dynamic_programming) target="dynamic-programming"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/dynamic-programming-84b5abdf7858ea19/test-bin-dynamic-programming`
+   0.023144875s  INFO prepare_target{force=false package_id=dynamic_programming v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/12_dynamic_programming) target="dynamic_programming"}: cargo::core::compiler::fingerprint: fingerprint error for dynamic_programming v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/12_dynamic_programming)/Check { test: true }/TargetInner { name: "dynamic_programming", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/12_dynamic_programming/dynamic_programming.rs", Edition2021) }
+   0.023148709s  INFO prepare_target{force=false package_id=dynamic_programming v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/12_dynamic_programming) target="dynamic_programming"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/dynamic_programming-881e193b4b6e8b53/test-bin-dynamic_programming`
 
 Caused by:
     No such file or directory (os error 2)
@@ -198,8 +198,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.135826209s  INFO prepare_target{force=false package_id=graphs v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/graphs) target="graphs"}: cargo::core::compiler::fingerprint: fingerprint error for graphs v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/graphs)/Check { test: false }/TargetInner { name: "graphs", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/graphs/graphs.rs", Edition2021) }
-   0.135830875s  INFO prepare_target{force=false package_id=graphs v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/graphs) target="graphs"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/graphs-95f5a0cd5d7fe2af/bin-graphs`
+   0.023300334s  INFO prepare_target{force=false package_id=graphs v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/10_graphs) target="graphs"}: cargo::core::compiler::fingerprint: fingerprint error for graphs v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/10_graphs)/Check { test: false }/TargetInner { name: "graphs", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/10_graphs/graphs.rs", Edition2021) }
+   0.023303667s  INFO prepare_target{force=false package_id=graphs v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/10_graphs) target="graphs"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/graphs-74a18240261ac3dd/bin-graphs`
 
 Caused by:
     No such file or directory (os error 2)
@@ -223,8 +223,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.136017084s  INFO prepare_target{force=false package_id=graphs v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/graphs) target="graphs"}: cargo::core::compiler::fingerprint: fingerprint error for graphs v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/graphs)/Check { test: true }/TargetInner { name: "graphs", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/graphs/graphs.rs", Edition2021) }
-   0.136020667s  INFO prepare_target{force=false package_id=graphs v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/graphs) target="graphs"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/graphs-54d48fb5748a19dc/test-bin-graphs`
+   0.023450625s  INFO prepare_target{force=false package_id=graphs v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/10_graphs) target="graphs"}: cargo::core::compiler::fingerprint: fingerprint error for graphs v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/10_graphs)/Check { test: true }/TargetInner { name: "graphs", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/10_graphs/graphs.rs", Edition2021) }
+   0.023454000s  INFO prepare_target{force=false package_id=graphs v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/10_graphs) target="graphs"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/graphs-fcaba936b0be365f/test-bin-graphs`
 
 Caused by:
     No such file or directory (os error 2)
@@ -248,8 +248,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.136188042s  INFO prepare_target{force=false package_id=greedy v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/greedy) target="greedy"}: cargo::core::compiler::fingerprint: fingerprint error for greedy v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/greedy)/Check { test: false }/TargetInner { name: "greedy", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/greedy/greedy.rs", Edition2021) }
-   0.136191417s  INFO prepare_target{force=false package_id=greedy v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/greedy) target="greedy"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/greedy-7998908f6ccc96b4/bin-greedy`
+   0.023600917s  INFO prepare_target{force=false package_id=greedy v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/14_greedy) target="greedy"}: cargo::core::compiler::fingerprint: fingerprint error for greedy v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/14_greedy)/Check { test: false }/TargetInner { name: "greedy", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/14_greedy/greedy.rs", Edition2021) }
+   0.023613334s  INFO prepare_target{force=false package_id=greedy v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/14_greedy) target="greedy"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/greedy-9f705be90d9e2327/bin-greedy`
 
 Caused by:
     No such file or directory (os error 2)
@@ -273,8 +273,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.136351750s  INFO prepare_target{force=false package_id=greedy v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/greedy) target="greedy"}: cargo::core::compiler::fingerprint: fingerprint error for greedy v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/greedy)/Check { test: true }/TargetInner { name: "greedy", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/greedy/greedy.rs", Edition2021) }
-   0.136355084s  INFO prepare_target{force=false package_id=greedy v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/greedy) target="greedy"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/greedy-a21333dc4ce24db6/test-bin-greedy`
+   0.023766209s  INFO prepare_target{force=false package_id=greedy v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/14_greedy) target="greedy"}: cargo::core::compiler::fingerprint: fingerprint error for greedy v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/14_greedy)/Check { test: true }/TargetInner { name: "greedy", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/14_greedy/greedy.rs", Edition2021) }
+   0.023769334s  INFO prepare_target{force=false package_id=greedy v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/14_greedy) target="greedy"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/greedy-15258016b130b065/test-bin-greedy`
 
 Caused by:
     No such file or directory (os error 2)
@@ -298,8 +298,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.136512250s  INFO prepare_target{force=false package_id=hash-maps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/hash_maps) target="hash-maps"}: cargo::core::compiler::fingerprint: fingerprint error for hash-maps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/hash_maps)/Check { test: false }/TargetInner { name: "hash-maps", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/hash_maps/hash_maps.rs", Edition2021) }
-   0.136516000s  INFO prepare_target{force=false package_id=hash-maps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/hash_maps) target="hash-maps"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/hash-maps-954eafc2cdec9bc7/bin-hash-maps`
+   0.023924250s  INFO prepare_target{force=false package_id=hash_maps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/02_hash_maps) target="hash_maps"}: cargo::core::compiler::fingerprint: fingerprint error for hash_maps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/02_hash_maps)/Check { test: false }/TargetInner { name: "hash_maps", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/02_hash_maps/hash_maps.rs", Edition2021) }
+   0.023927750s  INFO prepare_target{force=false package_id=hash_maps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/02_hash_maps) target="hash_maps"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/hash_maps-64915b784bd9c9d1/bin-hash_maps`
 
 Caused by:
     No such file or directory (os error 2)
@@ -323,8 +323,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.137065375s  INFO prepare_target{force=false package_id=hash-maps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/hash_maps) target="hash-maps"}: cargo::core::compiler::fingerprint: fingerprint error for hash-maps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/hash_maps)/Check { test: true }/TargetInner { name: "hash-maps", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/hash_maps/hash_maps.rs", Edition2021) }
-   0.137073584s  INFO prepare_target{force=false package_id=hash-maps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/hash_maps) target="hash-maps"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/hash-maps-e54b47e8694d1c10/test-bin-hash-maps`
+   0.024088875s  INFO prepare_target{force=false package_id=hash_maps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/02_hash_maps) target="hash_maps"}: cargo::core::compiler::fingerprint: fingerprint error for hash_maps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/02_hash_maps)/Check { test: true }/TargetInner { name: "hash_maps", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/02_hash_maps/hash_maps.rs", Edition2021) }
+   0.024092334s  INFO prepare_target{force=false package_id=hash_maps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/02_hash_maps) target="hash_maps"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/hash_maps-6da26f45374e9c1d/test-bin-hash_maps`
 
 Caused by:
     No such file or directory (os error 2)
@@ -348,8 +348,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.137715167s  INFO prepare_target{force=false package_id=heaps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/heaps) target="heaps"}: cargo::core::compiler::fingerprint: fingerprint error for heaps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/heaps)/Check { test: false }/TargetInner { name: "heaps", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/heaps/heaps.rs", Edition2021) }
-   0.137739750s  INFO prepare_target{force=false package_id=heaps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/heaps) target="heaps"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/heaps-98937acb32414ec0/bin-heaps`
+   0.024252792s  INFO prepare_target{force=false package_id=heaps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/08_heaps) target="heaps"}: cargo::core::compiler::fingerprint: fingerprint error for heaps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/08_heaps)/Check { test: false }/TargetInner { name: "heaps", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/08_heaps/heaps.rs", Edition2021) }
+   0.024256125s  INFO prepare_target{force=false package_id=heaps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/08_heaps) target="heaps"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/heaps-dcb4e274a8245628/bin-heaps`
 
 Caused by:
     No such file or directory (os error 2)
@@ -373,8 +373,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.138448292s  INFO prepare_target{force=false package_id=heaps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/heaps) target="heaps"}: cargo::core::compiler::fingerprint: fingerprint error for heaps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/heaps)/Check { test: true }/TargetInner { name: "heaps", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/heaps/heaps.rs", Edition2021) }
-   0.138454750s  INFO prepare_target{force=false package_id=heaps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/heaps) target="heaps"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/heaps-2e9526aa183eb15a/test-bin-heaps`
+   0.024411292s  INFO prepare_target{force=false package_id=heaps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/08_heaps) target="heaps"}: cargo::core::compiler::fingerprint: fingerprint error for heaps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/08_heaps)/Check { test: true }/TargetInner { name: "heaps", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/08_heaps/heaps.rs", Edition2021) }
+   0.024414792s  INFO prepare_target{force=false package_id=heaps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/08_heaps) target="heaps"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/heaps-d2441e4b5a96ead5/test-bin-heaps`
 
 Caused by:
     No such file or directory (os error 2)
@@ -398,8 +398,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.138676750s  INFO prepare_target{force=false package_id=linked-lists v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/linked_lists) target="linked-lists"}: cargo::core::compiler::fingerprint: fingerprint error for linked-lists v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/linked_lists)/Check { test: false }/TargetInner { name: "linked-lists", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/linked_lists/linked_lists.rs", Edition2021) }
-   0.138685834s  INFO prepare_target{force=false package_id=linked-lists v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/linked_lists) target="linked-lists"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/linked-lists-ce6807eee0b1797b/bin-linked-lists`
+   0.024582042s  INFO prepare_target{force=false package_id=linked_lists v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/04_linked_lists) target="linked_lists"}: cargo::core::compiler::fingerprint: fingerprint error for linked_lists v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/04_linked_lists)/Check { test: false }/TargetInner { name: "linked_lists", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/04_linked_lists/linked_lists.rs", Edition2021) }
+   0.024585500s  INFO prepare_target{force=false package_id=linked_lists v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/04_linked_lists) target="linked_lists"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/linked_lists-c12d7f88120d5239/bin-linked_lists`
 
 Caused by:
     No such file or directory (os error 2)
@@ -423,8 +423,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.138983542s  INFO prepare_target{force=false package_id=linked-lists v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/linked_lists) target="linked-lists"}: cargo::core::compiler::fingerprint: fingerprint error for linked-lists v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/linked_lists)/Check { test: true }/TargetInner { name: "linked-lists", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/linked_lists/linked_lists.rs", Edition2021) }
-   0.138988417s  INFO prepare_target{force=false package_id=linked-lists v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/linked_lists) target="linked-lists"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/linked-lists-dca0b05da5f1e656/test-bin-linked-lists`
+   0.024737167s  INFO prepare_target{force=false package_id=linked_lists v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/04_linked_lists) target="linked_lists"}: cargo::core::compiler::fingerprint: fingerprint error for linked_lists v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/04_linked_lists)/Check { test: true }/TargetInner { name: "linked_lists", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/04_linked_lists/linked_lists.rs", Edition2021) }
+   0.024741084s  INFO prepare_target{force=false package_id=linked_lists v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/04_linked_lists) target="linked_lists"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/linked_lists-4922b62562ce37d1/test-bin-linked_lists`
 
 Caused by:
     No such file or directory (os error 2)
@@ -448,8 +448,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.141303834s  INFO prepare_target{force=false package_id=sorting v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/sorting) target="sorting"}: cargo::core::compiler::fingerprint: fingerprint error for sorting v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/sorting)/Check { test: false }/TargetInner { name: "sorting", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/sorting/sorting.rs", Edition2021) }
-   0.141311834s  INFO prepare_target{force=false package_id=sorting v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/sorting) target="sorting"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/sorting-9650bcba945e1557/bin-sorting`
+   0.024899000s  INFO prepare_target{force=false package_id=sorting v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/06_sorting) target="sorting"}: cargo::core::compiler::fingerprint: fingerprint error for sorting v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/06_sorting)/Check { test: false }/TargetInner { name: "sorting", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/06_sorting/sorting.rs", Edition2021) }
+   0.024902875s  INFO prepare_target{force=false package_id=sorting v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/06_sorting) target="sorting"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/sorting-edd15cbd86893724/bin-sorting`
 
 Caused by:
     No such file or directory (os error 2)
@@ -473,8 +473,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.142388042s  INFO prepare_target{force=false package_id=sorting v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/sorting) target="sorting"}: cargo::core::compiler::fingerprint: fingerprint error for sorting v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/sorting)/Check { test: true }/TargetInner { name: "sorting", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/sorting/sorting.rs", Edition2021) }
-   0.142410750s  INFO prepare_target{force=false package_id=sorting v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/sorting) target="sorting"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/sorting-f818f55c5b64fa50/test-bin-sorting`
+   0.025055459s  INFO prepare_target{force=false package_id=sorting v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/06_sorting) target="sorting"}: cargo::core::compiler::fingerprint: fingerprint error for sorting v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/06_sorting)/Check { test: true }/TargetInner { name: "sorting", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/06_sorting/sorting.rs", Edition2021) }
+   0.025059417s  INFO prepare_target{force=false package_id=sorting v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/06_sorting) target="sorting"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/sorting-07d2f2f404868946/test-bin-sorting`
 
 Caused by:
     No such file or directory (os error 2)
@@ -498,8 +498,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.142926000s  INFO prepare_target{force=false package_id=stacks-queues v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/stacks_queues) target="stacks-queues"}: cargo::core::compiler::fingerprint: fingerprint error for stacks-queues v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/stacks_queues)/Check { test: false }/TargetInner { name: "stacks-queues", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/stacks_queues/stacks_queues.rs", Edition2021) }
-   0.142945250s  INFO prepare_target{force=false package_id=stacks-queues v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/stacks_queues) target="stacks-queues"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/stacks-queues-c2316c61224a325d/bin-stacks-queues`
+   0.025255167s  INFO prepare_target{force=false package_id=stacks_queues v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/05_stacks_queues) target="stacks_queues"}: cargo::core::compiler::fingerprint: fingerprint error for stacks_queues v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/05_stacks_queues)/Check { test: false }/TargetInner { name: "stacks_queues", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/05_stacks_queues/stacks_queues.rs", Edition2021) }
+   0.025259250s  INFO prepare_target{force=false package_id=stacks_queues v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/05_stacks_queues) target="stacks_queues"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/stacks_queues-9abc9eb5a62c67e3/bin-stacks_queues`
 
 Caused by:
     No such file or directory (os error 2)
@@ -523,8 +523,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.143385959s  INFO prepare_target{force=false package_id=stacks-queues v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/stacks_queues) target="stacks-queues"}: cargo::core::compiler::fingerprint: fingerprint error for stacks-queues v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/stacks_queues)/Check { test: true }/TargetInner { name: "stacks-queues", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/stacks_queues/stacks_queues.rs", Edition2021) }
-   0.143643209s  INFO prepare_target{force=false package_id=stacks-queues v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/stacks_queues) target="stacks-queues"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/stacks-queues-b665e6382aa37aa6/test-bin-stacks-queues`
+   0.025558292s  INFO prepare_target{force=false package_id=stacks_queues v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/05_stacks_queues) target="stacks_queues"}: cargo::core::compiler::fingerprint: fingerprint error for stacks_queues v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/05_stacks_queues)/Check { test: true }/TargetInner { name: "stacks_queues", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/05_stacks_queues/stacks_queues.rs", Edition2021) }
+   0.025565000s  INFO prepare_target{force=false package_id=stacks_queues v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/05_stacks_queues) target="stacks_queues"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/stacks_queues-67f5a1390b32defb/test-bin-stacks_queues`
 
 Caused by:
     No such file or directory (os error 2)
@@ -548,8 +548,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.144024709s  INFO prepare_target{force=false package_id=strings_algorithms v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/strings_algorithms) target="strings_algorithms"}: cargo::core::compiler::fingerprint: fingerprint error for strings_algorithms v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/strings_algorithms)/Check { test: false }/TargetInner { name: "strings_algorithms", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/strings_algorithms/strings_algorithms.rs", Edition2021) }
-   0.144038250s  INFO prepare_target{force=false package_id=strings_algorithms v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/strings_algorithms) target="strings_algorithms"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/strings_algorithms-46efc24c3ae54d0d/bin-strings_algorithms`
+   0.025776084s  INFO prepare_target{force=false package_id=strings v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/03_strings) target="strings"}: cargo::core::compiler::fingerprint: fingerprint error for strings v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/03_strings)/Check { test: false }/TargetInner { name: "strings", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/03_strings/strings.rs", Edition2021) }
+   0.025781250s  INFO prepare_target{force=false package_id=strings v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/03_strings) target="strings"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/strings-5ae5d88c9faadbe1/bin-strings`
 
 Caused by:
     No such file or directory (os error 2)
@@ -573,8 +573,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.145038792s  INFO prepare_target{force=false package_id=strings_algorithms v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/strings_algorithms) target="strings_algorithms"}: cargo::core::compiler::fingerprint: fingerprint error for strings_algorithms v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/strings_algorithms)/Check { test: true }/TargetInner { name: "strings_algorithms", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/strings_algorithms/strings_algorithms.rs", Edition2021) }
-   0.145065750s  INFO prepare_target{force=false package_id=strings_algorithms v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/strings_algorithms) target="strings_algorithms"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/strings_algorithms-b07f90c3955ab595/test-bin-strings_algorithms`
+   0.025959250s  INFO prepare_target{force=false package_id=strings v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/03_strings) target="strings"}: cargo::core::compiler::fingerprint: fingerprint error for strings v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/03_strings)/Check { test: true }/TargetInner { name: "strings", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/03_strings/strings.rs", Edition2021) }
+   0.025963667s  INFO prepare_target{force=false package_id=strings v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/03_strings) target="strings"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/strings-f5fe8bd4aca9d30a/test-bin-strings`
 
 Caused by:
     No such file or directory (os error 2)
@@ -598,8 +598,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.146175209s  INFO prepare_target{force=false package_id=trees v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/trees) target="trees"}: cargo::core::compiler::fingerprint: fingerprint error for trees v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/trees)/Check { test: false }/TargetInner { name: "trees", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/trees/trees.rs", Edition2021) }
-   0.146193792s  INFO prepare_target{force=false package_id=trees v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/trees) target="trees"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/trees-c93982c96ce37514/bin-trees`
+   0.026141584s  INFO prepare_target{force=false package_id=trees v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/07_trees) target="trees"}: cargo::core::compiler::fingerprint: fingerprint error for trees v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/07_trees)/Check { test: false }/TargetInner { name: "trees", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/07_trees/trees.rs", Edition2021) }
+   0.026146000s  INFO prepare_target{force=false package_id=trees v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/07_trees) target="trees"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/trees-2f700a1f3300617a/bin-trees`
 
 Caused by:
     No such file or directory (os error 2)
@@ -623,8 +623,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.146689709s  INFO prepare_target{force=false package_id=trees v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/trees) target="trees"}: cargo::core::compiler::fingerprint: fingerprint error for trees v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/trees)/Check { test: true }/TargetInner { name: "trees", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/trees/trees.rs", Edition2021) }
-   0.146700792s  INFO prepare_target{force=false package_id=trees v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/trees) target="trees"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/trees-4d55b11937b64664/test-bin-trees`
+   0.026330584s  INFO prepare_target{force=false package_id=trees v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/07_trees) target="trees"}: cargo::core::compiler::fingerprint: fingerprint error for trees v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/07_trees)/Check { test: true }/TargetInner { name: "trees", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/07_trees/trees.rs", Edition2021) }
+   0.026334834s  INFO prepare_target{force=false package_id=trees v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/07_trees) target="trees"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/trees-27bdc8b4166d47d5/test-bin-trees`
 
 Caused by:
     No such file or directory (os error 2)
@@ -648,8 +648,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.147131667s  INFO prepare_target{force=false package_id=tries v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/tries) target="tries"}: cargo::core::compiler::fingerprint: fingerprint error for tries v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/tries)/Check { test: false }/TargetInner { name: "tries", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/tries/tries.rs", Edition2021) }
-   0.147146167s  INFO prepare_target{force=false package_id=tries v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/tries) target="tries"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/tries-03586ee6ed2f6e71/bin-tries`
+   0.026545500s  INFO prepare_target{force=false package_id=tries v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/09_tries) target="tries"}: cargo::core::compiler::fingerprint: fingerprint error for tries v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/09_tries)/Check { test: false }/TargetInner { name: "tries", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/09_tries/tries.rs", Edition2021) }
+   0.026549459s  INFO prepare_target{force=false package_id=tries v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/09_tries) target="tries"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/tries-24f7f63da36d7510/bin-tries`
 
 Caused by:
     No such file or directory (os error 2)
@@ -673,8 +673,8 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-   0.149676417s  INFO prepare_target{force=false package_id=tries v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/tries) target="tries"}: cargo::core::compiler::fingerprint: fingerprint error for tries v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/tries)/Check { test: true }/TargetInner { name: "tries", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/tries/tries.rs", Edition2021) }
-   0.149697542s  INFO prepare_target{force=false package_id=tries v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/tries) target="tries"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/tries-96a80c7ee7fa5410/test-bin-tries`
+   0.026778750s  INFO prepare_target{force=false package_id=tries v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/09_tries) target="tries"}: cargo::core::compiler::fingerprint: fingerprint error for tries v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/09_tries)/Check { test: true }/TargetInner { name: "tries", doc: true, ..: with_path("/Users/mattjaikaran/dev/data-structures-handbook/09_tries/tries.rs", Edition2021) }
+   0.026783084s  INFO prepare_target{force=false package_id=tries v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/09_tries) target="tries"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/mattjaikaran/dev/data-structures-handbook/target/debug/.fingerprint/tries-8a848b8875b97ad0/test-bin-tries`
 
 Caused by:
     No such file or directory (os error 2)
@@ -698,33 +698,32 @@ Stack backtrace:
   15: std::rt::lang_start::<()>::{closure#0}
   16: std::rt::lang_start_internal
   17: _main
-    Checking trees v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/trees)
-    Checking arrays v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/arrays)
-    Checking dynamic-programming v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/dynamic_programming)
-    Checking linked-lists v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/linked_lists)
-    Checking graphs v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/graphs)
-    Checking bit-manipulation v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/bit_manipulation)
-    Checking greedy v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/greedy)
-    Checking sorting v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/sorting)
-error: could not compile `bit-manipulation` (bin "bit-manipulation") due to 1 previous error
+    Checking arrays v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/01_arrays)
+    Checking stacks_queues v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/05_stacks_queues)
+    Checking bit_manipulation v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/11_bit_manipulation)
+    Checking tries v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/09_tries)
+    Checking linked_lists v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/04_linked_lists)
+    Checking graphs v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/10_graphs)
+    Checking trees v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/07_trees)
+    Checking backtracking v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/13_backtracking)
+    Checking dynamic_programming v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/12_dynamic_programming)
+error: could not compile `stacks_queues` (bin "stacks_queues") due to 1 previous error
 warning: build failed, waiting for other jobs to finish...
-    Checking hash-maps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/hash_maps)
-error: could not compile `linked-lists` (bin "linked-lists") due to 1 previous error; 2 warnings emitted
-error: could not compile `sorting` (bin "sorting") due to 2 previous errors
-error: could not compile `graphs` (bin "graphs") due to 1 previous error
-    Checking backtracking v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/backtracking)
-    Checking heaps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/heaps)
-    Checking stacks-queues v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/stacks_queues)
-error: could not compile `dynamic-programming` (bin "dynamic-programming") due to 1 previous error
+    Checking heaps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/08_heaps)
 error: could not compile `trees` (bin "trees") due to 1 previous error
-    Checking strings_algorithms v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/strings_algorithms)
-error: could not compile `stacks-queues` (bin "stacks-queues") due to 1 previous error
 error: could not compile `backtracking` (bin "backtracking") due to 1 previous error
-    Checking tries v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/tries)
-error: could not compile `hash-maps` (bin "hash-maps") due to 1 previous error
-error: could not compile `strings_algorithms` (bin "strings_algorithms") due to 1 previous error
-error: could not compile `greedy` (bin "greedy") due to 1 previous error
-error: could not compile `heaps` (bin "heaps") due to 1 previous error
+    Checking sorting v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/06_sorting)
 error: could not compile `tries` (bin "tries") due to 1 previous error
+    Checking greedy v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/14_greedy)
+    Checking hash_maps v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/02_hash_maps)
+error: could not compile `dynamic_programming` (bin "dynamic_programming") due to 1 previous error
+error: could not compile `greedy` (bin "greedy") due to 1 previous error
+    Checking strings v0.1.0 (/Users/mattjaikaran/dev/data-structures-handbook/03_strings)
+error: could not compile `hash_maps` (bin "hash_maps") due to 1 previous error
+error: could not compile `linked_lists` (bin "linked_lists") due to 1 previous error; 2 warnings emitted
 error: could not compile `arrays` (bin "arrays") due to 1 previous error
-error: could not compile `sorting` (bin "sorting" test) due to 1 previous error
+error: could not compile `graphs` (bin "graphs") due to 1 previous error
+error: could not compile `bit_manipulation` (bin "bit_manipulation") due to 1 previous error
+error: could not compile `heaps` (bin "heaps") due to 1 previous error
+error: could not compile `sorting` (bin "sorting") due to 1 previous error
+error: could not compile `strings` (bin "strings") due to 1 previous error
