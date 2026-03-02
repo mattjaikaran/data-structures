@@ -8,6 +8,20 @@ TRAVERSALS  : Inorder (→ sorted), Preorder, Postorder, Level-order (BFS)
 AVL TREE    : Self-balancing BST — guarantees O(log n) via rotations
 """
 
+# ┌─────────────────────────────────────────────────────────────────┐
+# │ TABLE OF CONTENTS                                               │
+# ├─────────────────────────────────────────────────────────────────┤
+# │ 1. TreeNode class (from_list helper)                            │
+# │ 2. BST class                                                    │
+# │ 3. Problems                                                     │
+# │    - max_depth, invert_tree, is_symmetric, diameter    🟢       │
+# │    - level_order, right_side_view, lca                 🟡       │
+# │    - build_from_preorder_inorder, kth_smallest         🟡       │
+# │    - max_path_sum, serialize, deserialize              🔴       │
+# │    - is_balanced, path_sum                             🟡       │
+# │ 4. Tests                                                       │
+# └─────────────────────────────────────────────────────────────────┘
+
 from __future__ import annotations
 from collections import deque
 from typing import Optional
@@ -38,9 +52,9 @@ class TreeNode:
         return root
 
 
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 # BST
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 
 class BST:
     def __init__(self) -> None:
@@ -84,9 +98,9 @@ class BST:
         dfs(self.root); return res
 
 
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 # INTERVIEW PROBLEMS
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 
 def max_depth(root: Optional[TreeNode]) -> int:
     """🟢 Maximum Depth of Binary Tree (LC #104)"""
@@ -229,9 +243,9 @@ def path_sum(root: Optional[TreeNode], target: int) -> list[list[int]]:
     return result
 
 
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 # TESTS
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 
 def run_tests() -> None:
     print("Running tree tests...\n")

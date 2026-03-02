@@ -7,9 +7,30 @@ BFS → shortest path (unweighted). DFS → cycle, topo, components.
 Dijkstra → shortest path weighted (non-negative edges).
 Union-Find → O(α) disjoint sets, cycle detection, MST.
 """
+
+# ┌─────────────────────────────────────────────┐
+# │ TABLE OF CONTENTS                           │
+# ├─────────────────────────────────────────────┤
+# │ 1. Graph class                              │
+# │ 2. UnionFind class                          │
+# │ 3. Problems                                 │
+# │    - num_islands                 (LC #200) 🟡│
+# │    - can_finish                  (LC #207) 🟡│
+# │    - find_order                   (LC #210) 🟡│
+# │    - pacific_atlantic            (LC #417) 🟡│
+# │    - network_delay                (LC #743) 🟡│
+# │    - min_cost_connect_points     (LC #1584) 🟡│
+# │    - word_ladder                 (LC #127) 🔴│
+# │    - clone_graph                 (LC #133) 🟡│
+# │ 4. Tests                                    │
+# └─────────────────────────────────────────────┘
+
 from collections import defaultdict, deque
 import heapq
 
+# ══════════════════════════════════════
+# ── Graph class ──────────────────────
+# ══════════════════════════════════════
 
 class Graph:
     def __init__(self, directed=False):
@@ -86,6 +107,10 @@ class Graph:
         return any(dfs(n) for n in self.adj if color[n] == WHITE)
 
 
+# ══════════════════════════════════════
+# ── UnionFind class ──────────────────────
+# ══════════════════════════════════════
+
 class UnionFind:
     """Path compression + union by rank → O(α) per operation."""
     def __init__(self, n):
@@ -108,7 +133,9 @@ class UnionFind:
     def connected(self, x, y): return self.find(x) == self.find(y)
 
 
-# ── Problems ──────────────────────────────────
+# ══════════════════════════════════════
+# ── Problems ──────────────────────
+# ══════════════════════════════════════
 
 def num_islands(grid: list[list[str]]) -> int:
     """🟡 Number of Islands (LC #200)"""
@@ -210,7 +237,10 @@ def clone_graph(node):
         return clone
     return dfs(node)
 
-# ── Tests ─────────────────────────────────────
+# ══════════════════════════════════════
+# ── Tests ──────────────────────
+# ══════════════════════════════════════
+
 def run_tests():
     print("Running graph tests...\n")
 

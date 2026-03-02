@@ -1,8 +1,8 @@
 [package]
-name = "01_arrays"
+name = "arrays"
 version = "0.1.0"
 edition = "2021"
 
 [[bin]]
-name = "01_arrays"
+name = "arrays"
 path = "arrays.rs"

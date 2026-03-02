@@ -1,8 +1,8 @@
 [package]
-name = "10_graphs"
+name = "graphs"
 version = "0.1.0"
 edition = "2021"
 
 [[bin]]
-name = "10_graphs"
+name = "graphs"
 path = "graphs.rs"

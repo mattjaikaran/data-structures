@@ -42,6 +42,29 @@ CORE PATTERNS
   • Merge Technique                 — merge sorted lists
 """
 
+# ┌─────────────────────────────────────────────┐
+# │ TABLE OF CONTENTS                           │
+# ├─────────────────────────────────────────────┤
+# │ 1. Singly Linked List                       │
+# │    - SNode, SinglyLinkedList                │
+# │ 2. Doubly Linked List + LRU Cache           │
+# │    - DNode, DoublyLinkedList                │
+# │    - LRUCache, LRUCacheFull                 │
+# │ 3. Algorithm Helpers                        │
+# │    - from_list, to_list, reverse_list       │
+# │    - has_cycle, find_middle, merge_sorted   │
+# │ 4. Interview Problems                       │
+# │    - lc_reverse_list, lc_merge_two_sorted  │
+# │      lc_linked_list_cycle, lc_middle (🟢)  │
+# │    - lc_remove_duplicates           (🟢)   │
+# │    - lc_remove_nth_from_end, lc_reorder    │
+# │      lc_add_two_numbers, lc_swap_pairs    │
+# │      lc_find_duplicate, lc_sort_list (🟡)  │
+# │    - lc_reverse_k_group, lc_merge_k_sorted │
+# │      lc_detect_cycle_node            (🔴)  │
+# │ 5. Tests                                    │
+# └─────────────────────────────────────────────┘
+
 from __future__ import annotations
 from typing import Optional
 

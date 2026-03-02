@@ -172,7 +172,8 @@ pub fn reverse(head: Link) -> Link {
 /// O(n) time, O(1) space.
 pub fn remove_nth_from_end(head: Link, n: usize) -> Link {
     let len = length(&head);
-    let target = len - n; // 0-based index to remove
+    if n > len { return head; }
+    let target = len - n;
 
     let mut dummy = ListNode::new(0);
     dummy.next = head;
@@ -181,20 +182,8 @@ pub fn remove_nth_from_end(head: Link, n: usize) -> Link {
     for _ in 0..target {
         cur = &mut cur.as_mut().unwrap().next;
     }
-    // Remove the node at `target`
-    let removed_next = cur.as_mut().unwrap().next.take();
-    *cur = removed_next.and_then(|n| {
-        // put back n.next as the new current.next
-        let mut placeholder = n;
-        Some(placeholder).map(|mut node| {
-            // Actually we just want node.next
-            node.next.take(); // doesn't compile simply — use the approach below
-            node
-        })
-    });
-    // Cleaner approach: just skip the target node
-    let skip_next = cur.as_mut().unwrap().next.take();
-    *cur = skip_next;
+    let removed = cur.take().unwrap();
+    *cur = removed.next;
 
     dummy.next
 }

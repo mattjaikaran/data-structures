@@ -1,0 +1,249 @@
+"use strict";
+/**
+ * BACKTRACKING  ·  JavaScript
+ * Choose → explore → unchoose. Prune early.
+ */
+// ┌─────────────────────────────────────────────────────────────┐
+// │ TABLE OF CONTENTS                                           │
+// ├─────────────────────────────────────────────────────────────┤
+// │ 1. Subsets / Combinations / Permutations                    │
+// │    - subsets                  (LC #78)   🟡                  │
+// │    - subsetsWithDup           (LC #90)   🟡                  │
+// │    - combinationSum          (LC #39)   🟡                  │
+// │    - permutations             (LC #46)   🟡                  │
+// │ 2. Classic Constraint Problems                              │
+// │    - nQueens                  (LC #51)   🔴                  │
+// │    - wordSearch               (LC #79)   🟡                  │
+// │    - letterCombinations       (LC #17)   🟡                  │
+// │    - palindromePartitioning   (LC #131)  🟡                  │
+// │    - restoreIpAddresses       (LC #93)   🟡                  │
+// │ 3. Tests                                                     │
+// └─────────────────────────────────────────────────────────────┘
+
+// ══════════════════════════════════════
+// Subsets / Combinations / Permutations
+// ══════════════════════════════════════
+
+/**
+ * 🟡 subsets (LC #78)
+ * @param {number[]} nums
+ * @returns {number[][]}
+ */
+function subsets(nums) {
+  const result = [];
+  const bt = (start, path) => {
+    result.push([...path]);
+    for (let i = start; i < nums.length; i++) {
+      path.push(nums[i]); bt(i + 1, path); path.pop();
+    }
+  };
+  bt(0, []); return result;
+}
+
+/**
+ * 🟡 subsetsWithDup (LC #90)
+ * @param {number[]} nums
+ * @returns {number[][]}
+ */
+function subsetsWithDup(nums) {
+  nums.sort((a, b) => a - b);
+  const result = [];
+  const bt = (start, path) => {
+    result.push([...path]);
+    for (let i = start; i < nums.length; i++) {
+      if (i > start && nums[i] === nums[i-1]) continue;
+      path.push(nums[i]); bt(i + 1, path); path.pop();
+    }
+  };
+  bt(0, []); return result;
+}
+
+/**
+ * 🟡 combinationSum (LC #39)
+ * @param {number[]} candidates
+ * @param {number} target
+ * @returns {number[][]}
+ */
+function combinationSum(candidates, target) {
+  candidates.sort((a, b) => a - b);
+  const result = [];
+  const bt = (start, path, rem) => {
+    if (rem === 0) { result.push([...path]); return; }
+    for (let i = start; i < candidates.length; i++) {
+      if (candidates[i] > rem) break;
+      path.push(candidates[i]); bt(i, path, rem - candidates[i]); path.pop();
+    }
+  };
+  bt(0, [], target); return result;
+}
+
+/**
+ * 🟡 permutations (LC #46)
+ * @param {number[]} nums
+ * @returns {number[][]}
+ */
+function permutations(nums) {
+  const result = [];
+  const used = new Array(nums.length).fill(false);
+  const bt = (path) => {
+    if (path.length === nums.length) { result.push([...path]); return; }
+    for (let i = 0; i < nums.length; i++) {
+      if (used[i]) continue;
+      used[i] = true; path.push(nums[i]); bt(path); path.pop(); used[i] = false;
+    }
+  };
+  bt([]); return result;
+}
+
+// ══════════════════════════════════════
+// Classic Constraint Problems
+// ══════════════════════════════════════
+
+/**
+ * 🔴 nQueens (LC #51)
+ * @param {number} n
+ * @returns {string[][]}
+ */
+function nQueens(n) {
+  const result = [];
+  const cols = new Set(), d1 = new Set(), d2 = new Set();
+  const bt = (row, board) => {
+    if (row === n) { result.push(board.map(r => r.join(''))); return; }
+    for (let col = 0; col < n; col++) {
+      if (cols.has(col) || d1.has(row-col) || d2.has(row+col)) continue;
+      cols.add(col); d1.add(row-col); d2.add(row+col);
+      board[row][col] = 'Q'; bt(row+1, board); board[row][col] = '.';
+      cols.delete(col); d1.delete(row-col); d2.delete(row+col);
+    }
+  };
+  bt(0, Array.from({length:n}, () => Array(n).fill('.'))); return result;
+}
+
+/**
+ * 🟡 wordSearch (LC #79)
+ * @param {string[][]} board
+ * @param {string} word
+ * @returns {boolean}
+ */
+function wordSearch(board, word) {
+  const [rows, cols] = [board.length, board[0].length];
+  const dfs = (r, c, i) => {
+    if (i === word.length) return true;
+    if (r < 0 || r >= rows || c < 0 || c >= cols || board[r][c] !== word[i]) return false;
+    const tmp = board[r][c]; board[r][c] = '#';
+    const found = [[0,1],[0,-1],[1,0],[-1,0]].some(([dr,dc]) => dfs(r+dr,c+dc,i+1));
+    board[r][c] = tmp; return found;
+  };
+  for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++) if (dfs(r,c,0)) return true;
+  return false;
+}
+
+/**
+ * 🟡 letterCombinations (LC #17)
+ * @param {string} digits
+ * @returns {string[]}
+ */
+function letterCombinations(digits) {
+  if (!digits) return [];
+  const phone = {2:'abc',3:'def',4:'ghi',5:'jkl',6:'mno',7:'pqrs',8:'tuv',9:'wxyz'};
+  const result = [];
+  const bt = (i, path) => {
+    if (i === digits.length) { result.push(path.join('')); return; }
+    for (const c of phone[digits[i]]) { path.push(c); bt(i+1,path); path.pop(); }
+  };
+  bt(0, []); return result;
+}
+
+/**
+ * 🟡 palindromePartitioning (LC #131)
+ * @param {string} s
+ * @returns {string[][]}
+ */
+function palindromePartitioning(s) {
+  const result = [];
+  const isPal = (sub) => sub === sub.split('').reverse().join('');
+  const bt = (start, path) => {
+    if (start === s.length) { result.push([...path]); return; }
+    for (let end = start+1; end <= s.length; end++) {
+      const sub = s.slice(start,end);
+      if (isPal(sub)) { path.push(sub); bt(end,path); path.pop(); }
+    }
+  };
+  bt(0, []); return result;
+}
+
+/**
+ * 🟡 restoreIpAddresses (LC #93)
+ * @param {string} s
+ * @returns {string[]}
+ */
+function restoreIpAddresses(s) {
+  const result = [];
+  const bt = (start, parts) => {
+    if (parts.length === 4) { if (start === s.length) result.push(parts.join('.')); return; }
+    for (let len = 1; len <= 3; len++) {
+      if (start + len > s.length) break;
+      const seg = s.slice(start, start+len);
+      if (seg.length > 1 && seg[0] === '0') break;
+      if (parseInt(seg, 10) > 255) break;
+      parts.push(seg); bt(start+len, parts); parts.pop();
+    }
+  };
+  bt(0, []); return result;
+}
+
+// ══════════════════════════════════════
+// Tests
+// ══════════════════════════════════════
+/**
+ * @param {boolean} c
+ * @param {string} m
+ */
+function assert(c, m) { if (!c) throw new Error(`FAIL: ${m}`); }
+/**
+ * @param {unknown} a
+ * @param {unknown} b
+ * @returns {boolean}
+ */
+const eq = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+
+function runTests() {
+  console.log("Running backtracking tests...\n");
+
+  assert(subsets([1,2,3]).length === 8, "subsets count");
+  assert(subsets([1,2,3]).some(s => s.length === 0), "subsets has empty");
+  console.log("  ✅ subsets");
+
+  assert(subsetsWithDup([1,2,2]).length === 6, "subsetsWithDup");
+  console.log("  ✅ subsetsWithDup");
+
+  const cs = combinationSum([2,3,6,7], 7);
+  assert(cs.length === 2 && cs.some(c => eq(c,[7])), "combinationSum");
+  console.log("  ✅ combinationSum");
+
+  assert(permutations([1,2,3]).length === 6, "permutations");
+  console.log("  ✅ permutations");
+
+  assert(nQueens(4).length === 2, "nQueens 4x4");
+  console.log("  ✅ nQueens");
+
+  const grid = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]];
+  assert(wordSearch(grid.map(r=>[...r]), "ABCCED"), "wordSearch found");
+  assert(!wordSearch(grid.map(r=>[...r]), "ABCB"), "wordSearch not found");
+  console.log("  ✅ wordSearch");
+
+  assert(eq(letterCombinations("23").sort(), ["ad","ae","af","bd","be","bf","cd","ce","cf"].sort()), "letterCombinations");
+  console.log("  ✅ letterCombinations");
+
+  const pp = palindromePartitioning("aab");
+  assert(pp.some(p => eq(p,["a","a","b"])) && pp.some(p => eq(p,["aa","b"])), "palindromePartitioning");
+  console.log("  ✅ palindromePartitioning");
+
+  const ip = restoreIpAddresses("25525511135");
+  assert(ip.includes("255.255.11.135") && ip.includes("255.255.111.35"), "restoreIp");
+  console.log("  ✅ restoreIpAddresses");
+
+  console.log("\n✓ backtracking — all tests passed");
+}
+
+runTests();

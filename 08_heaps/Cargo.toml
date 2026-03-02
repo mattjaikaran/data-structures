@@ -1,8 +1,8 @@
 [package]
-name = "08_heaps"
+name = "heaps"
 version = "0.1.0"
 edition = "2021"
 
 [[bin]]
-name = "08_heaps"
+name = "heaps"
 path = "heaps.rs"

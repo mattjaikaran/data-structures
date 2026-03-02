@@ -81,7 +81,11 @@ def manacher(s: str) -> str:
     return s[start:start+p[center]]
 
 
-# ━━ CLASSIC STRING PROBLEMS ━━━━━━━━━━━━━━━━━━━━━━━
+# ══════════════════════════════════════════════
+# PART 2 — CLASSIC STRING PROBLEMS
+# ══════════════════════════════════════════════
+
+# ── Classic String Problems ────────────────────
 
 def is_palindrome(s: str) -> bool:
     """🟢 Valid Palindrome (LC #125) — alphanumeric only"""
@@ -217,7 +221,11 @@ def num_distinct(s: str, t: str) -> int:
     return dp[n]
 
 
-# ━━ Tests ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# ══════════════════════════════════════════════
+# PART 3 — TESTS
+# ══════════════════════════════════════════════
+
+# ── Tests ──────────────────────────────────────
 
 def run_tests():
     print("Running string algorithm tests...\n")

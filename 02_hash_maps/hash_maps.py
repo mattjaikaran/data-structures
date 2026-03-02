@@ -7,9 +7,35 @@ Python dict is open-addressing hash table with dynamic resizing.
 Key insight: trade O(n) space for O(1) lookup everywhere.
 Patterns: frequency counting, prefix sums, two-sum complement lookup.
 """
+
+# ┌─────────────────────────────────────────────┐
+# │ TABLE OF CONTENTS                           │
+# ├─────────────────────────────────────────────┤
+# │ 1. HashMap class                            │
+# │ 2. Problems                                 │
+# │    - group_anagrams             (LC #49) 🟡 │
+# │    - longest_consecutive        (LC #128) 🟡│
+# │    - longest_substring_no_repeat (LC #3) 🟡 │
+# │    - min_window_substring       (LC #76) 🔴 │
+# │    - four_sum_count             (LC #454) 🟡│
+# │    - subarray_sum_equals_k      (LC #560) 🟡│
+# │    - word_pattern               (LC #290) 🟢│
+# │    - is_isomorphic              (LC #205) 🟢│
+# │    - first_unique_char          (LC #387) 🟢│
+# │    - random_array_pick          (LC #398)   │
+# │    - longest_subarray_at_most_k_distinct     │
+# │      (LC #340) 🟡                           │
+# │    - find_all_anagrams          (LC #438) 🟡│
+# │ 3. Tests                                    │
+# └─────────────────────────────────────────────┘
+
 from collections import defaultdict, Counter, OrderedDict
 from typing import Optional
 
+
+# ══════════════════════════════════════════════
+# PART 1 — HASHMAP CLASS
+# ══════════════════════════════════════════════
 
 class HashMap:
     """Manual hash map using chaining for collision resolution."""
@@ -36,6 +62,10 @@ class HashMap:
         for i,(k,v) in enumerate(b):
             if k==key: b.pop(i); self.size-=1; return
 
+
+# ══════════════════════════════════════════════
+# PART 2 — PROBLEMS
+# ══════════════════════════════════════════════
 
 # ── Problems ──────────────────────────────────
 
@@ -133,6 +163,10 @@ def find_all_anagrams(s: str, p: str) -> list[int]:
         if i>=k: lc=s[i-k]; window[lc]-=1; (window.pop(lc) if window[lc]==0 else None)
         if window==need: result.append(i-k+1)
     return result
+
+# ══════════════════════════════════════════════
+# PART 3 — TESTS
+# ══════════════════════════════════════════════
 
 # ── Tests ─────────────────────────────────────
 def run_tests():

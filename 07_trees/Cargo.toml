@@ -1,8 +1,8 @@
 [package]
-name = "07_trees"
+name = "trees"
 version = "0.1.0"
 edition = "2021"
 
 [[bin]]
-name = "07_trees"
+name = "trees"
 path = "trees.rs"

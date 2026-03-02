@@ -22,13 +22,59 @@ STATE DESIGN (hardest part)
   Ask: what information do I need to make the optimal decision at step i?
   That becomes your state variables.
 """
+# ┌─────────────────────────────────────────────────────────────┐
+# │ TABLE OF CONTENTS                                           │
+# ├─────────────────────────────────────────────────────────────┤
+# │ 1. 1D DP — Linear                                           │
+# │    - climbing_stairs            (LC #70)   🟢                │
+# │    - house_robber               (LC #198)  🟡                │
+# │    - house_robber_ii            (LC #213)  🟡                │
+# │    - min_cost_climbing_stairs   (LC #746)  🟢                │
+# │    - jump_game                  (LC #55)   🟡                │
+# │    - jump_game_ii               (LC #45)   🟡                │
+# │    - word_break                 (LC #139)  🟡                │
+# │    - decode_ways                (LC #91)   🟡                │
+# │    - coin_change                (LC #322)  🟡                │
+# │    - coin_change_ways           (LC #518)  🟡                │
+# │    - longest_increasing_subsequence (LC #300) 🟡             │
+# │    - max_product_subarray       (LC #152)  🟡                │
+# │ 2. 2D DP — Grid / Two Sequences                             │
+# │    - unique_paths               (LC #62)   🟡                │
+# │    - min_path_sum               (LC #64)   🟡                │
+# │    - longest_common_subsequence (LC #1143) 🟡                │
+# │    - edit_distance              (LC #72)   🔴                │
+# │    - longest_palindromic_substring (LC #5)  🟡               │
+# │    - longest_palindromic_subseq (LC #516)  🟡                │
+# │ 3. Knapsack Variants                                         │
+# │    - partition_equal_subset    (LC #416)  🟡                │
+# │    - ones_and_zeroes            (LC #474)  🔴                │
+# │    - target_sum                (LC #494)   🟡                │
+# │ 4. DP on Strings                                             │
+# │    - is_interleaving           (LC #97)   🔴                │
+# │    - distinct_subsequences     (LC #115)  🔴                │
+# │    - wildcard_matching         (LC #44)   🔴                │
+# │ 5. DP on Trees                                               │
+# │    - TreeNode (helper)                                        │
+# │    - house_robber_iii          (LC #337)  🟡                │
+# │    - count_unique_bst           (LC #96)   🟡                │
+# │ 6. Interval DP                                                │
+# │    - burst_balloons            (LC #312)  🔴                │
+# │    - stone_game                (LC #877)  🟡                │
+# │    - minimum_cost_tree         (LC #1130) 🔴                │
+# │ 7. State Machine DP                                          │
+# │    - best_time_with_cooldown   (LC #309)  🟡                │
+# │    - best_time_with_fee        (LC #714)  🟡                │
+# │    - best_time_k_transactions  (LC #188)  🔴                │
+# │ 8. Tests                                                     │
+# └─────────────────────────────────────────────────────────────┘
+
 from functools import lru_cache
 from typing import Optional
 
 
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 # 1D DP — Linear
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 
 def climbing_stairs(n: int) -> int:
     """🟢 Climbing Stairs (LC #70)
@@ -170,9 +216,9 @@ def max_product_subarray(nums: list[int]) -> int:
     return best
 
 
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 # 2D DP — Grid / Two Sequences
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 
 def unique_paths(m: int, n: int) -> int:
     """🟡 Unique Paths (LC #62) — robot in m×n grid, only right/down"""
@@ -246,9 +292,9 @@ def longest_palindromic_subseq(s: str) -> int:
     return dp[0][n-1]
 
 
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 # Knapsack Variants
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 
 def partition_equal_subset(nums: list[int]) -> bool:
     """🟡 Partition Equal Subset Sum (LC #416) — 0/1 knapsack
@@ -289,9 +335,9 @@ def target_sum(nums: list[int], target: int) -> int:
     return dp.get(target, 0)
 
 
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 # DP on Strings
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 
 def is_interleaving(s1: str, s2: str, s3: str) -> bool:
     """🔴 Interleaving String (LC #97)"""
@@ -333,9 +379,9 @@ def wildcard_matching(s: str, p: str) -> bool:
     return dp[m][n]
 
 
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 # DP on Trees
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -369,9 +415,9 @@ def count_unique_bst(n: int) -> int:
     return dp[n]
 
 
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 # Interval DP
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 
 def burst_balloons(nums: list[int]) -> int:
     """🔴 Burst Balloons (LC #312)
@@ -411,9 +457,9 @@ def minimum_cost_tree(arr: list[int]) -> int:
     return cost
 
 
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 # State Machine DP
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 
 def best_time_with_cooldown(prices: list[int]) -> int:
     """🟡 Best Time to Buy and Sell Stock with Cooldown (LC #309)
@@ -448,9 +494,9 @@ def best_time_k_transactions(k: int, prices: list[int]) -> int:
     return sell[-1]
 
 
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 # TESTS
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 
 def run_tests():
     print("Running dynamic programming tests...\n")

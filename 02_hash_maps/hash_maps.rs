@@ -97,7 +97,7 @@ pub fn find_all_anagrams(s: &str, p: &str) -> Vec<usize> {
     for (i, &c) in sc.iter().enumerate() {
         *window.entry(c).or_insert(0) += 1;
         if i >= k { let lc=sc[i-k]; let v=window.entry(lc).or_insert(0); *v-=1; if *v==0 { window.remove(&lc); } }
-        if window == need { result.push(i-k+1); }
+        if i + 1 >= k && window == need { result.push(i + 1 - k); }
     }
     result
 }

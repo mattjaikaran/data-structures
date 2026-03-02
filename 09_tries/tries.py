@@ -70,6 +70,10 @@ class Trie:
         return node.count
 
 
+# ══════════════════════════════════════
+# ── WildcardTrie class ──────────────────────
+# ══════════════════════════════════════
+
 class WildcardTrie:
     """Trie supporting '.' as wildcard (matches any single character)."""
     def __init__(self): self.root = TrieNode()
@@ -92,7 +96,9 @@ class WildcardTrie:
         return dfs(self.root, 0)
 
 
-# ── Problems ──────────────────────────────────
+# ══════════════════════════════════════
+# ── Problems ──────────────────────
+# ══════════════════════════════════════
 
 def word_search_ii(board: list[list[str]], words: list[str]) -> list[str]:
     """🔴 Word Search II (LC #212) — Trie + DFS backtracking"""
@@ -167,7 +173,10 @@ def find_max_xor(nums: list[int]) -> int:
             max_xor = candidate
     return max_xor
 
-# ── Tests ─────────────────────────────────────
+# ══════════════════════════════════════
+# ── Tests ──────────────────────
+# ══════════════════════════════════════
+
 def run_tests():
     print("Running trie tests...\n")
 

@@ -8,11 +8,41 @@ vs DP: DP tries ALL choices; greedy commits to one.
 Proof technique: exchange argument — show any other choice
 is no better (swap it for greedy choice, result doesn't worsen).
 """
+# ┌─────────────────────────────────────────────────────────────┐
+# │ TABLE OF CONTENTS                                           │
+# ├─────────────────────────────────────────────────────────────┤
+# │ 1. Intervals                                                │
+# │    - meeting_rooms             (LC #252)  🟡                 │
+# │    - meeting_rooms_ii          (LC #253)  🟡                 │
+# │    - erase_overlap_intervals   (LC #435)  🟡                 │
+# │    - min_arrows_burst_balloons (LC #452)  🟡                │
+# │    - insert_interval           (LC #57)   🟡                 │
+# │    - partition_labels         (LC #763)  🟡                 │
+# │ 2. Scheduling / Allocation                                  │
+# │    - can_complete_circuit     (LC #134)  🟡                 │
+# │    - candy                    (LC #135)  🔴                 │
+# │    - largest_number           (LC #179)  🟡                 │
+# │    - assign_cookies           (LC #455)  🟢                 │
+# │    - lemonade_change          (LC #860)  🟢                 │
+# │    - broken_calculator        (LC #991)  🟡                 │
+# │ 3. Greedy + Heap                                             │
+# │    - find_min_cost_connect_sticks (LC #1167) 🟡              │
+# │    - ipo                     (LC #502)  🔴                 │
+# │    - rearrange_string_k_apart (k-distance) 🔴              │
+# │ 4. Two / Multi Pointer Greedy                               │
+# │    - boats_to_save_people     (LC #881)  🟡                 │
+# │    - two_city_scheduling      (LC #1029) 🟡                 │
+# │    - wiggle_subsequence       (LC #376)  🟡                 │
+# │ 5. Tests                                                     │
+# └─────────────────────────────────────────────────────────────┘
+
 import heapq
 from collections import Counter
 
 
-# ━━ INTERVALS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# ══════════════════════════════════════
+# Intervals
+# ══════════════════════════════════════
 
 def meeting_rooms(intervals: list[list[int]]) -> bool:
     """🟡 Meeting Rooms (LC #252) — can a person attend all?"""
@@ -72,7 +102,9 @@ def partition_labels(s: str) -> list[int]:
     return result
 
 
-# ━━ SCHEDULING / ALLOCATION ━━━━━━━━━━━━━━━━━━━━━━━
+# ══════════════════════════════════════
+# Scheduling / Allocation
+# ══════════════════════════════════════
 
 def can_complete_circuit(gas: list[int], cost: list[int]) -> int:
     """🟡 Gas Station (LC #134) — circular route"""
@@ -138,7 +170,9 @@ def broken_calculator(start: int, target: int) -> int:
     return ops + (start - target)
 
 
-# ━━ GREEDY + HEAP ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# ══════════════════════════════════════
+# Greedy + Heap
+# ══════════════════════════════════════
 
 def find_min_cost_connect_sticks(sticks: list[int]) -> int:
     """🟡 Minimum Cost to Connect Sticks (LC #1167)"""
@@ -178,7 +212,9 @@ def rearrange_string_k_apart(s: str, k: int) -> str:
     return ''.join(result) if len(result) == len(s) else ""
 
 
-# ━━ TWO / MULTI POINTER GREEDY ━━━━━━━━━━━━━━━━━━━━
+# ══════════════════════════════════════
+# Two / Multi Pointer Greedy
+# ══════════════════════════════════════
 
 def boats_to_save_people(people: list[int], limit: int) -> int:
     """🟡 Boats to Save People (LC #881) — at most 2 per boat"""
@@ -205,7 +241,9 @@ def wiggle_subsequence(nums: list[int]) -> int:
     return max(up, down)
 
 
-# ━━ Tests ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# ══════════════════════════════════════
+# Tests
+# ══════════════════════════════════════
 
 def run_tests():
     print("Running greedy tests...\n")
