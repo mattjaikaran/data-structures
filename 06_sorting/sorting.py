@@ -16,8 +16,30 @@ Tim Sort        O(n log n)   O(n log n)   O(n)    ✅  ← Python's built-in
 KEY INSIGHT: No comparison sort can beat O(n log n). Counting/Radix
 bypass this by exploiting structure in the data (not comparisons).
 """
+
+# ┌─────────────────────────────────────────────────────────────────┐
+# │ TABLE OF CONTENTS                                               │
+# ├─────────────────────────────────────────────────────────────────┤
+# │ 1. Basic sorts                                                  │
+# │    - bubble_sort, selection_sort, insertion_sort                │
+# │ 2. O(n log n) sorts                                             │
+# │    - merge_sort, merge, quick_sort, quick_sort_inplace, heap_sort│
+# │ 3. Non-comparison sorts                                         │
+# │    - counting_sort, radix_sort                                  │
+# │ 4. Problems                                                     │
+# │    - quickselect               (kth smallest)     🟡             │
+# │    - dutch_national_flag       (LC #75)           🟡             │
+# │    - merge_intervals_sorted    (LC #56)           🟡             │
+# │    - sort_nearly_sorted        (k-sorted heap)    🟡             │
+# │ 5. Tests                                                       │
+# └─────────────────────────────────────────────────────────────────┘
+
 import random
 
+
+# ══════════════════════════════════════
+# BASIC SORTS
+# ══════════════════════════════════════
 
 def bubble_sort(arr: list) -> list:
     """O(n²) — repeatedly swap adjacent out-of-order elements."""
@@ -52,6 +74,10 @@ def insertion_sort(arr: list) -> list:
         a[j+1] = key
     return a
 
+
+# ══════════════════════════════════════
+# O(n log n) SORTS
+# ══════════════════════════════════════
 
 def merge_sort(arr: list) -> list:
     """O(n log n) — divide and conquer. Stable, great for linked lists."""
@@ -120,6 +146,10 @@ def heap_sort(arr: list) -> list:
     return a
 
 
+# ══════════════════════════════════════
+# NON-COMPARISON SORTS
+# ══════════════════════════════════════
+
 def counting_sort(arr: list[int], max_val: int = None) -> list[int]:
     """O(n+k) — only works for non-negative integers in a known range."""
     if not arr: return []
@@ -144,8 +174,12 @@ def radix_sort(arr: list[int]) -> list[int]:
     return a
 
 
+# ══════════════════════════════════════
+# PROBLEMS
+# ══════════════════════════════════════
+
 def quickselect(nums: list[int], k: int) -> int:
-    """Find kth smallest element in O(n) avg via quickselect.
+    """🟡 Find kth smallest element in O(n) avg via quickselect.
     Same partition logic as quicksort but only recurse into relevant half.
     """
     def select(lo, hi, k):
@@ -167,7 +201,7 @@ def quickselect(nums: list[int], k: int) -> int:
 
 
 def dutch_national_flag(nums: list[int]) -> list[int]:
-    """Sort array of 0s, 1s, 2s in O(n) with O(1) space.
+    """🟡 Sort array of 0s, 1s, 2s in O(n) with O(1) space (LC #75).
     Three-way partition (also the core of 3-way quicksort).
     """
     lo = mid = 0; hi = len(nums) - 1
@@ -180,7 +214,7 @@ def dutch_national_flag(nums: list[int]) -> list[int]:
 
 
 def merge_intervals_sorted(intervals: list[list[int]]) -> list[list[int]]:
-    """Merge overlapping intervals. Sort first, then linear scan."""
+    """🟡 Merge overlapping intervals (LC #56). Sort first, then linear scan."""
     if not intervals: return []
     intervals = sorted(intervals, key=lambda x: x[0])
     merged = [intervals[0]]
@@ -191,7 +225,7 @@ def merge_intervals_sorted(intervals: list[list[int]]) -> list[list[int]]:
 
 
 def sort_nearly_sorted(arr: list[int], k: int) -> list[int]:
-    """Sort a k-sorted array (each element at most k positions from sorted pos).
+    """🟡 Sort a k-sorted array (each element at most k positions from sorted pos).
     Use min-heap of size k+1. O(n log k).
     """
     import heapq
@@ -203,7 +237,10 @@ def sort_nearly_sorted(arr: list[int], k: int) -> list[int]:
     return result
 
 
-# ── Tests ─────────────────────────────────────
+# ══════════════════════════════════════
+# TESTS
+# ══════════════════════════════════════
+
 def run_tests():
     print("Running sorting tests...\n")
 

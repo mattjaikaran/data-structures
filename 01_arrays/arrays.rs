@@ -34,9 +34,9 @@ use std::collections::HashMap;
 /// assert_eq!(binary_search(&[1, 3, 5, 7, 9], 6), None);
 /// ```
 pub fn binary_search(arr: &[i32], target: i32) -> Option<usize> {
+    if arr.is_empty() { return None; }
     let mut left = 0;
-    let mut right = arr.len().saturating_sub(1);
-    // saturating_sub prevents underflow on empty slice
+    let mut right = arr.len() - 1;
 
     while left <= right {
         let mid = left + (right - left) / 2; // avoids overflow vs (l+r)/2

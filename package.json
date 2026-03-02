@@ -1,0 +1,14 @@
+{
+  "name": "data-structures-handbook",
+  "version": "1.0.0",
+  "description": "Data Structures & Algorithms Handbook — Python, JavaScript, TypeScript, Rust",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:js": "for dir in 01_* 02_* 03_* 04_* 05_* 06_* 07_* 08_* 09_* 10_* 11_* 12_* 13_* 14_*; do echo \"=== $dir ===\"; node \"$dir\"/*.js; done",
+    "test:ts": "for dir in 01_* 02_* 03_* 04_* 05_* 06_* 07_* 08_* 09_* 10_* 11_* 12_* 13_* 14_*; do echo \"=== $dir ===\"; bun \"$dir\"/*.ts; done"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

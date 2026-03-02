@@ -12,9 +12,34 @@ When to use:
   - Combinations / permutations / subsets
   - Path finding with constraints
 """
+# ┌─────────────────────────────────────────────────────────────┐
+# │ TABLE OF CONTENTS                                           │
+# ├─────────────────────────────────────────────────────────────┤
+# │ 1. Subsets / Combinations / Permutations                   │
+# │    - subsets                  (LC #78)   🟡                 │
+# │    - subsets_with_dup         (LC #90)   🟡                 │
+# │    - combinations             (LC #77)   🟡                 │
+# │    - combination_sum         (LC #39)   🟡                 │
+# │    - combination_sum_ii      (LC #40)   🟡                 │
+# │    - permutations             (LC #46)   🟡                 │
+# │    - permutations_ii          (LC #47)   🟡                 │
+# │ 2. Classic Constraint Problems                              │
+# │    - n_queens                 (LC #51)   🔴                 │
+# │    - n_queens_count           (LC #52)   🔴                 │
+# │    - solve_sudoku             (LC #37)   🔴                 │
+# │    - word_search              (LC #79)   🟡                 │
+# │    - letter_combinations      (LC #17)   🟡                 │
+# │    - palindrome_partitioning  (LC #131)  🟡                 │
+# │    - restore_ip_addresses     (LC #93)   🟡                 │
+# │    - expression_add_operators (LC #282)  🔴                 │
+# │    - remove_invalid_parentheses (LC #301) 🔴                 │
+# │ 3. Tests                                                    │
+# └─────────────────────────────────────────────────────────────┘
 
 
-# ━━ SUBSETS / COMBINATIONS / PERMUTATIONS ━━━━━━━━━
+# ══════════════════════════════════════
+# Subsets / Combinations / Permutations
+# ══════════════════════════════════════
 
 def subsets(nums: list[int]) -> list[list[int]]:
     """🟡 Subsets (LC #78) — power set, no duplicates in input"""
@@ -119,7 +144,9 @@ def permutations_ii(nums: list[int]) -> list[list[int]]:
     return result
 
 
-# ━━ CLASSIC CONSTRAINT PROBLEMS ━━━━━━━━━━━━━━━━━━━
+# ══════════════════════════════════════
+# Classic Constraint Problems
+# ══════════════════════════════════════
 
 def n_queens(n: int) -> list[list[str]]:
     """🔴 N-Queens (LC #51) — place n queens, none attacking"""
@@ -286,7 +313,9 @@ def remove_invalid_parentheses(s: str) -> list[str]:
     return list(result)
 
 
-# ━━ Tests ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# ══════════════════════════════════════
+# Tests
+# ══════════════════════════════════════
 
 def run_tests():
     print("Running backtracking tests...\n")

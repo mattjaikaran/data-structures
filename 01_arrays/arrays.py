@@ -33,6 +33,34 @@ CORE PATTERNS
   • Binary Search    — O(log n) search on sorted data
 """
 
+# ┌─────────────────────────────────────────────┐
+# │ TABLE OF CONTENTS                           │
+# ├─────────────────────────────────────────────┤
+# │ 1. DynamicArray class                       │
+# │ 2. Core Algorithms                          │
+# │    - binary_search                          │
+# │    - prefix_sum                             │
+# │    - max_subarray_kadane                    │
+# │    - sliding_window_max_sum                 │
+# │    - two_pointer_sorted_pair                │
+# │    - rotate_right                           │
+# │ 3. Interview Problems                       │
+# │    - two_sum                (LC #1)   🟢    │
+# │    - best_time_buy_sell     (LC #121) 🟢    │
+# │    - contains_duplicate     (LC #217) 🟢    │
+# │    - move_zeroes            (LC #283) 🟢    │
+# │    - product_except_self    (LC #238) 🟡    │
+# │    - max_subarray           (LC #53)  🟡    │
+# │    - three_sum              (LC #15)  🟡    │
+# │    - max_product_subarray   (LC #152) 🟡    │
+# │    - subarray_sum_k         (LC #560) 🟡    │
+# │    - container_most_water   (LC #11)  🟡    │
+# │    - search_rotated         (LC #33)  🟡    │
+# │    - trap_rain_water        (LC #42)  🔴    │
+# │    - largest_rectangle_histogram (LC #84) 🔴│
+# │ 4. Tests                                    │
+# └─────────────────────────────────────────────┘
+
 from __future__ import annotations
 from typing import Optional
 

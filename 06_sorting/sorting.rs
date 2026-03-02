@@ -48,7 +48,8 @@ pub fn quickselect(nums: &[i32], k: usize) -> i32 {
         let p={let pivot=a[hi];let mut i=lo;for j in lo..hi{if a[j]<=pivot{a.swap(i,j);i+=1;}}a.swap(i,hi);i};
         if k==p{a[p]}else if k<p{select(a,lo,p-1,k)}else{select(a,p+1,hi,k)}
     }
-    select(&mut a, 0, a.len()-1, k-1)
+    let n = a.len();
+    select(&mut a, 0, n-1, k-1)
 }
 
 pub fn dutch_national_flag(arr: &[i32]) -> Vec<i32> {

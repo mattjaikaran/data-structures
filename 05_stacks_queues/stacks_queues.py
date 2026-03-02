@@ -23,13 +23,36 @@ COMPLEXITY
   Search in either:      O(n)
 """
 
+# ┌─────────────────────────────────────────────────────────────────┐
+# │ TABLE OF CONTENTS                                               │
+# ├─────────────────────────────────────────────────────────────────┤
+# │ 1. Stack class                                                  │
+# │ 2. Queue class                                                  │
+# │ 3. MinStack class                                               │
+# │ 4. QueueViaStacks class                                         │
+# │ 5. Problems                                                     │
+# │    - is_valid_parens         (LC #20)   🟢                      │
+# │    - backspace_compare       (LC #844)  🟢                      │
+# │    - eval_rpn                (LC #150)  🟡                      │
+# │    - generate_parentheses    (LC #22)   🟡                      │
+# │    - decode_string           (LC #394)   🟡                      │
+# │    - daily_temperatures      (LC #739)  🟡                      │
+# │    - next_greater_element    (LC #496)  🟡                      │
+# │    - asteroid_collision      (LC #735)  🟡                      │
+# │    - remove_k_digits         (LC #402)  🟡                      │
+# │    - sliding_window_maximum  (LC #239)  🔴                      │
+# │    - largest_rectangle_histogram (LC #84)  🔴                   │
+# │    - basic_calculator        (LC #224)  🔴                      │
+# │ 6. Tests                                                       │
+# └─────────────────────────────────────────────────────────────────┘
+
 from collections import deque
 from typing import Optional
 
 
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 # PART 1 — IMPLEMENTATIONS
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 
 class Stack:
     def __init__(self) -> None:
@@ -105,9 +128,9 @@ class QueueViaStacks:
         return not self._inbox and not self._outbox
 
 
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 # PART 2 — INTERVIEW PROBLEMS
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 
 # ── 🟢 Easy ───────────────────────────────────
 
@@ -136,7 +159,7 @@ def backspace_compare(s: str, t: str) -> bool:
     return process(s) == process(t)
 
 
-# ── 🟡 Medium ─────────────────────────────────
+# ── 🟡 Medium ──────────────────────────────────
 
 def eval_rpn(tokens: list[str]) -> int:
     """🟡 Evaluate Reverse Polish Notation (LC #150) — O(n)."""
@@ -229,7 +252,7 @@ def remove_k_digits(num: str, k: int) -> str:
     return result or '0'
 
 
-# ── 🔴 Hard ────────────────────────────────────
+# ── 🔴 Hard ───────────────────────────────────
 
 def sliding_window_maximum(nums: list[int], k: int) -> list[int]:
     """🔴 Sliding Window Maximum (LC #239) — monotonic deque. O(n)."""
@@ -278,9 +301,9 @@ def basic_calculator(s: str) -> int:
     return result
 
 
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 # PART 3 — TESTS
-# ══════════════════════════════════════════════
+# ══════════════════════════════════════
 
 def run_tests() -> None:
     print("Running stack/queue tests...\n")

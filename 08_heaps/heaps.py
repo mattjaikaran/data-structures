@@ -7,6 +7,25 @@ Python's heapq is a min-heap. For max-heap: negate values.
 Push/pop: O(log n). Peek min: O(1). Build from list: O(n).
 Use for: top-K, kth largest, median stream, task scheduling.
 """
+
+# ┌─────────────────────────────────────────────────────────────────┐
+# │ TABLE OF CONTENTS                                               │
+# ├─────────────────────────────────────────────────────────────────┤
+# │ 1. MinHeap class                                                │
+# │ 2. MaxHeap class                                                │
+# │ 3. Problems                                                    │
+# │    - kth_largest               (LC #215)  🟡                   │
+# │    - top_k_frequent            (LC #347)  🟡                   │
+# │    - find_kth_largest_stream   (LC #703)  🟡                   │
+# │    - merge_k_sorted            (LC #23)   🔴                   │
+# │    - MedianFinder              (LC #295)  🔴                   │
+# │    - task_scheduler            (LC #621)  🟡                   │
+# │    - k_closest_points          (LC #973)  🟡                   │
+# │    - ugly_number               (LC #264)  🟡                   │
+# │    - reorganize_string         (LC #767)  🟡                   │
+# │ 4. Tests                                                       │
+# └─────────────────────────────────────────────────────────────────┘
+
 import heapq
 from collections import Counter
 
@@ -25,6 +44,10 @@ class MaxHeap:
     def peek(self): return -self._h[0]
     def __len__(self): return len(self._h)
 
+
+# ══════════════════════════════════════
+# PROBLEMS
+# ══════════════════════════════════════
 
 def kth_largest(nums: list[int], k: int) -> int:
     """🟡 Kth Largest Element (LC #215) — min-heap of size k"""
@@ -109,7 +132,10 @@ def reorganize_string(s: str) -> str:
         result.append(counts[0][1])
     return "".join(result)
 
-# ── Tests ─────────────────────────────────────
+# ══════════════════════════════════════
+# TESTS
+# ══════════════════════════════════════
+
 def run_tests():
     print("Running heap tests...\n")
 

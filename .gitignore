@@ -15,8 +15,10 @@ tsconfig.tsbuildinfo
 .npm
 
 # Rust
-rust/target/
+target/
 Cargo.lock
+
+bun.lockb
 
 # IDE
 .vscode/

@@ -1,8 +1,8 @@
 [package]
-name = "11_bit_manipulation"
+name = "bit_manipulation"
 version = "0.1.0"
 edition = "2021"
 
 [[bin]]
-name = "11_bit_manipulation"
+name = "bit_manipulation"
 path = "bit_manipulation.rs"

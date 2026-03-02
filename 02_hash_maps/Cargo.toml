@@ -1,8 +1,8 @@
 [package]
-name = "02_hash_maps"
+name = "hash_maps"
 version = "0.1.0"
 edition = "2021"
 
 [[bin]]
-name = "02_hash_maps"
+name = "hash_maps"
 path = "hash_maps.rs"
