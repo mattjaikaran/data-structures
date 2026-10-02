@@ -3,6 +3,5 @@ name = "greedy"
 version = "0.1.0"
 edition = "2021"
 
-[[bin]]
-name = "greedy"
-path = "greedy.rs"
+[lib]
+path = "lib.rs"

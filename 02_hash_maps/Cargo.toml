@@ -3,6 +3,5 @@ name = "hash_maps"
 version = "0.1.0"
 edition = "2021"
 
-[[bin]]
-name = "hash_maps"
-path = "hash_maps.rs"
+[lib]
+path = "lib.rs"

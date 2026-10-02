@@ -1,6 +1,31 @@
 # Tries
 
-Trie (prefix tree): each node stores one character; path from root forms a prefix. Insert/search/startsWith run in O(L) where L is word length. Best for prefix queries, autocomplete, and dictionary lookups.
+Start with fundamentals. Then choose one problem, edit its solution file, and run
+its tests. Use JavaScript to understand the algorithm, then write Python without
+looking at the reference solution. Add TypeScript and Rust after that.
+
+Run all available exercises for this topic with:
+
+```bash
+npm run practice -- 09_tries py
+```
+
+## Fundamentals
+
+| Exercise | JavaScript | Python | TypeScript | Rust |
+|---|---|---|---|---|
+| [trie](fundamentals/trie/README.md) | [js](fundamentals/trie/solution.js) | [py](fundamentals/trie/solution.py) | [ts](fundamentals/trie/solution.ts) | [rs](fundamentals/trie/solution.rs) |
+| [wildcard trie](fundamentals/wildcard_trie/README.md) | [js](fundamentals/wildcard_trie/solution.js) | [py](fundamentals/wildcard_trie/solution.py) | [ts](fundamentals/wildcard_trie/solution.ts) | [rs](fundamentals/wildcard_trie/solution.rs) |
+
+## Problems
+
+| Exercise | JavaScript | Python | TypeScript | Rust |
+|---|---|---|---|---|
+| [replace words](problems/replace_words/README.md) | [js](problems/replace_words/solution.js) | [py](problems/replace_words/solution.py) | [ts](problems/replace_words/solution.ts) | [rs](problems/replace_words/solution.rs) |
+| [word search ii](problems/word_search_ii/README.md) | [js](problems/word_search_ii/solution.js) | [py](problems/word_search_ii/solution.py) | [ts](problems/word_search_ii/solution.ts) | — |
+| [longest word in dictionary](problems/longest_word_in_dictionary/README.md) | [js](problems/longest_word_in_dictionary/solution.js) | [py](problems/longest_word_in_dictionary/solution.py) | [ts](problems/longest_word_in_dictionary/solution.ts) | [rs](problems/longest_word_in_dictionary/solution.rs) |
+| [palindrome pairs](problems/palindrome_pairs/README.md) | — | [py](problems/palindrome_pairs/solution.py) | — | — |
+| [find max xor](problems/find_max_xor/README.md) | — | [py](problems/find_max_xor/solution.py) | — | — |
 
 ## Complexity
 
@@ -11,28 +36,8 @@ Trie (prefix tree): each node stores one character; path from root forms a prefi
 | startsWith | O(L) | O(L) |
 | Space | O(ALPHABET × L × N) | O(ALPHABET × L × N) |
 
-## Key Patterns
+A dash means the original handbook has no solution in that language. Each listed
+solution has a test file, or Rust tests inside the solution. Do not treat coverage
+as a claim that every language uses the same API.
 
-- **Prefix Queries** — traverse by character; `is_end` marks complete words
-- **Autocomplete** — DFS from prefix node to collect all words
-- **Wildcard Search** — DFS with backtracking when `'.'` matches any char
-- **Trie + Grid** — build trie from words, DFS board while matching trie path
-
-## Problems Implemented
-
-| Problem | Difficulty | LeetCode |
-|---------|-----------|----------|
-| Word Search II | Hard | #212 |
-| Replace Words | Medium | #648 |
-| Longest Word in Dictionary | Medium | #720 |
-| Palindrome Pairs | Hard | #336 |
-| Maximum XOR of Two Numbers | Medium | #421 |
-
-## Implementations
-
-| Language | File |
-|----------|------|
-| Python | [tries.py](tries.py) |
-| JavaScript | [tries.js](tries.js) |
-| TypeScript | [tries.ts](tries.ts) |
-| Rust | [tries.rs](tries.rs) |
+[Study path](../learning/study_path.md) · [AI/ML path](../learning/ai_ml_path.md)

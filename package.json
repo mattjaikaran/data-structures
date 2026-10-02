@@ -5,10 +5,16 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test:js": "for dir in 01_* 02_* 03_* 04_* 05_* 06_* 07_* 08_* 09_* 10_* 11_* 12_* 13_* 14_*; do echo \"=== $dir ===\"; node \"$dir\"/*.js; done",
-    "test:ts": "for dir in 01_* 02_* 03_* 04_* 05_* 06_* 07_* 08_* 09_* 10_* 11_* 12_* 13_* 14_*; do echo \"=== $dir ===\"; bun \"$dir\"/*.ts; done"
+    "practice": "node scripts/practice.mjs",
+    "test:js": "node scripts/practice.mjs all js",
+    "test:py": "node scripts/practice.mjs all py",
+    "test:ts": "node scripts/practice.mjs all ts",
+    "test:rs": "cargo test --workspace",
+    "test:sql": "node scripts/practice.mjs all sql",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run test:js && npm run test:py && npm run test:ts && npm run test:rs && npm run test:sql"
   },
   "devDependencies": {
-    "typescript": "5.7.0"
+    "typescript": "5.9.3"
   }
 }

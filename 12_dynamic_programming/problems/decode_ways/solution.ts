@@ -1,0 +1,11 @@
+export function decodeWays(s: string): number {
+  if (!s || s[0] === '0') return 0;
+  const n = s.length;
+  const dp = new Array(n + 1).fill(0); dp[0] = dp[1] = 1;
+  for (let i = 2; i <= n; i++) {
+    if (s[i-1] !== '0') dp[i] += dp[i-1];
+    const two = parseInt(s.slice(i-2, i));
+    if (two >= 10 && two <= 26) dp[i] += dp[i-2];
+  }
+  return dp[n];
+}

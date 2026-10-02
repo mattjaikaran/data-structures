@@ -3,6 +3,5 @@ name = "stacks_queues"
 version = "0.1.0"
 edition = "2021"
 
-[[bin]]
-name = "stacks_queues"
-path = "stacks_queues.rs"
+[lib]
+path = "lib.rs"

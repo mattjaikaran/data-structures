@@ -1,6 +1,35 @@
 # Heaps
 
-Min-heap: parent ≤ children; root is minimum. Python's `heapq` is a min-heap; for max-heap, negate values. Use for top-K, kth largest, median stream, and task scheduling.
+Start with fundamentals. Then choose one problem, edit its solution file, and run
+its tests. Use JavaScript to understand the algorithm, then write Python without
+looking at the reference solution. Add TypeScript and Rust after that.
+
+Run all available exercises for this topic with:
+
+```bash
+npm run practice -- 08_heaps py
+```
+
+## Fundamentals
+
+| Exercise | JavaScript | Python | TypeScript | Rust |
+|---|---|---|---|---|
+| [min heap](fundamentals/min_heap/README.md) | [js](fundamentals/min_heap/solution.js) | [py](fundamentals/min_heap/solution.py) | [ts](fundamentals/min_heap/solution.ts) | [rs](fundamentals/min_heap/solution.rs) |
+| [max heap](fundamentals/max_heap/README.md) | [js](fundamentals/max_heap/solution.js) | [py](fundamentals/max_heap/solution.py) | [ts](fundamentals/max_heap/solution.ts) | — |
+
+## Problems
+
+| Exercise | JavaScript | Python | TypeScript | Rust |
+|---|---|---|---|---|
+| [kth largest](problems/kth_largest/README.md) | [js](problems/kth_largest/solution.js) | [py](problems/kth_largest/solution.py) | [ts](problems/kth_largest/solution.ts) | [rs](problems/kth_largest/solution.rs) |
+| [top k frequent](problems/top_k_frequent/README.md) | [js](problems/top_k_frequent/solution.js) | [py](problems/top_k_frequent/solution.py) | [ts](problems/top_k_frequent/solution.ts) | [rs](problems/top_k_frequent/solution.rs) |
+| [merge k sorted](problems/merge_k_sorted/README.md) | [js](problems/merge_k_sorted/solution.js) | [py](problems/merge_k_sorted/solution.py) | [ts](problems/merge_k_sorted/solution.ts) | [rs](problems/merge_k_sorted/solution.rs) |
+| [median finder](problems/median_finder/README.md) | [js](problems/median_finder/solution.js) | [py](problems/median_finder/solution.py) | [ts](problems/median_finder/solution.ts) | [rs](problems/median_finder/solution.rs) |
+| [task scheduler](problems/task_scheduler/README.md) | [js](problems/task_scheduler/solution.js) | [py](problems/task_scheduler/solution.py) | [ts](problems/task_scheduler/solution.ts) | [rs](problems/task_scheduler/solution.rs) |
+| [k closest points](problems/k_closest_points/README.md) | [js](problems/k_closest_points/solution.js) | [py](problems/k_closest_points/solution.py) | [ts](problems/k_closest_points/solution.ts) | [rs](problems/k_closest_points/solution.rs) |
+| [reorganize string](problems/reorganize_string/README.md) | [js](problems/reorganize_string/solution.js) | [py](problems/reorganize_string/solution.py) | [ts](problems/reorganize_string/solution.ts) | — |
+| [find kth largest stream](problems/find_kth_largest_stream/README.md) | — | [py](problems/find_kth_largest_stream/solution.py) | — | — |
+| [ugly number](problems/ugly_number/README.md) | — | [py](problems/ugly_number/solution.py) | — | — |
 
 ## Complexity
 
@@ -11,32 +40,8 @@ Min-heap: parent ≤ children; root is minimum. Python's `heapq` is a min-heap; 
 | Peek min | O(1) | O(1) |
 | Build from list | O(n) | O(n) |
 
-## Key Patterns
+A dash means the original handbook has no solution in that language. Each listed
+solution has a test file, or Rust tests inside the solution. Do not treat coverage
+as a claim that every language uses the same API.
 
-- **Top-K / Kth Largest** — maintain min-heap of size k; smallest of k largest is at root
-- **Two Heaps for Median** — max-heap for lower half, min-heap for upper half
-- **Merge K Sorted** — heap of (value, list_idx, elem_idx) for O(n log k) merge
-- **Task Scheduling** — greedy with max-heap by frequency
-
-## Problems Implemented
-
-| Problem | Difficulty | LeetCode |
-|---------|-----------|----------|
-| Kth Largest Element | Medium | #215 |
-| Top K Frequent Elements | Medium | #347 |
-| Kth Largest in Stream | Medium | #703 |
-| Merge K Sorted Lists | Hard | #23 |
-| Find Median from Data Stream | Hard | #295 |
-| Task Scheduler | Medium | #621 |
-| K Closest Points to Origin | Medium | #973 |
-| Ugly Number II | Medium | #264 |
-| Reorganize String | Medium | #767 |
-
-## Implementations
-
-| Language | File |
-|----------|------|
-| Python | [heaps.py](heaps.py) |
-| JavaScript | [heaps.js](heaps.js) |
-| TypeScript | [heaps.ts](heaps.ts) |
-| Rust | [heaps.rs](heaps.rs) |
+[Study path](../learning/study_path.md) · [AI/ML path](../learning/ai_ml_path.md)

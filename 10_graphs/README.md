@@ -1,6 +1,35 @@
 # Graphs
 
-Graph = vertices + edges. Adjacency list uses O(V+E) space. BFS for shortest path (unweighted); DFS for cycles, topological sort, components. Dijkstra for weighted shortest path (non-negative edges). Union-Find for O(α) disjoint sets and cycle detection.
+Start with fundamentals. Then choose one problem, edit its solution file, and run
+its tests. Use JavaScript to understand the algorithm, then write Python without
+looking at the reference solution. Add TypeScript and Rust after that.
+
+Run all available exercises for this topic with:
+
+```bash
+npm run practice -- 10_graphs py
+```
+
+## Fundamentals
+
+| Exercise | JavaScript | Python | TypeScript | Rust |
+|---|---|---|---|---|
+| [graph](fundamentals/graph/README.md) | [js](fundamentals/graph/solution.js) | [py](fundamentals/graph/solution.py) | [ts](fundamentals/graph/solution.ts) | [rs](fundamentals/graph/solution.rs) |
+| [union find](fundamentals/union_find/README.md) | [js](fundamentals/union_find/solution.js) | [py](fundamentals/union_find/solution.py) | [ts](fundamentals/union_find/solution.ts) | [rs](fundamentals/union_find/solution.rs) |
+
+## Problems
+
+| Exercise | JavaScript | Python | TypeScript | Rust |
+|---|---|---|---|---|
+| [num islands](problems/num_islands/README.md) | [js](problems/num_islands/solution.js) | [py](problems/num_islands/solution.py) | [ts](problems/num_islands/solution.ts) | [rs](problems/num_islands/solution.rs) |
+| [can finish](problems/can_finish/README.md) | [js](problems/can_finish/solution.js) | [py](problems/can_finish/solution.py) | [ts](problems/can_finish/solution.ts) | [rs](problems/can_finish/solution.rs) |
+| [find order](problems/find_order/README.md) | [js](problems/find_order/solution.js) | [py](problems/find_order/solution.py) | [ts](problems/find_order/solution.ts) | [rs](problems/find_order/solution.rs) |
+| [network delay](problems/network_delay/README.md) | [js](problems/network_delay/solution.js) | [py](problems/network_delay/solution.py) | [ts](problems/network_delay/solution.ts) | [rs](problems/network_delay/solution.rs) |
+| [word ladder](problems/word_ladder/README.md) | [js](problems/word_ladder/solution.js) | [py](problems/word_ladder/solution.py) | [ts](problems/word_ladder/solution.ts) | — |
+| [pacific atlantic](problems/pacific_atlantic/README.md) | — | [py](problems/pacific_atlantic/solution.py) | — | — |
+| [min cost connect points](problems/min_cost_connect_points/README.md) | — | [py](problems/min_cost_connect_points/solution.py) | — | — |
+| [clone graph](problems/clone_graph/README.md) | — | [py](problems/clone_graph/solution.py) | — | — |
+| [rotting oranges](problems/rotting_oranges/README.md) | [js](problems/rotting_oranges/solution.js) | [py](problems/rotting_oranges/solution.py) | [ts](problems/rotting_oranges/solution.ts) | [rs](problems/rotting_oranges/solution.rs) |
 
 ## Complexity
 
@@ -11,32 +40,8 @@ Graph = vertices + edges. Adjacency list uses O(V+E) space. BFS for shortest pat
 | Topological Sort | O(V + E) | O(V + E) |
 | Union-Find (per op) | O(α(n)) | O(α(n)) |
 
-## Key Patterns
+A dash means the original handbook has no solution in that language. Each listed
+solution has a test file, or Rust tests inside the solution. Do not treat coverage
+as a claim that every language uses the same API.
 
-- **BFS Shortest Path** — unweighted graphs; first visit = shortest
-- **DFS Cycle Detection** — color nodes (white/gray/black) for directed graphs
-- **Topological Sort** — Kahn's algorithm (indegree) or DFS post-order
-- **Dijkstra** — min-heap of (dist, node); relax neighbors
-- **Union-Find** — path compression + union by rank
-
-## Problems Implemented
-
-| Problem | Difficulty | LeetCode |
-|---------|-----------|----------|
-| Number of Islands | Medium | #200 |
-| Course Schedule | Medium | #207 |
-| Course Schedule II | Medium | #210 |
-| Pacific Atlantic Water Flow | Medium | #417 |
-| Network Delay Time | Medium | #743 |
-| Min Cost to Connect All Points | Medium | #1584 |
-| Word Ladder | Hard | #127 |
-| Clone Graph | Medium | #133 |
-
-## Implementations
-
-| Language | File |
-|----------|------|
-| Python | [graphs.py](graphs.py) |
-| JavaScript | [graphs.js](graphs.js) |
-| TypeScript | [graphs.ts](graphs.ts) |
-| Rust | [graphs.rs](graphs.rs) |
+[Study path](../learning/study_path.md) · [AI/ML path](../learning/ai_ml_path.md)

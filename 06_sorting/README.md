@@ -1,6 +1,37 @@
 # Sorting
 
-Comparison sorts: Bubble, Selection, Insertion (O(n²)); Merge, Quick, Heap (O(n log n)). Non-comparison: Counting (O(n+k)), Radix (O(d·(n+k))). Key insight: no comparison sort beats O(n log n); Counting/Radix bypass this by exploiting data structure.
+Start with fundamentals. Then choose one problem, edit its solution file, and run
+its tests. Use JavaScript to understand the algorithm, then write Python without
+looking at the reference solution. Add TypeScript and Rust after that.
+
+Run all available exercises for this topic with:
+
+```bash
+npm run practice -- 06_sorting py
+```
+
+## Fundamentals
+
+| Exercise | JavaScript | Python | TypeScript | Rust |
+|---|---|---|---|---|
+| [bubble sort](fundamentals/bubble_sort/README.md) | [js](fundamentals/bubble_sort/solution.js) | [py](fundamentals/bubble_sort/solution.py) | [ts](fundamentals/bubble_sort/solution.ts) | — |
+| [insertion sort](fundamentals/insertion_sort/README.md) | [js](fundamentals/insertion_sort/solution.js) | [py](fundamentals/insertion_sort/solution.py) | [ts](fundamentals/insertion_sort/solution.ts) | [rs](fundamentals/insertion_sort/solution.rs) |
+| [merge sort](fundamentals/merge_sort/README.md) | [js](fundamentals/merge_sort/solution.js) | [py](fundamentals/merge_sort/solution.py) | [ts](fundamentals/merge_sort/solution.ts) | [rs](fundamentals/merge_sort/solution.rs) |
+| [quick sort](fundamentals/quick_sort/README.md) | [js](fundamentals/quick_sort/solution.js) | [py](fundamentals/quick_sort/solution.py) | [ts](fundamentals/quick_sort/solution.ts) | — |
+| [heap sort](fundamentals/heap_sort/README.md) | [js](fundamentals/heap_sort/solution.js) | [py](fundamentals/heap_sort/solution.py) | [ts](fundamentals/heap_sort/solution.ts) | [rs](fundamentals/heap_sort/solution.rs) |
+| [counting sort](fundamentals/counting_sort/README.md) | [js](fundamentals/counting_sort/solution.js) | [py](fundamentals/counting_sort/solution.py) | [ts](fundamentals/counting_sort/solution.ts) | [rs](fundamentals/counting_sort/solution.rs) |
+| [radix sort](fundamentals/radix_sort/README.md) | [js](fundamentals/radix_sort/solution.js) | [py](fundamentals/radix_sort/solution.py) | [ts](fundamentals/radix_sort/solution.ts) | [rs](fundamentals/radix_sort/solution.rs) |
+| [selection sort](fundamentals/selection_sort/README.md) | — | [py](fundamentals/selection_sort/solution.py) | — | — |
+| [quick sort inplace](fundamentals/quick_sort_inplace/README.md) | — | [py](fundamentals/quick_sort_inplace/solution.py) | — | — |
+
+## Problems
+
+| Exercise | JavaScript | Python | TypeScript | Rust |
+|---|---|---|---|---|
+| [quickselect](problems/quickselect/README.md) | [js](problems/quickselect/solution.js) | [py](problems/quickselect/solution.py) | [ts](problems/quickselect/solution.ts) | [rs](problems/quickselect/solution.rs) |
+| [dutch national flag](problems/dutch_national_flag/README.md) | [js](problems/dutch_national_flag/solution.js) | [py](problems/dutch_national_flag/solution.py) | [ts](problems/dutch_national_flag/solution.ts) | [rs](problems/dutch_national_flag/solution.rs) |
+| [merge intervals](problems/merge_intervals/README.md) | [js](problems/merge_intervals/solution.js) | [py](problems/merge_intervals/solution.py) | [ts](problems/merge_intervals/solution.ts) | [rs](problems/merge_intervals/solution.rs) |
+| [sort nearly sorted](problems/sort_nearly_sorted/README.md) | — | [py](problems/sort_nearly_sorted/solution.py) | — | — |
 
 ## Complexity
 
@@ -15,36 +46,8 @@ Comparison sorts: Bubble, Selection, Insertion (O(n²)); Merge, Quick, Heap (O(n
 | Counting Sort  | O(n+k)      | O(n+k)      | O(k)   | Yes    |
 | Radix Sort     | O(d·(n+k))  | O(d·(n+k))  | O(n+k) | Yes    |
 
-## Key Patterns
+A dash means the original handbook has no solution in that language. Each listed
+solution has a test file, or Rust tests inside the solution. Do not treat coverage
+as a claim that every language uses the same API.
 
-- **Insertion Sort** — best for nearly-sorted arrays
-- **Merge Sort** — best for linked lists, stable
-- **Quick Sort** — best average, in-place, random pivot avoids worst case
-- **Quickselect** — O(n) avg for kth smallest
-- **Dutch National Flag** — three-way partition for 0s, 1s, 2s
-
-## Problems Implemented
-
-| Problem           | Difficulty | Notes |
-|-------------------|------------|-------|
-| Bubble Sort       | —          | Basic |
-| Selection Sort    | —          | Basic |
-| Insertion Sort    | —          | Basic |
-| Merge Sort        | —          | Basic |
-| Quick Sort        | —          | Basic |
-| Heap Sort         | —          | Basic |
-| Counting Sort     | —          | Non-negative ints |
-| Radix Sort        | —          | Integers, strings |
-| Quickselect       | —          | Kth smallest |
-| Dutch National Flag | —       | Sort 0s, 1s, 2s |
-| Merge Intervals   | Medium     | Sort + linear scan |
-| Sort Nearly Sorted| —          | K-sorted via heap |
-
-## Implementations
-
-| Language   | File |
-|------------|------|
-| Python     | [sorting.py](sorting.py) |
-| JavaScript | [sorting.js](sorting.js) |
-| TypeScript | [sorting.ts](sorting.ts) |
-| Rust       | [sorting.rs](sorting.rs) |
+[Study path](../learning/study_path.md) · [AI/ML path](../learning/ai_ml_path.md)

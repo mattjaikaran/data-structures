@@ -3,6 +3,5 @@ name = "bit_manipulation"
 version = "0.1.0"
 edition = "2021"
 
-[[bin]]
-name = "bit_manipulation"
-path = "bit_manipulation.rs"
+[lib]
+path = "lib.rs"

@@ -1,10 +1,11 @@
 {
   "lockfileVersion": 1,
+  "configVersion": 0,
   "workspaces": {
     "": {
       "name": "data-structures-handbook",
       "devDependencies": {
-        "typescript": "^5.7.0",
+        "typescript": "5.9.3",
       },
     },
   },

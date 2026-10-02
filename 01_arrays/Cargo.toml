@@ -3,6 +3,5 @@ name = "arrays"
 version = "0.1.0"
 edition = "2021"
 
-[[bin]]
-name = "arrays"
-path = "arrays.rs"
+[lib]
+path = "lib.rs"

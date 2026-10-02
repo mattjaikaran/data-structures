@@ -3,6 +3,5 @@ name = "dynamic_programming"
 version = "0.1.0"
 edition = "2021"
 
-[[bin]]
-name = "dynamic_programming"
-path = "dynamic_programming.rs"
+[lib]
+path = "lib.rs"

@@ -3,6 +3,5 @@ name = "linked_lists"
 version = "0.1.0"
 edition = "2021"
 
-[[bin]]
-name = "linked_lists"
-path = "linked_lists.rs"
+[lib]
+path = "lib.rs"

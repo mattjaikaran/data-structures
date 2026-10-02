@@ -1,0 +1,7 @@
+
+def min_cost_climbing_stairs(cost: list[int]) -> int:
+    """🟢 Min Cost Climbing Stairs (LC #746)"""
+    a, b = cost[0], cost[1]
+    for i in range(2, len(cost)):
+        a, b = b, cost[i] + min(a, b)
+    return min(a, b)
