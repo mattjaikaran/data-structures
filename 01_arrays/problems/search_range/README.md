@@ -4,15 +4,19 @@ Practice the matching question: [LeetCode #34: Find First and Last Position of E
 
 Find the first and last index of a target in a sorted array. Return [-1, -1] when it is absent. Use O(log n) time and O(1) extra space; do not mutate the input.
 
-Read the tests before you open the reference solution. Implement the behavior,
-then run the language you use:
+Read the task and trusted tests. Keep public reference solutions unchanged.
+Create or reopen a private attempt, then edit the solution path it prints.
+Keep entry-point names and signatures. The attempt runner refreshes trusted tests.
 
 ```bash
-npm run practice -- 01_arrays/problems/search_range js
-npm run practice -- 01_arrays/problems/search_range py
-npm run practice -- 01_arrays/problems/search_range ts
-npm run practice -- 01_arrays/problems/search_range rs
+npm run practice -- start 01_arrays/problems/search_range py
+# Edit the private solution path printed above.
+npm run practice -- attempt 01_arrays/problems/search_range py
 ```
+
+Choose another available language from this page when you repeat the exercise.
+Use [private progress and reviews](../../../README.md#find-exercises-and-schedule-reviews) to record the result.
+
 
 | Language | Solution | Tests |
 |---|---|---|

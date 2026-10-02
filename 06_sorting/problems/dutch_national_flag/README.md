@@ -6,15 +6,18 @@ Partition values 0, 1, and 2 into sorted groups.
 
 ## Practice
 
-Read the tests, keep the existing function signatures, and replace the body in
-your chosen `solution` file with your own implementation. Run from the repository root.
+Read the task and trusted tests. Keep public reference solutions unchanged.
+Create or reopen a private attempt, then edit the solution path it prints.
+Keep entry-point names and signatures. The attempt runner refreshes trusted tests.
 
 ```bash
-npm run practice -- 06_sorting/problems/dutch_national_flag js
-npm run practice -- 06_sorting/problems/dutch_national_flag py
-npm run practice -- 06_sorting/problems/dutch_national_flag ts
-npm run practice -- 06_sorting/problems/dutch_national_flag rs
+npm run practice -- start 06_sorting/problems/dutch_national_flag py
+# Edit the private solution path printed above.
+npm run practice -- attempt 06_sorting/problems/dutch_national_flag py
 ```
+
+Choose another available language from this page when you repeat the exercise.
+Use [private progress and reviews](../../../README.md#find-exercises-and-schedule-reviews) to record the result.
 
 ## Files
 

@@ -4,15 +4,19 @@ Practice the matching question: [LeetCode #92: Reverse Linked List II](https://l
 
 Reverse nodes from one-based position left through right. Require 1 <= left <= right <= list length. Relink existing nodes; do not replace values or allocate replacement nodes. Return the new head. Use O(n) time and O(1) extra space.
 
-Read the tests before you open the reference solution. Implement the behavior,
-then run the language you use:
+Read the task and trusted tests. Keep public reference solutions unchanged.
+Create or reopen a private attempt, then edit the solution path it prints.
+Keep entry-point names and signatures. The attempt runner refreshes trusted tests.
 
 ```bash
-npm run practice -- 04_linked_lists/problems/reverse_between js
-npm run practice -- 04_linked_lists/problems/reverse_between py
-npm run practice -- 04_linked_lists/problems/reverse_between ts
-npm run practice -- 04_linked_lists/problems/reverse_between rs
+npm run practice -- start 04_linked_lists/problems/reverse_between py
+# Edit the private solution path printed above.
+npm run practice -- attempt 04_linked_lists/problems/reverse_between py
 ```
+
+Choose another available language from this page when you repeat the exercise.
+Use [private progress and reviews](../../../README.md#find-exercises-and-schedule-reviews) to record the result.
+
 
 | Language | Solution | Tests |
 |---|---|---|

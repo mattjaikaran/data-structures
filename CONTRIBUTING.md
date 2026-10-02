@@ -15,14 +15,21 @@
 6. Include a Rust solution in the topic's `lib.rs` with
    `include!("problems/<problem_name>/solution.rs");`.
 7. Update the topic's navigation table with the actual language coverage.
+8. Add editorial difficulty, pattern tags, and prerequisite lesson IDs to
+   `resources/exercises.json`. Use the published difficulty for linked LeetCode
+   questions. Use `foundation` for local fundamentals.
 
 Keep one problem per folder. Import shared helpers from their owner instead of
-copying them. The practice runner discovers folders automatically; do not add a
-registry entry for each problem.
+copying them. The runner discovers solution files and language coverage. Do not
+duplicate coverage, titles, or source links in the metadata. Keep prerequisites
+as recommended preparation, not a copy of runtime imports. The catalog rejects
+missing or stale entries and prerequisite cycles.
 
 ## Keep solutions usable
 
 - Keep public entry points stable so practice tests can import them.
+- When you must change an entry point, migrate its callers, tests, and examples.
+  Remove obsolete names instead of adding compatibility aliases.
 - Use clear names. Document mutation, return values, input constraints, and
   time/space costs.
 - Export JavaScript and TypeScript entry points. Import `.ts` files in TypeScript
@@ -36,22 +43,36 @@ registry entry for each problem.
   `console.assert` as a test gate.
 - Test results, boundaries, mutations, identity, and state changes. Do not test
   incidental wording or source formatting.
+- Use seeded reference comparisons for search and sorting, identity checks for
+  linked structures, and operation sequences for queues and heaps.
+- Keep tests deterministic and isolated. Test consumer behavior, not copied
+  configuration, wrappers, mock echoes, or implementation text.
+- Keep ML preprocessing and model selection separate from final held-out data.
 
 ## Verify changes
 
 ```bash
-bun install
+bun install --frozen-lockfile
 npm run practice -- 01_arrays/problems/two_sum js
 npm run practice -- 01_arrays/problems/two_sum py
 npm run practice -- 01_arrays/problems/two_sum ts
 npm run practice -- 01_arrays/problems/two_sum rs
 npm run typecheck
 npm test
-cargo clippy --workspace --all-targets
+npm run check:rust
+npm run check:py
+# For changes to the optional applied projects:
+npm run test:projects
 ```
 
-Replace the example folder with the problem you changed. Exercise the practice
-command as well as the tests. Keep generated binaries and Rust targets out of Git.
+Replace the example folder with the problem you changed. Exercise the actual
+practice command or project, not only its tests. Use a temporary `PRACTICE_HOME`
+to smoke private start/attempt/record workflows without changing your progress.
+For a project change, run its training or evaluation script and inspect results.
+Ruff checks all public Python files for selected errors and unused imports.
+Strict mypy checks the 16 standard-library ML solution modules; it does not claim
+that all DSA exercises or optional library APIs are fully typed.
+Keep generated binaries, model artifacts, and Rust targets out of Git.
 
 ## Keep content public-safe
 

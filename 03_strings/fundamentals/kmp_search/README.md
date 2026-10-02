@@ -4,15 +4,18 @@ Find pattern matches with a prefix table. Reuse previous comparisons when a matc
 
 ## Practice
 
-Read the tests, keep the existing function signatures, and replace the body in
-your chosen `solution` file with your own implementation. Run from the repository root.
+Read the task and trusted tests. Keep public reference solutions unchanged.
+Create or reopen a private attempt, then edit the solution path it prints.
+Keep entry-point names and signatures. The attempt runner refreshes trusted tests.
 
 ```bash
-npm run practice -- 03_strings/fundamentals/kmp_search js
-npm run practice -- 03_strings/fundamentals/kmp_search py
-npm run practice -- 03_strings/fundamentals/kmp_search ts
-npm run practice -- 03_strings/fundamentals/kmp_search rs
+npm run practice -- start 03_strings/fundamentals/kmp_search py
+# Edit the private solution path printed above.
+npm run practice -- attempt 03_strings/fundamentals/kmp_search py
 ```
+
+Choose another available language from this page when you repeat the exercise.
+Use [private progress and reviews](../../../README.md#find-exercises-and-schedule-reviews) to record the result.
 
 ## Files
 

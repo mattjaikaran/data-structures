@@ -4,15 +4,18 @@ Sort nonnegative integers by counting each value.
 
 ## Practice
 
-Read the tests, keep the existing function signatures, and replace the body in
-your chosen `solution` file with your own implementation. Run from the repository root.
+Read the task and trusted tests. Keep public reference solutions unchanged.
+Create or reopen a private attempt, then edit the solution path it prints.
+Keep entry-point names and signatures. The attempt runner refreshes trusted tests.
 
 ```bash
-npm run practice -- 06_sorting/fundamentals/counting_sort js
-npm run practice -- 06_sorting/fundamentals/counting_sort py
-npm run practice -- 06_sorting/fundamentals/counting_sort ts
-npm run practice -- 06_sorting/fundamentals/counting_sort rs
+npm run practice -- start 06_sorting/fundamentals/counting_sort py
+# Edit the private solution path printed above.
+npm run practice -- attempt 06_sorting/fundamentals/counting_sort py
 ```
+
+Choose another available language from this page when you repeat the exercise.
+Use [private progress and reviews](../../../README.md#find-exercises-and-schedule-reviews) to record the result.
 
 ## Files
 

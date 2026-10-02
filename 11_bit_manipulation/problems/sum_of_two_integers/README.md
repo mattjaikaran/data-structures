@@ -6,12 +6,18 @@ Add two integers with bit operations instead of arithmetic addition.
 
 ## Practice
 
-Read the tests, keep the existing function signatures, and replace the body in
-your chosen `solution` file with your own implementation. Run from the repository root.
+Read the task and trusted tests. Keep public reference solutions unchanged.
+Create or reopen a private attempt, then edit the solution path it prints.
+Keep entry-point names and signatures. The attempt runner refreshes trusted tests.
 
 ```bash
-npm run practice -- 11_bit_manipulation/problems/sum_of_two_integers py
+npm run practice -- start 11_bit_manipulation/problems/sum_of_two_integers py
+# Edit the private solution path printed above.
+npm run practice -- attempt 11_bit_manipulation/problems/sum_of_two_integers py
 ```
+
+Repeat the exercise from your explanation before you compare reference solutions.
+Use [private progress and reviews](../../../README.md#find-exercises-and-schedule-reviews) to record the result.
 
 ## Files
 

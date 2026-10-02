@@ -6,15 +6,18 @@ Count connected groups of land cells using horizontal and vertical neighbors.
 
 ## Practice
 
-Read the tests, keep the existing function signatures, and replace the body in
-your chosen `solution` file with your own implementation. Run from the repository root.
+Read the task and trusted tests. Keep public reference solutions unchanged.
+Create or reopen a private attempt, then edit the solution path it prints.
+Keep entry-point names and signatures. The attempt runner refreshes trusted tests.
 
 ```bash
-npm run practice -- 10_graphs/problems/num_islands js
-npm run practice -- 10_graphs/problems/num_islands py
-npm run practice -- 10_graphs/problems/num_islands ts
-npm run practice -- 10_graphs/problems/num_islands rs
+npm run practice -- start 10_graphs/problems/num_islands py
+# Edit the private solution path printed above.
+npm run practice -- attempt 10_graphs/problems/num_islands py
 ```
+
+Choose another available language from this page when you repeat the exercise.
+Use [private progress and reviews](../../../README.md#find-exercises-and-schedule-reviews) to record the result.
 
 ## Files
 

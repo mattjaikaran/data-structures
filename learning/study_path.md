@@ -32,18 +32,26 @@ Python, and TypeScript implementations.
 2. State the input constraints. Write a normal case and a boundary case.
 3. Describe a straightforward solution and its cost.
 4. Identify repeated work. Explain the invariant of your optimized approach.
-5. Write JavaScript and run that problem's tests.
-6. Close JavaScript. Write Python from your explanation and run its tests.
+5. Use `start` to create a private JavaScript attempt. Write it and run `attempt`.
+6. Close JavaScript. Start a private Python attempt from your explanation and run it.
 7. Compare the reference solutions. Explain any mutation and return-value differences.
-8. Revisit the problem later in Python before you look at your previous answer.
+8. Record your outcome and hints. Use `review` to revisit due problems in Python.
 9. Repeat in TypeScript with explicit types, then in Rust with ownership and borrowing.
 
 ```bash
-npm run practice -- 01_arrays/problems/two_sum js
-npm run practice -- 01_arrays/problems/two_sum py
-npm run practice -- 01_arrays/problems/two_sum ts
-npm run practice -- 01_arrays/problems/two_sum rs
+npm run practice -- start 01_arrays/problems/two_sum js
+# Edit the private solution path.
+npm run practice -- attempt 01_arrays/problems/two_sum js
+npm run practice -- start 01_arrays/problems/two_sum py
+# Write Python without reading the reference.
+npm run practice -- attempt 01_arrays/problems/two_sum py
+npm run practice -- record 01_arrays/problems/two_sum py --outcome solved --hints 0 --minutes 15
+npm run practice -- review --language py
 ```
+
+Repeat `start` and `attempt` with `ts` or `rs` after you can explain the algorithm.
+Use [catalog search and private review scheduling](../README.md#find-exercises-and-schedule-reviews)
+to choose difficulty, patterns, and prerequisite preparation.
 
 ## Translate ideas, not syntax
 

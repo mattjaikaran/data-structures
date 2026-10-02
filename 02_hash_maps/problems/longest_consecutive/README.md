@@ -6,15 +6,18 @@ Return the length of the longest consecutive integer sequence, regardless of inp
 
 ## Practice
 
-Read the tests, keep the existing function signatures, and replace the body in
-your chosen `solution` file with your own implementation. Run from the repository root.
+Read the task and trusted tests. Keep public reference solutions unchanged.
+Create or reopen a private attempt, then edit the solution path it prints.
+Keep entry-point names and signatures. The attempt runner refreshes trusted tests.
 
 ```bash
-npm run practice -- 02_hash_maps/problems/longest_consecutive js
-npm run practice -- 02_hash_maps/problems/longest_consecutive py
-npm run practice -- 02_hash_maps/problems/longest_consecutive ts
-npm run practice -- 02_hash_maps/problems/longest_consecutive rs
+npm run practice -- start 02_hash_maps/problems/longest_consecutive py
+# Edit the private solution path printed above.
+npm run practice -- attempt 02_hash_maps/problems/longest_consecutive py
 ```
+
+Choose another available language from this page when you repeat the exercise.
+Use [private progress and reviews](../../../README.md#find-exercises-and-schedule-reviews) to record the result.
 
 ## Files
 

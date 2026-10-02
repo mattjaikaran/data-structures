@@ -15,9 +15,10 @@ npm run test:sql
 | [latest event](problems/latest_event/README.md) | Choose exactly one latest event per user with a deterministic tie break. |
 | [retention cohorts](problems/retention_cohorts/README.md) | Compute next-day retention for cohorts defined by each user’s first activity day. |
 
-Read each schema and expected result in tests.py. Edit solution.sql and rerun
-the exercise. Check duplicate rows, missing matches, tie breaks, integer division,
-and calendar boundaries. Use SQLite 3.25 or later for window functions.
+Read each schema and expected result in `tests.py`. Use the lesson's `start`
+command, edit its private `solution.sql`, and run `attempt`. The topic command
+above verifies public references. Check duplicate rows, missing matches, tie
+breaks, integer division, and calendar boundaries. Use SQLite 3.25 or later.
 
 For explanations, use the [SQLite window function reference](https://www.sqlite.org/windowfunctions.html).
 For the next steps, follow the [AI/ML path](../learning/ai_ml_path.md).

@@ -96,6 +96,10 @@ held-out results, and a short error analysis. Record the dependency versions and
 random seeds. Explain what the model cannot establish. Keep source data and
 outputs outside Git unless you have a reason and permission to publish them.
 
+Run the [tabular prediction project](../projects/tabular/README.md). It builds
+historical features with SQL, compares training-only CV pipelines, reports a
+held-out mean baseline, and saves and reloads the selected fitted pipeline.
+
 **Check:** Reproduce the result from a clean environment. Predict on unseen input.
 Show whether the trained model improves on the baseline; do not claim success
 from training loss alone.
@@ -112,8 +116,10 @@ Study initialization, learning rates, normalization, regularization, overfitting
 and gradient behavior. Compare the network with your classical baseline. Add
 CNNs for image tasks and tokenization, embeddings, and sequence models for text.
 
-Use a separate virtual environment for these libraries. The local handbook tests
-remain standard-library-only; they do not install a GPU stack.
+Use the [neural classifier project](../projects/neural_classifier/README.md) for
+tiny-batch overfitting, real PyTorch training, validation checkpoint selection,
+held-out classification metrics, and restored inference. Keep its optional
+uv dependencies separate from the standard-library exercise runner.
 
 **Check:** Overfit a tiny batch to check training mechanics, then evaluate on
 separate data. Reload a saved model and compare its predictions before and after reload.
@@ -130,6 +136,11 @@ Next, study tokenizers, transformer blocks, positional information, pretraining,
 fine-tuning, context limits, and inference costs. Build retrieval with a real
 embedding model and public documents. Evaluate retrieval before you add generated
 answers. Compare lexical search with vector search and reranking.
+
+Run the [embedding retrieval project](../projects/retrieval/README.md) to compare
+TF-IDF with a pinned, real sentence-transformer. Use its original public-safe
+corpus, separate development/test questions, Recall@k, MRR, and failure reports.
+It performs retrieval only; it does not generate answers or train an LLM.
 
 For RAG, measure document relevance, grounded answers, citation correctness,
 latency, and cost on a fixed evaluation set. Test prompt injection in retrieved

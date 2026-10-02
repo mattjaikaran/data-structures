@@ -4,15 +4,19 @@ Practice the matching question: [LeetCode #680: Valid Palindrome II](https://lee
 
 Return whether a lowercase ASCII string can become a palindrome after deleting at most one character. Use O(n) time and O(1) extra space.
 
-Read the tests before you open the reference solution. Implement the behavior,
-then run the language you use:
+Read the task and trusted tests. Keep public reference solutions unchanged.
+Create or reopen a private attempt, then edit the solution path it prints.
+Keep entry-point names and signatures. The attempt runner refreshes trusted tests.
 
 ```bash
-npm run practice -- 03_strings/problems/valid_palindrome_ii js
-npm run practice -- 03_strings/problems/valid_palindrome_ii py
-npm run practice -- 03_strings/problems/valid_palindrome_ii ts
-npm run practice -- 03_strings/problems/valid_palindrome_ii rs
+npm run practice -- start 03_strings/problems/valid_palindrome_ii py
+# Edit the private solution path printed above.
+npm run practice -- attempt 03_strings/problems/valid_palindrome_ii py
 ```
+
+Choose another available language from this page when you repeat the exercise.
+Use [private progress and reviews](../../../README.md#find-exercises-and-schedule-reviews) to record the result.
+
 
 | Language | Solution | Tests |
 |---|---|---|

@@ -3,6 +3,8 @@
 Build the math and model behavior in Python before you move to larger libraries.
 These 16 exercises use the standard library and synthetic inputs. They do not
 require an API key, GPU, downloaded dataset, or network access.
+Use each page's `start` and `attempt` commands to keep your work private.
+The topic command below verifies references; it does not rate your own solution.
 
 ```bash
 npm run practice -- 15_machine_learning py
@@ -45,6 +47,10 @@ npm run practice -- 15_machine_learning py
 
 Study [SQL](../16_sql/README.md) alongside data preparation. Keep DSA practice
 in Python; hashing, heaps, graphs, and dynamic programming remain useful.
+
+After these exercises, run the [applied projects](../projects/README.md) for SQL
+feature preparation, scikit-learn pipelines, actual PyTorch training, and real
+sentence-transformer retrieval. Their optional dependencies remain separate.
 
 The neural forward and attention exercises implement their named computations,
 not a full training framework or transformer. Linear and logistic regression

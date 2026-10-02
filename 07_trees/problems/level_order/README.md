@@ -6,15 +6,18 @@ Return binary-tree values grouped by depth, from left to right.
 
 ## Practice
 
-Read the tests, keep the existing function signatures, and replace the body in
-your chosen `solution` file with your own implementation. Run from the repository root.
+Read the task and trusted tests. Keep public reference solutions unchanged.
+Create or reopen a private attempt, then edit the solution path it prints.
+Keep entry-point names and signatures. The attempt runner refreshes trusted tests.
 
 ```bash
-npm run practice -- 07_trees/problems/level_order js
-npm run practice -- 07_trees/problems/level_order py
-npm run practice -- 07_trees/problems/level_order ts
-npm run practice -- 07_trees/problems/level_order rs
+npm run practice -- start 07_trees/problems/level_order py
+# Edit the private solution path printed above.
+npm run practice -- attempt 07_trees/problems/level_order py
 ```
+
+Choose another available language from this page when you repeat the exercise.
+Use [private progress and reviews](../../../README.md#find-exercises-and-schedule-reviews) to record the result.
 
 ## Files
 

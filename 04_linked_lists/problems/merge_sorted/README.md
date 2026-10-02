@@ -6,15 +6,18 @@ Merge two sorted linked lists into one sorted list.
 
 ## Practice
 
-Read the tests, keep the existing function signatures, and replace the body in
-your chosen `solution` file with your own implementation. Run from the repository root.
+Read the task and trusted tests. Keep public reference solutions unchanged.
+Create or reopen a private attempt, then edit the solution path it prints.
+Keep entry-point names and signatures. The attempt runner refreshes trusted tests.
 
 ```bash
-npm run practice -- 04_linked_lists/problems/merge_sorted js
-npm run practice -- 04_linked_lists/problems/merge_sorted py
-npm run practice -- 04_linked_lists/problems/merge_sorted ts
-npm run practice -- 04_linked_lists/problems/merge_sorted rs
+npm run practice -- start 04_linked_lists/problems/merge_sorted py
+# Edit the private solution path printed above.
+npm run practice -- attempt 04_linked_lists/problems/merge_sorted py
 ```
+
+Choose another available language from this page when you repeat the exercise.
+Use [private progress and reviews](../../../README.md#find-exercises-and-schedule-reviews) to record the result.
 
 ## Files
 

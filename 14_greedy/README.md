@@ -1,10 +1,10 @@
 # Greedy
 
-Start with fundamentals. Then choose one problem, edit its solution file, and run
-its tests. Use JavaScript to understand the algorithm, then write Python without
-looking at the reference solution. Add TypeScript and Rust after that.
+Start with fundamentals. Choose a problem and use its private start/attempt
+commands. Read JavaScript to learn the algorithm, then write Python from your
+explanation. Keep public references unchanged. Add TypeScript and Rust later.
 
-Run all available exercises for this topic with:
+Verify all available reference exercises for this topic with:
 
 ```bash
 npm run practice -- 14_greedy py
