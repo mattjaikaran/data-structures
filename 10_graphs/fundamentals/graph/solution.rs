@@ -40,7 +40,7 @@ impl Graph {
 
     pub fn topo_sort(&self) -> Vec<usize> {
         let mut indegree: HashMap<usize, usize> = self.adj.keys().map(|&k| (k, 0)).collect();
-        for (_, edges) in &self.adj { for &(v, _) in edges { *indegree.entry(v).or_insert(0) += 1; } }
+        for edges in self.adj.values() { for &(v, _) in edges { *indegree.entry(v).or_insert(0) += 1; } }
         let mut q: VecDeque<usize> = indegree.iter().filter(|(_, &d)| d == 0).map(|(&u, _)| u).collect();
         let mut order = vec![];
         while let Some(u) = q.pop_front() {

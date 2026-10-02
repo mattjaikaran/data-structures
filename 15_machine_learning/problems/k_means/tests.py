@@ -1,6 +1,5 @@
 import sys
 from pathlib import Path
-from math import isclose
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from problems.k_means.solution import k_means
@@ -12,4 +11,12 @@ assert k_means([[0],[2]],[[0],[0]],10,1e-8)[0] == [[2],[0]]
 centers,labels = k_means([[0],[4],[5],[6]],[[0],[10]],1,0)
 assert labels == [0,0,1,1], 'Return labels for updated centers, not stale assignments'
 assert centers == [[3],[6]]
+for points,centers in [([],[[0]]),([[0]],[]),([[0,1]],[[0]]),([[0],[1,2]],[[0]])]:
+    try:
+        k_means(points,centers,10,0)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError('Invalid clustering shape accepted')
+
 print('PASS 15_machine_learning/k_means (py)')

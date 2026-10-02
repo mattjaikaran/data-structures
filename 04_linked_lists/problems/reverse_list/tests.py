@@ -8,4 +8,15 @@ from problems.reverse_list.solution import reverse_list
 assert to_list(reverse_list(from_list([1, 2, 3, 4, 5]))) == [5, 4, 3, 2, 1]
 assert to_list(reverse_list(from_list([1]))) == [1]
 assert reverse_list(None) is None
+head = from_list([1,1,2,3])
+nodes, current = [], head
+while current:
+    nodes.append(current)
+    current = current.next
+current = reverse_list(head)
+for node in reversed(nodes):
+    assert current is node
+    current = current.next
+assert current is None
+
 print("PASS 04_linked_lists/reverse_list (py)")

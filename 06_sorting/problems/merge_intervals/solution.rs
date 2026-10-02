@@ -1,4 +1,4 @@
-pub fn merge_intervals(intervals: &mut Vec<[i32;2]>) -> Vec<[i32;2]> {
+pub fn merge_intervals(intervals: &mut [[i32;2]]) -> Vec<[i32;2]> {
     if intervals.is_empty() { return vec![]; }
     intervals.sort_by_key(|i| i[0]);
     let mut merged=vec![intervals[0]];

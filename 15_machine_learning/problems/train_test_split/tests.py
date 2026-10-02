@@ -1,6 +1,5 @@
 import sys
 from pathlib import Path
-from math import isclose
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 import random

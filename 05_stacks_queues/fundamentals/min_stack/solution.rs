@@ -1,3 +1,4 @@
+#[derive(Default)]
 pub struct MinStack {
     stack: Vec<i32>,
     mins:  Vec<i32>,

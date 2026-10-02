@@ -4,7 +4,7 @@ pub fn remove_duplicates(mut head: Link) -> Link {
     let mut cur = &mut head;
     while let Some(node) = cur {
         // Skip all next nodes with the same value
-        while node.next.as_ref().map_or(false, |n| n.val == node.val) {
+        while node.next.as_ref().is_some_and(|n| n.val == node.val) {
             node.next = node.next.as_mut().unwrap().next.take();
         }
         cur = &mut cur.as_mut().unwrap().next;

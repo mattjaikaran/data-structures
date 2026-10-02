@@ -1,6 +1,5 @@
 import sys
 from pathlib import Path
-from math import isclose
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from fundamentals.matrix_multiply.solution import matrix_multiply

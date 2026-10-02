@@ -32,4 +32,23 @@ mod reverse_list_tests {
             assert_eq!(to_vec(&reverse_list(from_slice(&[1]))), vec![1]);
             assert_eq!(to_vec(&reverse_list(None)), vec![]);
         }
+
+    #[test]
+    fn relinks_every_existing_node() {
+        let head = from_slice(&[1, 1, 2, 3]);
+        let mut pointers = Vec::with_capacity(4);
+        let mut current = head.as_ref();
+        while let Some(node) = current {
+            pointers.push(node.as_ref() as *const ListNode);
+            current = node.next.as_ref();
+        }
+        let reversed = reverse_list(head);
+        current = reversed.as_ref();
+        for expected in pointers.iter().rev() {
+            let node = current.unwrap();
+            assert_eq!(node.as_ref() as *const ListNode, *expected);
+            current = node.next.as_ref();
+        }
+        assert!(current.is_none());
+    }
 }

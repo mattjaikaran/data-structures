@@ -30,7 +30,7 @@ pub fn reverse_k_group(head: Link, k: usize) -> Link {
 
     // Walk to the tail of the reversed segment to attach `rest`
     let mut tail = &mut prev;
-    while tail.as_ref().map_or(false, |n| n.next.is_some()) {
+    while tail.as_ref().is_some_and(|n| n.next.is_some()) {
         tail = &mut tail.as_mut().unwrap().next;
     }
     if let Some(ref mut t) = tail {

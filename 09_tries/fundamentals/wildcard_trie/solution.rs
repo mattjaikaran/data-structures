@@ -1,3 +1,4 @@
+#[derive(Default)]
 pub struct WildcardTrie { root: TrieNode }
 
 impl WildcardTrie {
@@ -14,7 +15,7 @@ impl WildcardTrie {
     fn dfs_wc(node: &TrieNode, chars: &[char], i: usize) -> bool {
         if i == chars.len() { return node.is_end; }
         if chars[i] == '.' { node.children.values().any(|child| Self::dfs_wc(child, chars, i+1)) }
-        else { node.children.get(&chars[i]).map_or(false, |child| Self::dfs_wc(child, chars, i+1)) }
+        else { node.children.get(&chars[i]).is_some_and(|child| Self::dfs_wc(child, chars, i+1)) }
     }
 }
 

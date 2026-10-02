@@ -1,6 +1,5 @@
 import sys
 from pathlib import Path
-from math import isclose
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from problems.standard_scaler.solution import StandardScaler
@@ -16,4 +15,13 @@ except ValueError:
     pass
 else:
     raise AssertionError('Wrong feature dimension accepted')
+assert scaler.transform([]) == []
+for rows in [[],[[]],[[1],[2,3]]]:
+    try:
+        StandardScaler.fit(rows)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError('Invalid training shape accepted')
+
 print('PASS 15_machine_learning/standard_scaler (py)')

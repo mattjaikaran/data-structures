@@ -9,14 +9,16 @@ export class MaxHeap {
     this.#h.push(-v);
   }
 
-  /** @returns {number} */
+  /** @returns {number | undefined} */
   pop() {
-    return -this.#h.pop();
+    const value = this.#h.pop();
+    return value === undefined ? undefined : -value;
   }
 
-  /** @returns {number} */
+  /** @returns {number | undefined} */
   peek() {
-    return -this.#h.peek();
+    const value = this.#h.peek();
+    return value === undefined ? undefined : -value;
   }
 
   get size() {

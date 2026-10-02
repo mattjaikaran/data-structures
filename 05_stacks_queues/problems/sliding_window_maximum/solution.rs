@@ -3,8 +3,8 @@ pub fn sliding_window_maximum(nums: &[i32], k: usize) -> Vec<i32> {
     let mut result: Vec<i32> = Vec::new();
     let mut dq: VecDeque<usize> = VecDeque::new();
     for (i, &n) in nums.iter().enumerate() {
-        while dq.front().map_or(false, |&f| f + k <= i) { dq.pop_front(); }
-        while dq.back().map_or(false, |&b| nums[b] < n) { dq.pop_back(); }
+        while dq.front().is_some_and(|&f| f + k <= i) { dq.pop_front(); }
+        while dq.back().is_some_and(|&b| nums[b] < n) { dq.pop_back(); }
         dq.push_back(i);
         if i + 1 >= k { result.push(nums[*dq.front().unwrap()]); }
     }

@@ -1,6 +1,6 @@
 /// 🟢 Move Zeroes (LC #283) — in-place.
 /// O(n) time, O(1) space.
-pub fn move_zeroes(nums: &mut Vec<i32>) {
+pub fn move_zeroes(nums: &mut [i32]) {
     let mut left = 0;
     for right in 0..nums.len() {
         if nums[right] != 0 {

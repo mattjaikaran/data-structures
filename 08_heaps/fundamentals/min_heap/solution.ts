@@ -6,12 +6,12 @@ export class MinHeap {
   private data: number[] = [];
   get size() { return this.data.length; }
   push(v: number): void { this.data.push(v); this.bubbleUp(this.data.length - 1); }
-  pop(): number {
+  pop(): number | undefined {
     const top = this.data[0]; const last = this.data.pop()!;
     if (this.data.length) { this.data[0] = last; this.sinkDown(0); }
     return top;
   }
-  peek(): number { return this.data[0]; }
+  peek(): number | undefined { return this.data[0]; }
   private bubbleUp(i: number): void {
     while (i > 0) { const p = (i-1)>>1; if (this.data[p] <= this.data[i]) break; [this.data[p],this.data[i]]=[this.data[i],this.data[p]]; i=p; }
   }

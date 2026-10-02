@@ -1,3 +1,4 @@
+#[derive(Default)]
 pub struct MedianFinder {
     lo: BinaryHeap<i32>,          // max-heap, lower half
     hi: BinaryHeap<Reverse<i32>>, // min-heap, upper half

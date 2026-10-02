@@ -1,7 +1,11 @@
 pub fn counting_sort(arr: &[usize], max_val: usize) -> Vec<usize> {
     let mut cnt=vec![0usize;max_val+1];
     for &n in arr { cnt[n]+=1; }
-    cnt.iter().enumerate().flat_map(|(v,&c)| std::iter::repeat(v).take(c)).collect()
+    let mut sorted = Vec::with_capacity(arr.len());
+    for (value, &count) in cnt.iter().enumerate() {
+        sorted.extend(std::iter::repeat_n(value, count));
+    }
+    sorted
 }
 
 #[cfg(test)]

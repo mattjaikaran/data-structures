@@ -1,4 +1,4 @@
-pub fn subsets_with_dup(nums: &mut Vec<i32>) -> Vec<Vec<i32>> {
+pub fn subsets_with_dup(nums: &mut [i32]) -> Vec<Vec<i32>> {
     nums.sort();
     let mut result = vec![];
     fn bt(nums: &[i32], start: usize, path: &mut Vec<i32>, result: &mut Vec<Vec<i32>>) {
@@ -17,6 +17,9 @@ mod subsets_with_dup_tests {
 
     #[test]
     fn test_subsets_with_dup() {
-            assert_eq!(subsets_with_dup(&mut vec![1,2,2]).len(), 6);
+            let mut values = [2, 1, 2];
+            let mut actual = subsets_with_dup(&mut values);
+            actual.sort();
+            assert_eq!(actual, vec![vec![], vec![1], vec![1,2], vec![1,2,2], vec![2], vec![2,2]]);
         }
 }

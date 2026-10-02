@@ -18,4 +18,17 @@ assert arr == [1, 3, 12, 0, 0]
 arr = [1, 2, 3, 4, 5]
 rotate_right(arr, 2)
 assert arr == [4, 5, 1, 2, 3]
+from random import Random
+random = Random(91)
+for _ in range(60):
+    values = sorted(random.randint(-20,20) for _ in range(random.randrange(31)))
+    original = values[:]
+    target = random.randint(-25,25)
+    position = binary_search(values,target)
+    assert (0 <= position < len(values) and values[position] == target) if target in values else position == -1
+    assert values == original
+assert binary_search([],1) == -1
+assert binary_search([5],5) == 0
+assert binary_search([5],4) == -1
+
 print("PASS 01_arrays/binary_search (py)")

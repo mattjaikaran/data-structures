@@ -5,6 +5,7 @@ pub struct TrieNode {
     pub count: usize,
 }
 
+#[derive(Default)]
 pub struct Trie { root: TrieNode }
 
 impl Trie {

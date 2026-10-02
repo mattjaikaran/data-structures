@@ -18,4 +18,12 @@ for sort_fn in [quick_sort]:
     for tc, exp in zip(test_cases, expected):
         assert sort_fn(tc) == exp, f"{sort_fn.__name__} failed on {tc}"
     print(f"  ✅ {sort_fn.__name__}")
+from random import Random
+random = Random(91)
+for _ in range(60):
+    values = [random.randint(-20,20) for _ in range(random.randrange(35))]
+    original = values[:]
+    assert quick_sort(values) == sorted(original)
+    assert values == original
+
 print("PASS 06_sorting/quick_sort (py)")

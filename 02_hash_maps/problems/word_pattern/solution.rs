@@ -4,8 +4,8 @@ pub fn word_pattern(pattern: &str, s: &str) -> bool {
     let mut pw: HashMap<char,&str> = HashMap::new();
     let mut wp: HashMap<&str,char> = HashMap::new();
     for (p, w) in pattern.chars().zip(words.iter()) {
-        if pw.get(&p).map_or(false, |&v| v != *w) { return false; }
-        if wp.get(w).map_or(false, |&v| v != p) { return false; }
+        if pw.get(&p).is_some_and(|&v| v != *w) { return false; }
+        if wp.get(w).is_some_and(|&v| v != p) { return false; }
         pw.insert(p, w); wp.insert(w, p);
     }
     true

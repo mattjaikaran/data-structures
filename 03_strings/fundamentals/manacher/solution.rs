@@ -7,7 +7,7 @@ pub fn manacher(s: &str) -> String {
     let (mut c, mut r) = (0i64, 0i64);
     for i in 0..n as i64 {
         if i < r { p[i as usize] = (r - i).min(p[(2*c-i) as usize]); }
-        while i - p[i as usize] - 1 >= 0 && i + p[i as usize] + 1 < n as i64
+        while i - p[i as usize] > 0 && i + p[i as usize] + 1 < n as i64
             && t[(i - p[i as usize] - 1) as usize] == t[(i + p[i as usize] + 1) as usize]
         { p[i as usize] += 1; }
         if i + p[i as usize] > r { c = i; r = i + p[i as usize]; }
