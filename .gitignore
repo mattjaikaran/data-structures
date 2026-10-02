@@ -16,6 +16,14 @@ tsconfig.tsbuildinfo
 
 # Rust
 target/
+
+# Compiled binaries and intermediate files
+bin/
+*.bin
+*.exe
+*.o
+*.rlib
+*.rmeta
 Cargo.lock
 
 bun.lockb
@@ -26,3 +34,56 @@ bun.lockb
 *.swp
 *.swo
 .DS_Store
+
+# Local credentials and configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+.npmrc
+.pypirc
+.netrc
+.ssh/
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+
+# Private notes, browser state, and local output
+.private/
+.local/
+.cache/
+.auth/
+storage-state*.json
+storageState*.json
+cookies*.json
+*.har
+*.log
+logs/
+coverage/
+.ipynb_checkpoints/
+.jupyter/
+.mypy_cache/
+.ruff_cache/
+
+# Local datasets, databases, experiments, and model artifacts
+/data/raw/
+/data/private/
+/downloads/
+/mlruns/
+/wandb/
+*.db
+*.sqlite
+*.sqlite3
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.onnx
+*.h5
+*.hdf5
+*.safetensors
+*.ckpt
