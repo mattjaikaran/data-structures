@@ -1,0 +1,2093 @@
+{
+  "01_arrays/fundamentals/binary_search": {
+    "difficulty": "foundation",
+    "patterns": [
+      "array",
+      "binary-search"
+    ],
+    "prerequisites": []
+  },
+  "01_arrays/fundamentals/dynamic_array": {
+    "difficulty": "foundation",
+    "patterns": [
+      "array"
+    ],
+    "prerequisites": []
+  },
+  "01_arrays/fundamentals/prefix_sum": {
+    "difficulty": "foundation",
+    "patterns": [
+      "array",
+      "prefix-sum"
+    ],
+    "prerequisites": []
+  },
+  "01_arrays/fundamentals/rotate_right": {
+    "difficulty": "foundation",
+    "patterns": [
+      "array",
+      "two-pointers"
+    ],
+    "prerequisites": []
+  },
+  "01_arrays/fundamentals/sliding_window_max_sum": {
+    "difficulty": "foundation",
+    "patterns": [
+      "array",
+      "sliding-window"
+    ],
+    "prerequisites": []
+  },
+  "01_arrays/problems/best_time_buy_sell": {
+    "difficulty": "easy",
+    "patterns": [
+      "array"
+    ],
+    "prerequisites": [
+      "01_arrays/fundamentals/dynamic_array"
+    ]
+  },
+  "01_arrays/problems/container_most_water": {
+    "difficulty": "medium",
+    "patterns": [
+      "array",
+      "two-pointers"
+    ],
+    "prerequisites": [
+      "01_arrays/fundamentals/dynamic_array"
+    ]
+  },
+  "01_arrays/problems/contains_duplicate": {
+    "difficulty": "easy",
+    "patterns": [
+      "array",
+      "hash-set"
+    ],
+    "prerequisites": [
+      "01_arrays/fundamentals/dynamic_array"
+    ]
+  },
+  "01_arrays/problems/largest_rectangle_histogram": {
+    "difficulty": "hard",
+    "patterns": [
+      "array",
+      "monotonic-stack"
+    ],
+    "prerequisites": [
+      "01_arrays/fundamentals/dynamic_array"
+    ]
+  },
+  "01_arrays/problems/max_product_subarray": {
+    "difficulty": "medium",
+    "patterns": [
+      "array"
+    ],
+    "prerequisites": [
+      "01_arrays/fundamentals/dynamic_array"
+    ]
+  },
+  "01_arrays/problems/max_subarray": {
+    "difficulty": "medium",
+    "patterns": [
+      "array",
+      "kadane"
+    ],
+    "prerequisites": [
+      "01_arrays/fundamentals/dynamic_array"
+    ]
+  },
+  "01_arrays/problems/move_zeroes": {
+    "difficulty": "easy",
+    "patterns": [
+      "array",
+      "two-pointers"
+    ],
+    "prerequisites": [
+      "01_arrays/fundamentals/dynamic_array"
+    ]
+  },
+  "01_arrays/problems/product_except_self": {
+    "difficulty": "medium",
+    "patterns": [
+      "array"
+    ],
+    "prerequisites": [
+      "01_arrays/fundamentals/dynamic_array"
+    ]
+  },
+  "01_arrays/problems/search_range": {
+    "difficulty": "medium",
+    "patterns": [
+      "array",
+      "binary-search"
+    ],
+    "prerequisites": [
+      "01_arrays/fundamentals/binary_search"
+    ]
+  },
+  "01_arrays/problems/search_rotated": {
+    "difficulty": "medium",
+    "patterns": [
+      "array",
+      "binary-search"
+    ],
+    "prerequisites": [
+      "01_arrays/fundamentals/dynamic_array"
+    ]
+  },
+  "01_arrays/problems/subarray_sum_k": {
+    "difficulty": "medium",
+    "patterns": [
+      "array",
+      "prefix-sum"
+    ],
+    "prerequisites": [
+      "01_arrays/fundamentals/dynamic_array"
+    ]
+  },
+  "01_arrays/problems/three_sum": {
+    "difficulty": "medium",
+    "patterns": [
+      "array",
+      "two-pointers"
+    ],
+    "prerequisites": [
+      "01_arrays/fundamentals/dynamic_array"
+    ]
+  },
+  "01_arrays/problems/trap_rain_water": {
+    "difficulty": "hard",
+    "patterns": [
+      "array",
+      "two-pointers"
+    ],
+    "prerequisites": [
+      "01_arrays/fundamentals/dynamic_array"
+    ]
+  },
+  "01_arrays/problems/two_sum": {
+    "difficulty": "easy",
+    "patterns": [
+      "array",
+      "hash-map"
+    ],
+    "prerequisites": [
+      "01_arrays/fundamentals/dynamic_array"
+    ]
+  },
+  "02_hash_maps/fundamentals/hash_map": {
+    "difficulty": "foundation",
+    "patterns": [
+      "hash-map"
+    ],
+    "prerequisites": []
+  },
+  "02_hash_maps/problems/find_all_anagrams": {
+    "difficulty": "medium",
+    "patterns": [
+      "hash-map",
+      "sliding-window"
+    ],
+    "prerequisites": [
+      "02_hash_maps/fundamentals/hash_map"
+    ]
+  },
+  "02_hash_maps/problems/first_unique_char": {
+    "difficulty": "easy",
+    "patterns": [
+      "hash-map"
+    ],
+    "prerequisites": [
+      "02_hash_maps/fundamentals/hash_map"
+    ]
+  },
+  "02_hash_maps/problems/four_sum_count": {
+    "difficulty": "medium",
+    "patterns": [
+      "hash-map",
+      "two-pointers"
+    ],
+    "prerequisites": [
+      "02_hash_maps/fundamentals/hash_map"
+    ]
+  },
+  "02_hash_maps/problems/group_anagrams": {
+    "difficulty": "medium",
+    "patterns": [
+      "hash-map"
+    ],
+    "prerequisites": [
+      "02_hash_maps/fundamentals/hash_map"
+    ]
+  },
+  "02_hash_maps/problems/is_isomorphic": {
+    "difficulty": "easy",
+    "patterns": [
+      "hash-map"
+    ],
+    "prerequisites": [
+      "02_hash_maps/fundamentals/hash_map"
+    ]
+  },
+  "02_hash_maps/problems/longest_consecutive": {
+    "difficulty": "medium",
+    "patterns": [
+      "hash-map",
+      "hash-set"
+    ],
+    "prerequisites": [
+      "02_hash_maps/fundamentals/hash_map"
+    ]
+  },
+  "02_hash_maps/problems/longest_subarray_at_most_k_distinct": {
+    "difficulty": "medium",
+    "patterns": [
+      "hash-map",
+      "sliding-window"
+    ],
+    "prerequisites": [
+      "02_hash_maps/fundamentals/hash_map"
+    ]
+  },
+  "02_hash_maps/problems/longest_substring_no_repeat": {
+    "difficulty": "medium",
+    "patterns": [
+      "hash-map",
+      "sliding-window"
+    ],
+    "prerequisites": [
+      "02_hash_maps/fundamentals/hash_map"
+    ]
+  },
+  "02_hash_maps/problems/min_window_substring": {
+    "difficulty": "hard",
+    "patterns": [
+      "hash-map",
+      "sliding-window"
+    ],
+    "prerequisites": [
+      "02_hash_maps/fundamentals/hash_map"
+    ]
+  },
+  "02_hash_maps/problems/random_array_pick": {
+    "difficulty": "medium",
+    "patterns": [
+      "hash-map"
+    ],
+    "prerequisites": [
+      "02_hash_maps/fundamentals/hash_map"
+    ]
+  },
+  "02_hash_maps/problems/subarray_sum_k": {
+    "difficulty": "medium",
+    "patterns": [
+      "hash-map",
+      "prefix-sum"
+    ],
+    "prerequisites": [
+      "02_hash_maps/fundamentals/hash_map"
+    ]
+  },
+  "02_hash_maps/problems/word_pattern": {
+    "difficulty": "easy",
+    "patterns": [
+      "hash-map"
+    ],
+    "prerequisites": [
+      "02_hash_maps/fundamentals/hash_map"
+    ]
+  },
+  "03_strings/fundamentals/kmp_search": {
+    "difficulty": "foundation",
+    "patterns": [
+      "string",
+      "string-matching"
+    ],
+    "prerequisites": []
+  },
+  "03_strings/fundamentals/manacher": {
+    "difficulty": "foundation",
+    "patterns": [
+      "string",
+      "palindrome"
+    ],
+    "prerequisites": []
+  },
+  "03_strings/fundamentals/rabin_karp": {
+    "difficulty": "foundation",
+    "patterns": [
+      "string",
+      "rolling-hash"
+    ],
+    "prerequisites": []
+  },
+  "03_strings/fundamentals/z_search": {
+    "difficulty": "foundation",
+    "patterns": [
+      "string",
+      "string-matching"
+    ],
+    "prerequisites": []
+  },
+  "03_strings/problems/count_and_say": {
+    "difficulty": "medium",
+    "patterns": [
+      "string"
+    ],
+    "prerequisites": []
+  },
+  "03_strings/problems/int_to_roman": {
+    "difficulty": "medium",
+    "patterns": [
+      "string"
+    ],
+    "prerequisites": []
+  },
+  "03_strings/problems/is_anagram": {
+    "difficulty": "easy",
+    "patterns": [
+      "string",
+      "hash-map"
+    ],
+    "prerequisites": []
+  },
+  "03_strings/problems/is_palindrome": {
+    "difficulty": "easy",
+    "patterns": [
+      "string",
+      "two-pointers"
+    ],
+    "prerequisites": []
+  },
+  "03_strings/problems/is_scramble": {
+    "difficulty": "hard",
+    "patterns": [
+      "string"
+    ],
+    "prerequisites": []
+  },
+  "03_strings/problems/longest_common_prefix": {
+    "difficulty": "easy",
+    "patterns": [
+      "string",
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "03_strings/problems/multiply_strings": {
+    "difficulty": "medium",
+    "patterns": [
+      "string"
+    ],
+    "prerequisites": []
+  },
+  "03_strings/problems/num_distinct": {
+    "difficulty": "hard",
+    "patterns": [
+      "string",
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "03_strings/problems/reverse_words": {
+    "difficulty": "medium",
+    "patterns": [
+      "string",
+      "two-pointers"
+    ],
+    "prerequisites": []
+  },
+  "03_strings/problems/roman_to_int": {
+    "difficulty": "easy",
+    "patterns": [
+      "string"
+    ],
+    "prerequisites": []
+  },
+  "03_strings/problems/string_compression": {
+    "difficulty": "medium",
+    "patterns": [
+      "string"
+    ],
+    "prerequisites": []
+  },
+  "03_strings/problems/strstr": {
+    "difficulty": "easy",
+    "patterns": [
+      "string"
+    ],
+    "prerequisites": []
+  },
+  "03_strings/problems/valid_ip_address": {
+    "difficulty": "medium",
+    "patterns": [
+      "string"
+    ],
+    "prerequisites": []
+  },
+  "03_strings/problems/valid_palindrome_ii": {
+    "difficulty": "easy",
+    "patterns": [
+      "string",
+      "two-pointers"
+    ],
+    "prerequisites": []
+  },
+  "03_strings/problems/zigzag_conversion": {
+    "difficulty": "medium",
+    "patterns": [
+      "string"
+    ],
+    "prerequisites": []
+  },
+  "04_linked_lists/fundamentals/doubly_linked_list": {
+    "difficulty": "foundation",
+    "patterns": [
+      "linked-list"
+    ],
+    "prerequisites": []
+  },
+  "04_linked_lists/fundamentals/singly_linked_list": {
+    "difficulty": "foundation",
+    "patterns": [
+      "linked-list"
+    ],
+    "prerequisites": []
+  },
+  "04_linked_lists/problems/add_two_numbers": {
+    "difficulty": "medium",
+    "patterns": [
+      "linked-list"
+    ],
+    "prerequisites": [
+      "04_linked_lists/fundamentals/singly_linked_list"
+    ]
+  },
+  "04_linked_lists/problems/detect_cycle_node": {
+    "difficulty": "medium",
+    "patterns": [
+      "linked-list",
+      "fast-slow-pointers"
+    ],
+    "prerequisites": [
+      "04_linked_lists/fundamentals/singly_linked_list"
+    ]
+  },
+  "04_linked_lists/problems/find_duplicate": {
+    "difficulty": "medium",
+    "patterns": [
+      "linked-list",
+      "fast-slow-pointers"
+    ],
+    "prerequisites": [
+      "04_linked_lists/fundamentals/singly_linked_list"
+    ]
+  },
+  "04_linked_lists/problems/find_middle": {
+    "difficulty": "easy",
+    "patterns": [
+      "linked-list",
+      "fast-slow-pointers"
+    ],
+    "prerequisites": [
+      "04_linked_lists/fundamentals/singly_linked_list"
+    ]
+  },
+  "04_linked_lists/problems/has_cycle": {
+    "difficulty": "easy",
+    "patterns": [
+      "linked-list",
+      "fast-slow-pointers"
+    ],
+    "prerequisites": [
+      "04_linked_lists/fundamentals/singly_linked_list"
+    ]
+  },
+  "04_linked_lists/problems/lru_cache": {
+    "difficulty": "medium",
+    "patterns": [
+      "linked-list"
+    ],
+    "prerequisites": [
+      "04_linked_lists/fundamentals/singly_linked_list"
+    ]
+  },
+  "04_linked_lists/problems/merge_k_lists": {
+    "difficulty": "hard",
+    "patterns": [
+      "linked-list",
+      "heap"
+    ],
+    "prerequisites": [
+      "04_linked_lists/fundamentals/singly_linked_list"
+    ]
+  },
+  "04_linked_lists/problems/merge_sorted": {
+    "difficulty": "easy",
+    "patterns": [
+      "linked-list"
+    ],
+    "prerequisites": [
+      "04_linked_lists/fundamentals/singly_linked_list"
+    ]
+  },
+  "04_linked_lists/problems/remove_duplicates": {
+    "difficulty": "easy",
+    "patterns": [
+      "linked-list"
+    ],
+    "prerequisites": [
+      "04_linked_lists/fundamentals/singly_linked_list"
+    ]
+  },
+  "04_linked_lists/problems/remove_nth_from_end": {
+    "difficulty": "medium",
+    "patterns": [
+      "linked-list"
+    ],
+    "prerequisites": [
+      "04_linked_lists/fundamentals/singly_linked_list"
+    ]
+  },
+  "04_linked_lists/problems/reorder_list": {
+    "difficulty": "medium",
+    "patterns": [
+      "linked-list"
+    ],
+    "prerequisites": [
+      "04_linked_lists/fundamentals/singly_linked_list"
+    ]
+  },
+  "04_linked_lists/problems/reverse_between": {
+    "difficulty": "medium",
+    "patterns": [
+      "linked-list"
+    ],
+    "prerequisites": [
+      "04_linked_lists/fundamentals/singly_linked_list"
+    ]
+  },
+  "04_linked_lists/problems/reverse_k_group": {
+    "difficulty": "hard",
+    "patterns": [
+      "linked-list"
+    ],
+    "prerequisites": [
+      "04_linked_lists/fundamentals/singly_linked_list"
+    ]
+  },
+  "04_linked_lists/problems/reverse_list": {
+    "difficulty": "easy",
+    "patterns": [
+      "linked-list"
+    ],
+    "prerequisites": [
+      "04_linked_lists/fundamentals/singly_linked_list"
+    ]
+  },
+  "04_linked_lists/problems/sort_list": {
+    "difficulty": "medium",
+    "patterns": [
+      "linked-list"
+    ],
+    "prerequisites": [
+      "04_linked_lists/fundamentals/singly_linked_list"
+    ]
+  },
+  "04_linked_lists/problems/swap_pairs": {
+    "difficulty": "medium",
+    "patterns": [
+      "linked-list"
+    ],
+    "prerequisites": [
+      "04_linked_lists/fundamentals/singly_linked_list"
+    ]
+  },
+  "05_stacks_queues/fundamentals/min_stack": {
+    "difficulty": "foundation",
+    "patterns": [
+      "stack",
+      "queue"
+    ],
+    "prerequisites": []
+  },
+  "05_stacks_queues/fundamentals/queue": {
+    "difficulty": "foundation",
+    "patterns": [
+      "stack",
+      "queue"
+    ],
+    "prerequisites": []
+  },
+  "05_stacks_queues/fundamentals/queue_via_stacks": {
+    "difficulty": "foundation",
+    "patterns": [
+      "stack",
+      "queue"
+    ],
+    "prerequisites": []
+  },
+  "05_stacks_queues/fundamentals/stack": {
+    "difficulty": "foundation",
+    "patterns": [
+      "stack",
+      "queue"
+    ],
+    "prerequisites": []
+  },
+  "05_stacks_queues/problems/asteroid_collision": {
+    "difficulty": "medium",
+    "patterns": [
+      "stack",
+      "queue"
+    ],
+    "prerequisites": [
+      "05_stacks_queues/fundamentals/stack"
+    ]
+  },
+  "05_stacks_queues/problems/backspace_compare": {
+    "difficulty": "easy",
+    "patterns": [
+      "stack",
+      "queue"
+    ],
+    "prerequisites": [
+      "05_stacks_queues/fundamentals/stack"
+    ]
+  },
+  "05_stacks_queues/problems/basic_calculator": {
+    "difficulty": "hard",
+    "patterns": [
+      "stack",
+      "queue"
+    ],
+    "prerequisites": [
+      "05_stacks_queues/fundamentals/stack"
+    ]
+  },
+  "05_stacks_queues/problems/daily_temperatures": {
+    "difficulty": "medium",
+    "patterns": [
+      "stack",
+      "queue",
+      "monotonic-stack"
+    ],
+    "prerequisites": [
+      "05_stacks_queues/fundamentals/stack"
+    ]
+  },
+  "05_stacks_queues/problems/decode_string": {
+    "difficulty": "medium",
+    "patterns": [
+      "stack",
+      "queue"
+    ],
+    "prerequisites": [
+      "05_stacks_queues/fundamentals/stack"
+    ]
+  },
+  "05_stacks_queues/problems/eval_rpn": {
+    "difficulty": "medium",
+    "patterns": [
+      "stack",
+      "queue"
+    ],
+    "prerequisites": [
+      "05_stacks_queues/fundamentals/stack"
+    ]
+  },
+  "05_stacks_queues/problems/generate_parentheses": {
+    "difficulty": "medium",
+    "patterns": [
+      "stack",
+      "queue",
+      "backtracking"
+    ],
+    "prerequisites": [
+      "05_stacks_queues/fundamentals/stack"
+    ]
+  },
+  "05_stacks_queues/problems/is_valid_parens": {
+    "difficulty": "easy",
+    "patterns": [
+      "stack",
+      "queue"
+    ],
+    "prerequisites": [
+      "05_stacks_queues/fundamentals/stack"
+    ]
+  },
+  "05_stacks_queues/problems/largest_rectangle_histogram": {
+    "difficulty": "hard",
+    "patterns": [
+      "stack",
+      "queue",
+      "monotonic-stack"
+    ],
+    "prerequisites": [
+      "05_stacks_queues/fundamentals/stack"
+    ]
+  },
+  "05_stacks_queues/problems/next_greater_element": {
+    "difficulty": "easy",
+    "patterns": [
+      "stack",
+      "queue",
+      "monotonic-stack"
+    ],
+    "prerequisites": [
+      "05_stacks_queues/fundamentals/stack"
+    ]
+  },
+  "05_stacks_queues/problems/remove_k_digits": {
+    "difficulty": "medium",
+    "patterns": [
+      "stack",
+      "queue",
+      "monotonic-stack"
+    ],
+    "prerequisites": [
+      "05_stacks_queues/fundamentals/stack"
+    ]
+  },
+  "05_stacks_queues/problems/sliding_window_maximum": {
+    "difficulty": "hard",
+    "patterns": [
+      "stack",
+      "queue",
+      "sliding-window",
+      "monotonic-queue"
+    ],
+    "prerequisites": [
+      "05_stacks_queues/fundamentals/stack"
+    ]
+  },
+  "06_sorting/fundamentals/bubble_sort": {
+    "difficulty": "foundation",
+    "patterns": [
+      "sorting"
+    ],
+    "prerequisites": []
+  },
+  "06_sorting/fundamentals/counting_sort": {
+    "difficulty": "foundation",
+    "patterns": [
+      "sorting"
+    ],
+    "prerequisites": []
+  },
+  "06_sorting/fundamentals/heap_sort": {
+    "difficulty": "foundation",
+    "patterns": [
+      "sorting"
+    ],
+    "prerequisites": []
+  },
+  "06_sorting/fundamentals/insertion_sort": {
+    "difficulty": "foundation",
+    "patterns": [
+      "sorting"
+    ],
+    "prerequisites": []
+  },
+  "06_sorting/fundamentals/merge_sort": {
+    "difficulty": "foundation",
+    "patterns": [
+      "sorting"
+    ],
+    "prerequisites": []
+  },
+  "06_sorting/fundamentals/quick_sort": {
+    "difficulty": "foundation",
+    "patterns": [
+      "sorting"
+    ],
+    "prerequisites": []
+  },
+  "06_sorting/fundamentals/quick_sort_inplace": {
+    "difficulty": "foundation",
+    "patterns": [
+      "sorting"
+    ],
+    "prerequisites": []
+  },
+  "06_sorting/fundamentals/radix_sort": {
+    "difficulty": "foundation",
+    "patterns": [
+      "sorting"
+    ],
+    "prerequisites": []
+  },
+  "06_sorting/fundamentals/selection_sort": {
+    "difficulty": "foundation",
+    "patterns": [
+      "sorting"
+    ],
+    "prerequisites": []
+  },
+  "06_sorting/problems/dutch_national_flag": {
+    "difficulty": "medium",
+    "patterns": [
+      "sorting"
+    ],
+    "prerequisites": []
+  },
+  "06_sorting/problems/merge_intervals": {
+    "difficulty": "medium",
+    "patterns": [
+      "sorting"
+    ],
+    "prerequisites": []
+  },
+  "06_sorting/problems/quickselect": {
+    "difficulty": "medium",
+    "patterns": [
+      "sorting"
+    ],
+    "prerequisites": []
+  },
+  "06_sorting/problems/sort_nearly_sorted": {
+    "difficulty": "medium",
+    "patterns": [
+      "sorting"
+    ],
+    "prerequisites": []
+  },
+  "07_trees/fundamentals/bst": {
+    "difficulty": "foundation",
+    "patterns": [
+      "tree"
+    ],
+    "prerequisites": []
+  },
+  "07_trees/problems/build_tree_from_pre_in": {
+    "difficulty": "medium",
+    "patterns": [
+      "tree"
+    ],
+    "prerequisites": [
+      "07_trees/fundamentals/bst"
+    ]
+  },
+  "07_trees/problems/deserialize": {
+    "difficulty": "medium",
+    "patterns": [
+      "tree"
+    ],
+    "prerequisites": [
+      "07_trees/fundamentals/bst"
+    ]
+  },
+  "07_trees/problems/diameter_of_binary_tree": {
+    "difficulty": "easy",
+    "patterns": [
+      "tree",
+      "depth-first-search"
+    ],
+    "prerequisites": [
+      "07_trees/fundamentals/bst"
+    ]
+  },
+  "07_trees/problems/invert_tree": {
+    "difficulty": "easy",
+    "patterns": [
+      "tree",
+      "depth-first-search"
+    ],
+    "prerequisites": [
+      "07_trees/fundamentals/bst"
+    ]
+  },
+  "07_trees/problems/is_balanced": {
+    "difficulty": "easy",
+    "patterns": [
+      "tree"
+    ],
+    "prerequisites": [
+      "07_trees/fundamentals/bst"
+    ]
+  },
+  "07_trees/problems/is_symmetric": {
+    "difficulty": "easy",
+    "patterns": [
+      "tree"
+    ],
+    "prerequisites": [
+      "07_trees/fundamentals/bst"
+    ]
+  },
+  "07_trees/problems/is_valid_bst": {
+    "difficulty": "medium",
+    "patterns": [
+      "tree"
+    ],
+    "prerequisites": [
+      "07_trees/fundamentals/bst"
+    ]
+  },
+  "07_trees/problems/kth_smallest": {
+    "difficulty": "medium",
+    "patterns": [
+      "tree",
+      "heap"
+    ],
+    "prerequisites": [
+      "07_trees/fundamentals/bst"
+    ]
+  },
+  "07_trees/problems/level_order": {
+    "difficulty": "medium",
+    "patterns": [
+      "tree",
+      "breadth-first-search"
+    ],
+    "prerequisites": [
+      "07_trees/fundamentals/bst"
+    ]
+  },
+  "07_trees/problems/lowest_common_ancestor": {
+    "difficulty": "medium",
+    "patterns": [
+      "tree"
+    ],
+    "prerequisites": [
+      "07_trees/fundamentals/bst"
+    ]
+  },
+  "07_trees/problems/max_depth": {
+    "difficulty": "easy",
+    "patterns": [
+      "tree"
+    ],
+    "prerequisites": [
+      "07_trees/fundamentals/bst"
+    ]
+  },
+  "07_trees/problems/max_path_sum": {
+    "difficulty": "hard",
+    "patterns": [
+      "tree",
+      "depth-first-search"
+    ],
+    "prerequisites": [
+      "07_trees/fundamentals/bst"
+    ]
+  },
+  "07_trees/problems/path_sum": {
+    "difficulty": "medium",
+    "patterns": [
+      "tree",
+      "depth-first-search"
+    ],
+    "prerequisites": [
+      "07_trees/fundamentals/bst"
+    ]
+  },
+  "07_trees/problems/right_side_view": {
+    "difficulty": "medium",
+    "patterns": [
+      "tree"
+    ],
+    "prerequisites": [
+      "07_trees/fundamentals/bst"
+    ]
+  },
+  "07_trees/problems/serialize": {
+    "difficulty": "hard",
+    "patterns": [
+      "tree"
+    ],
+    "prerequisites": [
+      "07_trees/fundamentals/bst"
+    ]
+  },
+  "07_trees/problems/zigzag_level_order": {
+    "difficulty": "medium",
+    "patterns": [
+      "tree",
+      "breadth-first-search"
+    ],
+    "prerequisites": [
+      "07_trees/fundamentals/bst"
+    ]
+  },
+  "08_heaps/fundamentals/max_heap": {
+    "difficulty": "foundation",
+    "patterns": [
+      "heap"
+    ],
+    "prerequisites": []
+  },
+  "08_heaps/fundamentals/min_heap": {
+    "difficulty": "foundation",
+    "patterns": [
+      "heap"
+    ],
+    "prerequisites": []
+  },
+  "08_heaps/problems/find_kth_largest_stream": {
+    "difficulty": "easy",
+    "patterns": [
+      "heap"
+    ],
+    "prerequisites": [
+      "08_heaps/fundamentals/min_heap"
+    ]
+  },
+  "08_heaps/problems/k_closest_points": {
+    "difficulty": "medium",
+    "patterns": [
+      "heap"
+    ],
+    "prerequisites": [
+      "08_heaps/fundamentals/min_heap"
+    ]
+  },
+  "08_heaps/problems/kth_largest": {
+    "difficulty": "medium",
+    "patterns": [
+      "heap"
+    ],
+    "prerequisites": [
+      "08_heaps/fundamentals/min_heap"
+    ]
+  },
+  "08_heaps/problems/median_finder": {
+    "difficulty": "hard",
+    "patterns": [
+      "heap"
+    ],
+    "prerequisites": [
+      "08_heaps/fundamentals/min_heap"
+    ]
+  },
+  "08_heaps/problems/merge_k_sorted": {
+    "difficulty": "medium",
+    "patterns": [
+      "heap"
+    ],
+    "prerequisites": [
+      "08_heaps/fundamentals/min_heap"
+    ]
+  },
+  "08_heaps/problems/reorganize_string": {
+    "difficulty": "medium",
+    "patterns": [
+      "heap"
+    ],
+    "prerequisites": [
+      "08_heaps/fundamentals/min_heap"
+    ]
+  },
+  "08_heaps/problems/task_scheduler": {
+    "difficulty": "medium",
+    "patterns": [
+      "heap"
+    ],
+    "prerequisites": [
+      "08_heaps/fundamentals/min_heap"
+    ]
+  },
+  "08_heaps/problems/top_k_frequent": {
+    "difficulty": "medium",
+    "patterns": [
+      "heap"
+    ],
+    "prerequisites": [
+      "08_heaps/fundamentals/min_heap"
+    ]
+  },
+  "08_heaps/problems/ugly_number": {
+    "difficulty": "medium",
+    "patterns": [
+      "heap"
+    ],
+    "prerequisites": [
+      "08_heaps/fundamentals/min_heap"
+    ]
+  },
+  "09_tries/fundamentals/trie": {
+    "difficulty": "foundation",
+    "patterns": [
+      "trie"
+    ],
+    "prerequisites": []
+  },
+  "09_tries/fundamentals/wildcard_trie": {
+    "difficulty": "foundation",
+    "patterns": [
+      "trie"
+    ],
+    "prerequisites": []
+  },
+  "09_tries/problems/find_max_xor": {
+    "difficulty": "medium",
+    "patterns": [
+      "trie"
+    ],
+    "prerequisites": [
+      "09_tries/fundamentals/trie"
+    ]
+  },
+  "09_tries/problems/longest_word_in_dictionary": {
+    "difficulty": "medium",
+    "patterns": [
+      "trie"
+    ],
+    "prerequisites": [
+      "09_tries/fundamentals/trie"
+    ]
+  },
+  "09_tries/problems/palindrome_pairs": {
+    "difficulty": "hard",
+    "patterns": [
+      "trie",
+      "two-pointers"
+    ],
+    "prerequisites": [
+      "09_tries/fundamentals/trie"
+    ]
+  },
+  "09_tries/problems/replace_words": {
+    "difficulty": "medium",
+    "patterns": [
+      "trie"
+    ],
+    "prerequisites": [
+      "09_tries/fundamentals/trie"
+    ]
+  },
+  "09_tries/problems/word_search_ii": {
+    "difficulty": "hard",
+    "patterns": [
+      "trie",
+      "backtracking"
+    ],
+    "prerequisites": [
+      "09_tries/fundamentals/trie"
+    ]
+  },
+  "10_graphs/fundamentals/graph": {
+    "difficulty": "foundation",
+    "patterns": [
+      "graph"
+    ],
+    "prerequisites": []
+  },
+  "10_graphs/fundamentals/union_find": {
+    "difficulty": "foundation",
+    "patterns": [
+      "graph",
+      "union-find"
+    ],
+    "prerequisites": []
+  },
+  "10_graphs/problems/can_finish": {
+    "difficulty": "medium",
+    "patterns": [
+      "graph",
+      "topological-sort"
+    ],
+    "prerequisites": [
+      "10_graphs/fundamentals/graph"
+    ]
+  },
+  "10_graphs/problems/clone_graph": {
+    "difficulty": "medium",
+    "patterns": [
+      "graph",
+      "depth-first-search"
+    ],
+    "prerequisites": [
+      "10_graphs/fundamentals/graph"
+    ]
+  },
+  "10_graphs/problems/find_order": {
+    "difficulty": "medium",
+    "patterns": [
+      "graph",
+      "topological-sort"
+    ],
+    "prerequisites": [
+      "10_graphs/fundamentals/graph"
+    ]
+  },
+  "10_graphs/problems/min_cost_connect_points": {
+    "difficulty": "medium",
+    "patterns": [
+      "graph",
+      "union-find",
+      "minimum-spanning-tree"
+    ],
+    "prerequisites": [
+      "10_graphs/fundamentals/graph"
+    ]
+  },
+  "10_graphs/problems/network_delay": {
+    "difficulty": "medium",
+    "patterns": [
+      "graph",
+      "shortest-path"
+    ],
+    "prerequisites": [
+      "10_graphs/fundamentals/graph"
+    ]
+  },
+  "10_graphs/problems/num_islands": {
+    "difficulty": "medium",
+    "patterns": [
+      "graph",
+      "depth-first-search"
+    ],
+    "prerequisites": [
+      "10_graphs/fundamentals/graph"
+    ]
+  },
+  "10_graphs/problems/pacific_atlantic": {
+    "difficulty": "medium",
+    "patterns": [
+      "graph",
+      "depth-first-search"
+    ],
+    "prerequisites": [
+      "10_graphs/fundamentals/graph"
+    ]
+  },
+  "10_graphs/problems/rotting_oranges": {
+    "difficulty": "medium",
+    "patterns": [
+      "graph",
+      "breadth-first-search"
+    ],
+    "prerequisites": [
+      "10_graphs/fundamentals/graph"
+    ]
+  },
+  "10_graphs/problems/word_ladder": {
+    "difficulty": "hard",
+    "patterns": [
+      "graph",
+      "breadth-first-search"
+    ],
+    "prerequisites": [
+      "10_graphs/fundamentals/graph"
+    ]
+  },
+  "11_bit_manipulation/fundamentals/clear_bit": {
+    "difficulty": "foundation",
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "prerequisites": []
+  },
+  "11_bit_manipulation/fundamentals/count_bits": {
+    "difficulty": "easy",
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "prerequisites": []
+  },
+  "11_bit_manipulation/fundamentals/get_bit": {
+    "difficulty": "foundation",
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "prerequisites": []
+  },
+  "11_bit_manipulation/fundamentals/is_power_of_two": {
+    "difficulty": "easy",
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "prerequisites": []
+  },
+  "11_bit_manipulation/fundamentals/lowest_set_bit": {
+    "difficulty": "foundation",
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "prerequisites": []
+  },
+  "11_bit_manipulation/fundamentals/set_bit": {
+    "difficulty": "foundation",
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "prerequisites": []
+  },
+  "11_bit_manipulation/fundamentals/toggle_bit": {
+    "difficulty": "foundation",
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "prerequisites": []
+  },
+  "11_bit_manipulation/problems/bitwise_and_range": {
+    "difficulty": "medium",
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "prerequisites": []
+  },
+  "11_bit_manipulation/problems/count_bits_range": {
+    "difficulty": "easy",
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "prerequisites": []
+  },
+  "11_bit_manipulation/problems/find_complement": {
+    "difficulty": "easy",
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "prerequisites": []
+  },
+  "11_bit_manipulation/problems/hamming_distance": {
+    "difficulty": "easy",
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "prerequisites": []
+  },
+  "11_bit_manipulation/problems/maximum_xor": {
+    "difficulty": "medium",
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "prerequisites": []
+  },
+  "11_bit_manipulation/problems/missing_number": {
+    "difficulty": "easy",
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "prerequisites": []
+  },
+  "11_bit_manipulation/problems/power_of_four": {
+    "difficulty": "easy",
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "prerequisites": []
+  },
+  "11_bit_manipulation/problems/reverse_bits": {
+    "difficulty": "easy",
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "prerequisites": []
+  },
+  "11_bit_manipulation/problems/single_number": {
+    "difficulty": "easy",
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "prerequisites": []
+  },
+  "11_bit_manipulation/problems/single_number_ii": {
+    "difficulty": "medium",
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "prerequisites": []
+  },
+  "11_bit_manipulation/problems/single_number_iii": {
+    "difficulty": "medium",
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "prerequisites": []
+  },
+  "11_bit_manipulation/problems/subsets_bitmask": {
+    "difficulty": "medium",
+    "patterns": [
+      "bit-manipulation",
+      "backtracking"
+    ],
+    "prerequisites": []
+  },
+  "11_bit_manipulation/problems/sum_of_two_integers": {
+    "difficulty": "medium",
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "prerequisites": []
+  },
+  "11_bit_manipulation/problems/total_hamming_distance": {
+    "difficulty": "medium",
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "prerequisites": []
+  },
+  "11_bit_manipulation/problems/utf8_validation": {
+    "difficulty": "medium",
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/best_time_cooldown": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/best_time_k_transactions": {
+    "difficulty": "hard",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/best_time_with_fee": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/burst_balloons": {
+    "difficulty": "hard",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/climbing_stairs": {
+    "difficulty": "easy",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/coin_change": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/coin_change_ways": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/decode_ways": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/distinct_subsequences": {
+    "difficulty": "hard",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/edit_distance": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/house_robber": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/house_robber_ii": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/house_robber_iii": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/is_interleaving": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/jump_game": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/jump_game_ii": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/length_of_lis": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/longest_common_subsequence": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/longest_palindromic_subseq": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/longest_palindromic_substring": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/max_product": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/min_cost_climbing_stairs": {
+    "difficulty": "easy",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/min_path_sum": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming",
+      "depth-first-search"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/minimum_cost_tree": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/num_trees": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/ones_and_zeroes": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/partition_equal_subset": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/stone_game": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/target_sum": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/unique_paths": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/wildcard_matching": {
+    "difficulty": "hard",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "12_dynamic_programming/problems/word_break": {
+    "difficulty": "medium",
+    "patterns": [
+      "dynamic-programming"
+    ],
+    "prerequisites": []
+  },
+  "13_backtracking/problems/combination_sum": {
+    "difficulty": "medium",
+    "patterns": [
+      "backtracking"
+    ],
+    "prerequisites": []
+  },
+  "13_backtracking/problems/combination_sum_ii": {
+    "difficulty": "medium",
+    "patterns": [
+      "backtracking"
+    ],
+    "prerequisites": []
+  },
+  "13_backtracking/problems/combinations": {
+    "difficulty": "medium",
+    "patterns": [
+      "backtracking"
+    ],
+    "prerequisites": []
+  },
+  "13_backtracking/problems/expression_add_operators": {
+    "difficulty": "hard",
+    "patterns": [
+      "backtracking"
+    ],
+    "prerequisites": []
+  },
+  "13_backtracking/problems/letter_combinations": {
+    "difficulty": "medium",
+    "patterns": [
+      "backtracking"
+    ],
+    "prerequisites": []
+  },
+  "13_backtracking/problems/n_queens": {
+    "difficulty": "hard",
+    "patterns": [
+      "backtracking"
+    ],
+    "prerequisites": []
+  },
+  "13_backtracking/problems/n_queens_count": {
+    "difficulty": "hard",
+    "patterns": [
+      "backtracking"
+    ],
+    "prerequisites": []
+  },
+  "13_backtracking/problems/palindrome_partitioning": {
+    "difficulty": "medium",
+    "patterns": [
+      "backtracking",
+      "two-pointers"
+    ],
+    "prerequisites": []
+  },
+  "13_backtracking/problems/permutations": {
+    "difficulty": "medium",
+    "patterns": [
+      "backtracking"
+    ],
+    "prerequisites": []
+  },
+  "13_backtracking/problems/permutations_ii": {
+    "difficulty": "medium",
+    "patterns": [
+      "backtracking"
+    ],
+    "prerequisites": []
+  },
+  "13_backtracking/problems/remove_invalid_parentheses": {
+    "difficulty": "hard",
+    "patterns": [
+      "backtracking"
+    ],
+    "prerequisites": []
+  },
+  "13_backtracking/problems/restore_ip_addresses": {
+    "difficulty": "medium",
+    "patterns": [
+      "backtracking"
+    ],
+    "prerequisites": []
+  },
+  "13_backtracking/problems/solve_sudoku": {
+    "difficulty": "hard",
+    "patterns": [
+      "backtracking"
+    ],
+    "prerequisites": []
+  },
+  "13_backtracking/problems/subsets": {
+    "difficulty": "medium",
+    "patterns": [
+      "backtracking"
+    ],
+    "prerequisites": []
+  },
+  "13_backtracking/problems/subsets_with_dup": {
+    "difficulty": "medium",
+    "patterns": [
+      "backtracking"
+    ],
+    "prerequisites": []
+  },
+  "13_backtracking/problems/word_search": {
+    "difficulty": "medium",
+    "patterns": [
+      "backtracking"
+    ],
+    "prerequisites": []
+  },
+  "14_greedy/problems/assign_cookies": {
+    "difficulty": "easy",
+    "patterns": [
+      "greedy"
+    ],
+    "prerequisites": []
+  },
+  "14_greedy/problems/boats_to_save_people": {
+    "difficulty": "medium",
+    "patterns": [
+      "greedy"
+    ],
+    "prerequisites": []
+  },
+  "14_greedy/problems/broken_calculator": {
+    "difficulty": "medium",
+    "patterns": [
+      "greedy"
+    ],
+    "prerequisites": []
+  },
+  "14_greedy/problems/can_complete_circuit": {
+    "difficulty": "medium",
+    "patterns": [
+      "greedy"
+    ],
+    "prerequisites": []
+  },
+  "14_greedy/problems/candy": {
+    "difficulty": "hard",
+    "patterns": [
+      "greedy"
+    ],
+    "prerequisites": []
+  },
+  "14_greedy/problems/erase_overlap_intervals": {
+    "difficulty": "medium",
+    "patterns": [
+      "greedy"
+    ],
+    "prerequisites": []
+  },
+  "14_greedy/problems/find_min_cost_connect_sticks": {
+    "difficulty": "medium",
+    "patterns": [
+      "greedy"
+    ],
+    "prerequisites": []
+  },
+  "14_greedy/problems/insert_interval": {
+    "difficulty": "medium",
+    "patterns": [
+      "greedy"
+    ],
+    "prerequisites": []
+  },
+  "14_greedy/problems/ipo": {
+    "difficulty": "hard",
+    "patterns": [
+      "greedy"
+    ],
+    "prerequisites": []
+  },
+  "14_greedy/problems/largest_number": {
+    "difficulty": "medium",
+    "patterns": [
+      "greedy"
+    ],
+    "prerequisites": []
+  },
+  "14_greedy/problems/lemonade_change": {
+    "difficulty": "easy",
+    "patterns": [
+      "greedy"
+    ],
+    "prerequisites": []
+  },
+  "14_greedy/problems/meeting_rooms": {
+    "difficulty": "easy",
+    "patterns": [
+      "greedy"
+    ],
+    "prerequisites": []
+  },
+  "14_greedy/problems/meeting_rooms_ii": {
+    "difficulty": "medium",
+    "patterns": [
+      "greedy"
+    ],
+    "prerequisites": []
+  },
+  "14_greedy/problems/min_arrows_burst_balloons": {
+    "difficulty": "medium",
+    "patterns": [
+      "greedy"
+    ],
+    "prerequisites": []
+  },
+  "14_greedy/problems/partition_labels": {
+    "difficulty": "medium",
+    "patterns": [
+      "greedy"
+    ],
+    "prerequisites": []
+  },
+  "14_greedy/problems/rearrange_string_k_apart": {
+    "difficulty": "medium",
+    "patterns": [
+      "greedy"
+    ],
+    "prerequisites": []
+  },
+  "14_greedy/problems/two_city_scheduling": {
+    "difficulty": "medium",
+    "patterns": [
+      "greedy"
+    ],
+    "prerequisites": []
+  },
+  "14_greedy/problems/wiggle_subsequence": {
+    "difficulty": "medium",
+    "patterns": [
+      "greedy"
+    ],
+    "prerequisites": []
+  },
+  "15_machine_learning/fundamentals/descriptive_statistics": {
+    "difficulty": "foundation",
+    "patterns": [
+      "machine-learning",
+      "statistics"
+    ],
+    "prerequisites": []
+  },
+  "15_machine_learning/fundamentals/gradient_check": {
+    "difficulty": "foundation",
+    "patterns": [
+      "machine-learning",
+      "numerical-stability",
+      "gradient-descent"
+    ],
+    "prerequisites": [
+      "15_machine_learning/fundamentals/loss_functions"
+    ]
+  },
+  "15_machine_learning/fundamentals/loss_functions": {
+    "difficulty": "foundation",
+    "patterns": [
+      "machine-learning",
+      "numerical-stability"
+    ],
+    "prerequisites": []
+  },
+  "15_machine_learning/fundamentals/matrix_multiply": {
+    "difficulty": "foundation",
+    "patterns": [
+      "machine-learning",
+      "linear-algebra"
+    ],
+    "prerequisites": [
+      "15_machine_learning/fundamentals/vector_operations"
+    ]
+  },
+  "15_machine_learning/fundamentals/neural_network_forward": {
+    "difficulty": "foundation",
+    "patterns": [
+      "machine-learning",
+      "neural-network"
+    ],
+    "prerequisites": [
+      "15_machine_learning/fundamentals/matrix_multiply",
+      "15_machine_learning/fundamentals/stable_softmax"
+    ]
+  },
+  "15_machine_learning/fundamentals/stable_softmax": {
+    "difficulty": "foundation",
+    "patterns": [
+      "machine-learning",
+      "numerical-stability"
+    ],
+    "prerequisites": []
+  },
+  "15_machine_learning/fundamentals/vector_operations": {
+    "difficulty": "foundation",
+    "patterns": [
+      "machine-learning",
+      "linear-algebra"
+    ],
+    "prerequisites": []
+  },
+  "15_machine_learning/problems/classification_metrics": {
+    "difficulty": "medium",
+    "patterns": [
+      "machine-learning",
+      "classification",
+      "evaluation"
+    ],
+    "prerequisites": [
+      "15_machine_learning/problems/train_test_split"
+    ]
+  },
+  "15_machine_learning/problems/cosine_retrieval": {
+    "difficulty": "medium",
+    "patterns": [
+      "machine-learning",
+      "retrieval"
+    ],
+    "prerequisites": [
+      "15_machine_learning/fundamentals/vector_operations"
+    ]
+  },
+  "15_machine_learning/problems/k_means": {
+    "difficulty": "medium",
+    "patterns": [
+      "machine-learning",
+      "clustering"
+    ],
+    "prerequisites": [
+      "15_machine_learning/fundamentals/vector_operations"
+    ]
+  },
+  "15_machine_learning/problems/k_nearest_neighbors": {
+    "difficulty": "medium",
+    "patterns": [
+      "machine-learning",
+      "classification"
+    ],
+    "prerequisites": [
+      "15_machine_learning/fundamentals/vector_operations",
+      "15_machine_learning/problems/standard_scaler"
+    ]
+  },
+  "15_machine_learning/problems/linear_regression": {
+    "difficulty": "medium",
+    "patterns": [
+      "machine-learning",
+      "gradient-descent",
+      "regression"
+    ],
+    "prerequisites": [
+      "15_machine_learning/fundamentals/gradient_check",
+      "15_machine_learning/problems/standard_scaler"
+    ]
+  },
+  "15_machine_learning/problems/logistic_regression": {
+    "difficulty": "medium",
+    "patterns": [
+      "machine-learning",
+      "gradient-descent",
+      "classification"
+    ],
+    "prerequisites": [
+      "15_machine_learning/fundamentals/loss_functions",
+      "15_machine_learning/problems/standard_scaler"
+    ]
+  },
+  "15_machine_learning/problems/scaled_dot_product_attention": {
+    "difficulty": "medium",
+    "patterns": [
+      "machine-learning",
+      "attention"
+    ],
+    "prerequisites": [
+      "15_machine_learning/fundamentals/matrix_multiply",
+      "15_machine_learning/fundamentals/stable_softmax"
+    ]
+  },
+  "15_machine_learning/problems/standard_scaler": {
+    "difficulty": "medium",
+    "patterns": [
+      "machine-learning",
+      "data-leakage"
+    ],
+    "prerequisites": [
+      "15_machine_learning/fundamentals/descriptive_statistics",
+      "15_machine_learning/problems/train_test_split"
+    ]
+  },
+  "15_machine_learning/problems/train_test_split": {
+    "difficulty": "medium",
+    "patterns": [
+      "machine-learning",
+      "data-leakage"
+    ],
+    "prerequisites": []
+  },
+  "16_sql/problems/join_aggregates": {
+    "difficulty": "easy",
+    "patterns": [
+      "sql",
+      "join",
+      "aggregation"
+    ],
+    "prerequisites": []
+  },
+  "16_sql/problems/latest_event": {
+    "difficulty": "medium",
+    "patterns": [
+      "sql",
+      "window-function"
+    ],
+    "prerequisites": [
+      "16_sql/problems/window_ranking"
+    ]
+  },
+  "16_sql/problems/retention_cohorts": {
+    "difficulty": "medium",
+    "patterns": [
+      "sql",
+      "aggregation",
+      "cohort-analysis"
+    ],
+    "prerequisites": [
+      "16_sql/problems/join_aggregates"
+    ]
+  },
+  "16_sql/problems/window_ranking": {
+    "difficulty": "medium",
+    "patterns": [
+      "sql",
+      "window-function"
+    ],
+    "prerequisites": []
+  }
+}
