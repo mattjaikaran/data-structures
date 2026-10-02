@@ -1,9 +1,11 @@
 {
   "name": "data-structures-handbook",
   "version": "1.0.0",
-  "description": "Data Structures & Algorithms Handbook \u2014 Python, JavaScript, TypeScript, Rust",
+  "description": "DSA, SQL, and AI/ML handbook with isolated local practice",
   "private": true,
+  "license": "MIT",
   "type": "module",
+  "engines": { "node": ">=22" },
   "scripts": {
     "practice": "node scripts/practice.mjs",
     "test:js": "node scripts/practice.mjs all js",
@@ -11,8 +13,13 @@
     "test:ts": "node scripts/practice.mjs all ts",
     "test:rs": "cargo test --workspace",
     "test:sql": "node scripts/practice.mjs all sql",
+    "test:tooling": "node --test scripts/tests/*.test.mjs",
+    "test:projects": "uv run --frozen --all-extras python -m unittest projects.tabular.test_train projects.neural_classifier.test_train projects.retrieval.test_evaluate",
+    "check:py": "uv run --frozen ruff check && uv run --frozen mypy",
+    "check:rust": "cargo clippy --workspace --all-targets -- -D warnings",
+    "benchmark": "node scripts/practice.mjs benchmark all py",
     "typecheck": "tsc --noEmit",
-    "test": "npm run test:js && npm run test:py && npm run test:ts && npm run test:rs && npm run test:sql"
+    "test": "npm run test:tooling && npm run test:js && npm run test:py && npm run test:ts && npm run test:rs && npm run test:sql"
   },
   "devDependencies": {
     "typescript": "5.9.3"

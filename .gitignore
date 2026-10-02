@@ -24,7 +24,6 @@ bin/
 *.o
 *.rlib
 *.rmeta
-Cargo.lock
 
 bun.lockb
 

@@ -1,0 +1,32 @@
+{
+  "license": "MIT",
+  "provenance": "Original educational documents and relevance judgments written for this handbook. No private or downloaded document data.",
+  "documents": [
+    {"id": "password_recovery", "title": "Account recovery", "text": "To regain access to an account when you forget its password, request a recovery message at your registered email address. Choose a new password after verifying the recovery link. Never share the link with another person."},
+    {"id": "delivery_tracking", "title": "Parcel delivery", "text": "After a shop dispatches a parcel, the courier provides a tracking number. Use the courier's tracking page to inspect delivery updates. If a shipment stops moving, contact the shop with the order and tracking numbers."},
+    {"id": "refund_policy", "title": "Returning a purchase", "text": "A customer who returns an unused item within the store's return period can request a refund. Keep the receipt and inspect the store's conditions before shipping the item back. Reimbursements may take several business days."},
+    {"id": "binary_search", "title": "Searching a sorted sequence", "text": "Binary search finds a target in a sorted array by comparing it with the middle element. Each comparison discards half of the remaining search range. Its time cost is logarithmic, unlike checking every element."},
+    {"id": "breadth_first_search", "title": "Shortest paths with equal edge costs", "text": "Breadth-first search visits a graph in distance layers using a queue. Mark a vertex when you enqueue it so cycles do not cause repeated work. In an unweighted graph, the first visit gives the minimum number of edges from the starting vertex."},
+    {"id": "training_scaler", "title": "Fitting feature transforms", "text": "Fit normalization statistics on training rows only. Reuse the fitted mean and standard deviation for validation and test rows. Fitting a scaler on the whole dataset exposes held-out information and makes evaluation less trustworthy."},
+    {"id": "model_evaluation", "title": "Choosing and testing a model", "text": "Choose model settings with a validation set or cross-validation inside the training data. Reserve the final test set for an evaluation after selection. Repeatedly choosing settings from final test results leaks information about that test set."},
+    {"id": "classification_metrics", "title": "Detecting rare positive cases", "text": "A classifier can have high accuracy while missing most rare positive cases. Recall measures the fraction of actual positives that it detects. Precision measures how often its positive predictions are correct. Choose the metric from the cost of each mistake."},
+    {"id": "sql_left_join", "title": "Keeping unmatched database rows", "text": "Use a SQL left join when the result must retain customers with no matching orders. Count a non-null order identifier rather than every joined row. Replace a missing sum with zero if the contract defines an empty total that way."},
+    {"id": "causal_attention", "title": "Preventing future-token access", "text": "Causal attention masks positions that come after the current token. Assign those scores negative infinity before softmax so they get zero probability. Earlier outputs must not depend on values from future positions."},
+    {"id": "experiment_reproducibility", "title": "Reproducing a training experiment", "text": "Record dependency versions, random seeds, feature logic, and the dataset source. Save preprocessing with the trained model. Reload the artifact and compare predictions on the same unseen inputs before you serve it."},
+    {"id": "private_data", "title": "Keeping local data private", "text": "Keep credentials, private notes, raw personal data, browser sessions, and model artifacts outside tracked repository files. Ignore rules do not remove previously committed data. Revoke an exposed credential before cleaning its history."}
+  ],
+  "questions": [
+    {"id": "dev_recover", "split": "development", "query": "I cannot remember the secret I use to sign in. How can I regain access?", "relevant": ["password_recovery"]},
+    {"id": "dev_neighbors", "split": "development", "query": "Which traversal finds the fewest hops when every connection has the same cost?", "relevant": ["breadth_first_search"]},
+    {"id": "dev_normalize", "split": "development", "query": "Should I calculate normalization averages using the examples reserved for evaluation?", "relevant": ["training_scaler"]},
+    {"id": "test_delivery", "split": "test", "query": "How can I locate the package that a seller has sent to me?", "relevant": ["delivery_tracking"]},
+    {"id": "test_return", "split": "test", "query": "I want my money back for an unused purchase. What information should I keep?", "relevant": ["refund_policy"]},
+    {"id": "test_halves", "split": "test", "query": "How can I locate a value in an ordered list without inspecting every entry?", "relevant": ["binary_search"]},
+    {"id": "test_tuning", "split": "test", "query": "May I choose a predictor's settings from its scores on the final held-out examples?", "relevant": ["model_evaluation"]},
+    {"id": "test_rare", "split": "test", "query": "My detector says almost everything is negative and still looks accurate. How do I measure missed positive cases?", "relevant": ["classification_metrics"]},
+    {"id": "test_empty_orders", "split": "test", "query": "How do I include people who have never bought anything when summarizing their purchases?", "relevant": ["sql_left_join"]},
+    {"id": "test_future", "split": "test", "query": "How do I stop a token from using information that appears later in its sequence?", "relevant": ["causal_attention"]},
+    {"id": "test_repeat", "split": "test", "query": "What should I preserve so someone can repeat my training run and use the same predictions?", "relevant": ["experiment_reproducibility"]},
+    {"id": "test_secret", "split": "test", "query": "Does adding an exposed credential's filename to the ignore list make its old commits safe?", "relevant": ["private_data"]}
+  ]
+}
